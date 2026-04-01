@@ -1,0 +1,1 @@
+"""Firehose subsystem scaffolding."""

@@ -1,0 +1,163 @@
+"""SQLite schema bootstrap and versioning for pipeline state.
+
+This module owns table/index creation for the control-plane database.
+It intentionally stops at schema contracts; runtime state transitions are
+implemented in later phases.
+"""
+
+from __future__ import annotations
+
+import sqlite3
+from collections.abc import Sequence
+
+SCHEMA_VERSION = 1
+
+HYDRATION_STATUS_VALUES: tuple[str, ...] = (
+    "pending",
+    "claimed",
+    "hydrated",
+    "retryable",
+    "missing",
+    "failed",
+)
+
+_CAPTURE_RUNS_DDL = """
+CREATE TABLE IF NOT EXISTS capture_runs (
+    capture_run_id TEXT PRIMARY KEY,
+    started_at TEXT NOT NULL,
+    completed_at TEXT,
+    status TEXT NOT NULL,
+    target_post_count INTEGER NOT NULL,
+    written_post_count INTEGER NOT NULL DEFAULT 0,
+    last_seq_seen INTEGER,
+    notes TEXT
+);
+"""
+
+_HYDRATE_RUNS_DDL = """
+CREATE TABLE IF NOT EXISTS hydrate_runs (
+    hydrate_run_id TEXT PRIMARY KEY,
+    capture_run_id TEXT NOT NULL,
+    started_at TEXT NOT NULL,
+    completed_at TEXT,
+    status TEXT NOT NULL,
+    eligible_post_count INTEGER NOT NULL DEFAULT 0,
+    hydrated_post_count INTEGER NOT NULL DEFAULT 0,
+    missing_post_count INTEGER NOT NULL DEFAULT 0,
+    failed_post_count INTEGER NOT NULL DEFAULT 0,
+    FOREIGN KEY (capture_run_id) REFERENCES capture_runs(capture_run_id)
+);
+"""
+
+_BATCH_FILES_DDL = """
+CREATE TABLE IF NOT EXISTS batch_files (
+    file_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    job_type TEXT NOT NULL,
+    run_id TEXT NOT NULL,
+    dataset_type TEXT NOT NULL,
+    local_path TEXT NOT NULL,
+    row_count INTEGER NOT NULL DEFAULT 0,
+    byte_size INTEGER NOT NULL DEFAULT 0,
+    status TEXT NOT NULL,
+    created_at TEXT NOT NULL,
+    closed_at TEXT,
+    UNIQUE(local_path)
+);
+"""
+
+_CAPTURED_POSTS_DDL = f"""
+CREATE TABLE IF NOT EXISTS captured_posts (
+    uri TEXT PRIMARY KEY,
+    capture_run_id TEXT NOT NULL,
+    repo_did TEXT NOT NULL,
+    rkey TEXT NOT NULL,
+    cid_at_capture TEXT,
+    seq INTEGER,
+    record_created_at TEXT,
+    captured_at TEXT NOT NULL,
+    capture_file_id INTEGER,
+    hydration_status TEXT NOT NULL DEFAULT 'pending'
+        CHECK (hydration_status IN {HYDRATION_STATUS_VALUES}),
+    hydration_attempt_count INTEGER NOT NULL DEFAULT 0,
+    last_hydration_attempt_at TEXT,
+    hydrated_at TEXT,
+    hydrate_run_id TEXT,
+    last_error TEXT,
+    claimed_by_worker TEXT,
+    claim_expires_at TEXT,
+    FOREIGN KEY (capture_run_id) REFERENCES capture_runs(capture_run_id),
+    FOREIGN KEY (capture_file_id) REFERENCES batch_files(file_id),
+    FOREIGN KEY (hydrate_run_id) REFERENCES hydrate_runs(hydrate_run_id)
+);
+"""
+
+_INDEX_DDLS: tuple[str, ...] = (
+    """
+    CREATE INDEX IF NOT EXISTS idx_capture_runs_status
+    ON capture_runs(status);
+    """,
+    """
+    CREATE INDEX IF NOT EXISTS idx_hydrate_runs_capture
+    ON hydrate_runs(capture_run_id, status);
+    """,
+    """
+    CREATE INDEX IF NOT EXISTS idx_batch_files_run_lookup
+    ON batch_files(job_type, run_id, dataset_type, status);
+    """,
+    """
+    CREATE INDEX IF NOT EXISTS idx_captured_posts_status_captured_at
+    ON captured_posts(hydration_status, captured_at);
+    """,
+    """
+    CREATE INDEX IF NOT EXISTS idx_captured_posts_claim_expiration
+    ON captured_posts(claim_expires_at);
+    """,
+    """
+    CREATE INDEX IF NOT EXISTS idx_captured_posts_hydrate_run
+    ON captured_posts(hydrate_run_id, hydration_status);
+    """,
+)
+
+_TABLE_DDLS: tuple[str, ...] = (
+    _CAPTURE_RUNS_DDL,
+    _HYDRATE_RUNS_DDL,
+    _BATCH_FILES_DDL,
+    _CAPTURED_POSTS_DDL,
+)
+
+
+def _execute_ddl_statements(conn: sqlite3.Connection, ddls: Sequence[str]) -> None:
+    """Execute a list of DDL statements in order."""
+
+    for ddl in ddls:
+        conn.execute(ddl)
+
+
+def create_schema(conn: sqlite3.Connection) -> None:
+    """Create all required tables/indexes and set schema version.
+
+    DDL statements are idempotent (`IF NOT EXISTS`) so this can safely run on
+    startup for scaffolding and early development.
+    """
+
+    conn.execute("PRAGMA foreign_keys = ON;")
+    _execute_ddl_statements(conn, _TABLE_DDLS)
+    _execute_ddl_statements(conn, _INDEX_DDLS)
+    conn.execute(f"PRAGMA user_version = {SCHEMA_VERSION};")
+    conn.commit()
+
+
+def ensure_schema(conn: sqlite3.Connection) -> None:
+    """Ensure schema exists and is compatible with current SCHEMA_VERSION."""
+
+    conn.execute("PRAGMA foreign_keys = ON;")
+    current_version = int(conn.execute("PRAGMA user_version;").fetchone()[0])
+
+    if current_version > SCHEMA_VERSION:
+        raise RuntimeError(
+            f"Database schema version {current_version} is newer than supported "
+            f"version {SCHEMA_VERSION}."
+        )
+
+    # For scaffolding phase, we re-run idempotent DDL and then bump user_version.
+    create_schema(conn)

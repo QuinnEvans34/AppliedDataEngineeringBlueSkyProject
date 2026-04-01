@@ -1,0 +1,1 @@
+"""Batch writing subsystem scaffolding."""
