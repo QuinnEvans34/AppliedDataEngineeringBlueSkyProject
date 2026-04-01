@@ -12,6 +12,24 @@ from collections.abc import Sequence
 
 SCHEMA_VERSION = 1
 
+CAPTURE_RUN_STATUS_VALUES: tuple[str, ...] = (
+    "running",
+    "completed",
+    "failed",
+)
+
+HYDRATE_RUN_STATUS_VALUES: tuple[str, ...] = (
+    "running",
+    "completed",
+    "failed",
+)
+
+BATCH_FILE_STATUS_VALUES: tuple[str, ...] = (
+    "open",
+    "closed",
+    "failed",
+)
+
 HYDRATION_STATUS_VALUES: tuple[str, ...] = (
     "pending",
     "claimed",
@@ -21,12 +39,12 @@ HYDRATION_STATUS_VALUES: tuple[str, ...] = (
     "failed",
 )
 
-_CAPTURE_RUNS_DDL = """
+_CAPTURE_RUNS_DDL = f"""
 CREATE TABLE IF NOT EXISTS capture_runs (
     capture_run_id TEXT PRIMARY KEY,
     started_at TEXT NOT NULL,
     completed_at TEXT,
-    status TEXT NOT NULL,
+    status TEXT NOT NULL CHECK (status IN {CAPTURE_RUN_STATUS_VALUES}),
     target_post_count INTEGER NOT NULL,
     written_post_count INTEGER NOT NULL DEFAULT 0,
     last_seq_seen INTEGER,
@@ -34,13 +52,13 @@ CREATE TABLE IF NOT EXISTS capture_runs (
 );
 """
 
-_HYDRATE_RUNS_DDL = """
+_HYDRATE_RUNS_DDL = f"""
 CREATE TABLE IF NOT EXISTS hydrate_runs (
     hydrate_run_id TEXT PRIMARY KEY,
     capture_run_id TEXT NOT NULL,
     started_at TEXT NOT NULL,
     completed_at TEXT,
-    status TEXT NOT NULL,
+    status TEXT NOT NULL CHECK (status IN {HYDRATE_RUN_STATUS_VALUES}),
     eligible_post_count INTEGER NOT NULL DEFAULT 0,
     hydrated_post_count INTEGER NOT NULL DEFAULT 0,
     missing_post_count INTEGER NOT NULL DEFAULT 0,
@@ -49,7 +67,7 @@ CREATE TABLE IF NOT EXISTS hydrate_runs (
 );
 """
 
-_BATCH_FILES_DDL = """
+_BATCH_FILES_DDL = f"""
 CREATE TABLE IF NOT EXISTS batch_files (
     file_id INTEGER PRIMARY KEY AUTOINCREMENT,
     job_type TEXT NOT NULL,
@@ -58,7 +76,7 @@ CREATE TABLE IF NOT EXISTS batch_files (
     local_path TEXT NOT NULL,
     row_count INTEGER NOT NULL DEFAULT 0,
     byte_size INTEGER NOT NULL DEFAULT 0,
-    status TEXT NOT NULL,
+    status TEXT NOT NULL CHECK (status IN {BATCH_FILE_STATUS_VALUES}),
     created_at TEXT NOT NULL,
     closed_at TEXT,
     UNIQUE(local_path)
@@ -111,6 +129,10 @@ _INDEX_DDLS: tuple[str, ...] = (
     """
     CREATE INDEX IF NOT EXISTS idx_captured_posts_claim_expiration
     ON captured_posts(claim_expires_at);
+    """,
+    """
+    CREATE INDEX IF NOT EXISTS idx_captured_posts_status_claim_expiration
+    ON captured_posts(hydration_status, claim_expires_at);
     """,
     """
     CREATE INDEX IF NOT EXISTS idx_captured_posts_hydrate_run

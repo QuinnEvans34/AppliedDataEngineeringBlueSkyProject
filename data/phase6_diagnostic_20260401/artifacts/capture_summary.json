@@ -1,0 +1,9 @@
+{
+  "raw_capture_file": "data/phase6_diagnostic_20260401/raw_posts/cap_20260401T184939Z_85c99020/raw_posts_000001.jsonl.gz",
+  "raw_unique_uri_count": 25,
+  "raw_row_count": 25,
+  "normal_uri": "at://did:plc:l5ykcgaeg5noxtdbqiu77boo/app.bsky.feed.post/3mihe7wquq22i",
+  "complex_uri": "at://did:plc:73qgdt6gfor27mdo65lgygxh/app.bsky.feed.post/3mihe7wbmh22n",
+  "oldest_record_created_uri": "at://did:plc:i4ulcycxlr3yugkorjbrcjtd/app.bsky.feed.post/3mihe6nw3ds2s",
+  "oldest_record_created_at": "2026-04-01T18:48:56.308Z"
+}

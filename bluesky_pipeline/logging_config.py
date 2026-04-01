@@ -21,7 +21,10 @@ def configure_logging(job_name: str, log_path: Path, level: int = logging.INFO) 
     logger.propagate = False
 
     # Avoid duplicate handlers when entrypoints are re-run in the same process.
-    logger.handlers.clear()
+    # Close old handlers first so file descriptors are not leaked.
+    for handler in list(logger.handlers):
+        handler.close()
+        logger.removeHandler(handler)
 
     formatter = logging.Formatter(
         fmt="%(asctime)s | %(levelname)s | %(name)s | %(message)s",

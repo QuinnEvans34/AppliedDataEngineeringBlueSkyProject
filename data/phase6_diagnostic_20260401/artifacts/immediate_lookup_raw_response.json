@@ -1,0 +1,47 @@
+{
+  "posts": [
+    {
+      "uri": "at://did:plc:l5ykcgaeg5noxtdbqiu77boo/app.bsky.feed.post/3mihe7wquq22i",
+      "cid": "bafyreiciycbxjyhzy3e64ufiwdp2difwskn2nzpwpw5hyalu4bymvw47mm",
+      "author": {
+        "did": "did:plc:l5ykcgaeg5noxtdbqiu77boo",
+        "handle": "lauspalo.com",
+        "displayName": "Jarkko Lauspalo",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:l5ykcgaeg5noxtdbqiu77boo/bafkreicf3ghjb4b7rautyi3wet5k6xlaygjenup6fr75khg7unfenng2ji",
+        "associated": {
+          "chat": {
+            "allowIncoming": "following"
+          },
+          "activitySubscription": {
+            "allowSubscriptions": "followers"
+          }
+        },
+        "labels": [
+          {
+            "src": "did:plc:l5ykcgaeg5noxtdbqiu77boo",
+            "uri": "at://did:plc:l5ykcgaeg5noxtdbqiu77boo/app.bsky.actor.profile/self",
+            "cid": "bafyreigwlwuxhyyx7krav2s4jp6lq53kwkcxsw332utl72ihzpmfznptza",
+            "val": "!no-unauthenticated",
+            "cts": "1970-01-01T00:00:00.000Z"
+          }
+        ],
+        "createdAt": "2023-10-13T10:42:34.756Z"
+      },
+      "record": {
+        "$type": "app.bsky.feed.post",
+        "createdAt": "2026-04-01T18:49:39.129Z",
+        "langs": [
+          "fi"
+        ],
+        "text": "Voiko moderni talous käytännössä kasvaa ilman että velan määrä myös kasvaa? Ainut keino ehkä jokin tuottavuusräjähdys, kuten äärimmäisen kannattava fuusiovoima tai vastaava?"
+      },
+      "bookmarkCount": 0,
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 1,
+      "quoteCount": 0,
+      "indexedAt": "2026-04-01T18:49:39.853Z",
+      "labels": []
+    }
+  ]
+}

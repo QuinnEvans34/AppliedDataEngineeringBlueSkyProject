@@ -1,0 +1,24 @@
+{
+  "hydrate_run_id": "phase6_immediate_lookup",
+  "capture_run_id": "cap_20260401T184939Z_85c99020",
+  "uri": "at://did:plc:l5ykcgaeg5noxtdbqiu77boo/app.bsky.feed.post/3mihe7wquq22i",
+  "cid": "bafyreiciycbxjyhzy3e64ufiwdp2difwskn2nzpwpw5hyalu4bymvw47mm",
+  "indexed_at": "2026-04-01T18:49:39.853Z",
+  "author_did": "did:plc:l5ykcgaeg5noxtdbqiu77boo",
+  "author_handle": "lauspalo.com",
+  "author_display_name": "Jarkko Lauspalo",
+  "reply_count": 0,
+  "repost_count": 0,
+  "like_count": 1,
+  "quote_count": 0,
+  "labels": [],
+  "hydrated_at": "2026-04-01T18:54:23.320113+00:00",
+  "record": {
+    "$type": "app.bsky.feed.post",
+    "createdAt": "2026-04-01T18:49:39.129Z",
+    "langs": [
+      "fi"
+    ],
+    "text": "Voiko moderni talous käytännössä kasvaa ilman että velan määrä myös kasvaa? Ainut keino ehkä jokin tuottavuusräjähdys, kuten äärimmäisen kannattava fuusiovoima tai vastaava?"
+  }
+}

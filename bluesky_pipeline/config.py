@@ -51,8 +51,11 @@ class FirehoseConfig:
         "wss://bsky.network/xrpc/com.atproto.sync.subscribeRepos"
     )
     target_capture_count: int = 1_000_000
+    recv_timeout_seconds: float = 30.0
     reconnect_base_delay_seconds: float = 1.0
     reconnect_max_delay_seconds: float = 30.0
+    progress_log_interval_seconds: float = 15.0
+    progress_db_sync_interval_seconds: float = 5.0
 
 
 @dataclass(slots=True)
@@ -61,9 +64,14 @@ class HydrateConfig:
 
     api_base_url: str = "https://public.api.bsky.app"
     get_posts_path: str = "/xrpc/app.bsky.feed.getPosts"
+    claim_batch_size: int = 200
+    claim_ttl_seconds: int = 300
     request_batch_size: int = 25
+    request_timeout_seconds: float = 15.0
     maturity_hours: int = 24
     poll_interval_seconds: int = 30
+    progress_log_interval_seconds: float = 15.0
+    max_unresolved_attempts: int = 3
     continue_polling_when_idle: bool = False
 
 

@@ -1,12 +1,8 @@
-"""Hydrated view normalization scaffolding.
-
-Intended responsibility:
-- convert hydrated post views into Dataset B rows
-- generate Dataset C miss/error rows when hydration returns no post
-"""
+"""Hydrated view and miss-row normalization for output datasets."""
 
 from __future__ import annotations
 
+from collections.abc import Mapping
 from typing import Any
 
 
@@ -18,7 +14,13 @@ def normalize_hydrated_post(
 ) -> dict[str, Any]:
     """Convert a hydrated post view into Dataset B row shape."""
 
-    author = post_view.get("author") or {}
+    author_value = post_view.get("author")
+    author = author_value if isinstance(author_value, Mapping) else {}
+    record_value = post_view.get("record")
+    labels = post_view.get("labels")
+    if not isinstance(labels, list):
+        labels = []
+
     return {
         "hydrate_run_id": hydrate_run_id,
         "capture_run_id": capture_run_id,
@@ -28,13 +30,13 @@ def normalize_hydrated_post(
         "author_did": author.get("did"),
         "author_handle": author.get("handle"),
         "author_display_name": author.get("displayName"),
-        "reply_count": post_view.get("replyCount"),
-        "repost_count": post_view.get("repostCount"),
-        "like_count": post_view.get("likeCount"),
-        "quote_count": post_view.get("quoteCount"),
-        "labels": post_view.get("labels"),
+        "reply_count": _to_int_or_none(post_view.get("replyCount")),
+        "repost_count": _to_int_or_none(post_view.get("repostCount")),
+        "like_count": _to_int_or_none(post_view.get("likeCount")),
+        "quote_count": _to_int_or_none(post_view.get("quoteCount")),
+        "labels": labels,
         "hydrated_at": hydrated_at,
-        "record": post_view.get("record"),
+        "record": dict(record_value) if isinstance(record_value, Mapping) else None,
     }
 
 
@@ -42,8 +44,12 @@ def normalize_hydration_miss(
     hydrate_run_id: str,
     capture_run_id: str,
     uri: str,
+    *,
+    cid_at_capture: str | None,
+    captured_at: str,
+    attempt_count: int,
     reason: str,
-    hydrated_at: str,
+    checked_at: str,
 ) -> dict[str, Any]:
     """Create a Dataset C miss row for unresolved hydration targets."""
 
@@ -51,6 +57,19 @@ def normalize_hydration_miss(
         "hydrate_run_id": hydrate_run_id,
         "capture_run_id": capture_run_id,
         "uri": uri,
+        "cid_at_capture": cid_at_capture,
+        "captured_at": captured_at,
+        "status": "missing",
         "reason": reason,
-        "hydrated_at": hydrated_at,
+        "checked_at": checked_at,
+        "attempt_count": attempt_count,
     }
+
+
+def _to_int_or_none(value: Any) -> int | None:
+    if value is None:
+        return None
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return None

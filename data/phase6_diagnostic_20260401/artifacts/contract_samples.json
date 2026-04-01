@@ -1,0 +1,290 @@
+{
+  "selected_uris": {
+    "normal": "at://did:plc:l5ykcgaeg5noxtdbqiu77boo/app.bsky.feed.post/3mihe7wquq22i",
+    "complex": "at://did:plc:73qgdt6gfor27mdo65lgygxh/app.bsky.feed.post/3mihe7wbmh22n",
+    "older": "at://did:plc:i4ulcycxlr3yugkorjbrcjtd/app.bsky.feed.post/3mihe6nw3ds2s"
+  },
+  "samples": {
+    "at://did:plc:l5ykcgaeg5noxtdbqiu77boo/app.bsky.feed.post/3mihe7wquq22i": {
+      "raw": {
+        "capture_run_id": "cap_20260401T184939Z_85c99020",
+        "seq": 28756093036,
+        "repo_did": "did:plc:l5ykcgaeg5noxtdbqiu77boo",
+        "event_time": "2026-04-01T18:49:39.658Z",
+        "operation": "create",
+        "collection": "app.bsky.feed.post",
+        "rkey": "3mihe7wquq22i",
+        "uri": "at://did:plc:l5ykcgaeg5noxtdbqiu77boo/app.bsky.feed.post/3mihe7wquq22i",
+        "cid": "bafyreiciycbxjyhzy3e64ufiwdp2difwskn2nzpwpw5hyalu4bymvw47mm",
+        "record_created_at": "2026-04-01T18:49:39.129Z",
+        "has_reply": false,
+        "has_embed": false,
+        "captured_at": "2026-04-01T18:49:40.662473+00:00",
+        "record": {
+          "text": "Voiko moderni talous k\u00e4yt\u00e4nn\u00f6ss\u00e4 kasvaa ilman ett\u00e4 velan m\u00e4\u00e4r\u00e4 my\u00f6s kasvaa? Ainut keino ehk\u00e4 jokin tuottavuusr\u00e4j\u00e4hdys, kuten \u00e4\u00e4rimm\u00e4isen kannattava fuusiovoima tai vastaava?",
+          "$type": "app.bsky.feed.post",
+          "langs": [
+            "fi"
+          ],
+          "createdAt": "2026-04-01T18:49:39.129Z"
+        }
+      },
+      "captured_posts_state": {
+        "uri": "at://did:plc:l5ykcgaeg5noxtdbqiu77boo/app.bsky.feed.post/3mihe7wquq22i",
+        "repo_did": "did:plc:l5ykcgaeg5noxtdbqiu77boo",
+        "cid_at_capture": "bafyreiciycbxjyhzy3e64ufiwdp2difwskn2nzpwpw5hyalu4bymvw47mm",
+        "seq": 28756093036,
+        "record_created_at": "2026-04-01T18:49:39.129Z",
+        "captured_at": "2026-04-01T18:49:40.662473+00:00",
+        "hydration_status": "hydrated",
+        "hydration_attempt_count": 1,
+        "last_hydration_attempt_at": "2026-04-01T18:51:09.212906+00:00",
+        "hydrated_at": "2026-04-01T18:51:09.213868+00:00",
+        "hydrate_run_id": "hyd_20260401T185109Z_97b40e6f",
+        "last_error": null
+      },
+      "hydrated": {
+        "hydrate_run_id": "hyd_20260401T185109Z_97b40e6f",
+        "capture_run_id": "cap_20260401T184939Z_85c99020",
+        "uri": "at://did:plc:l5ykcgaeg5noxtdbqiu77boo/app.bsky.feed.post/3mihe7wquq22i",
+        "cid": "bafyreiciycbxjyhzy3e64ufiwdp2difwskn2nzpwpw5hyalu4bymvw47mm",
+        "indexed_at": "2026-04-01T18:49:39.853Z",
+        "author_did": "did:plc:l5ykcgaeg5noxtdbqiu77boo",
+        "author_handle": "lauspalo.com",
+        "author_display_name": "Jarkko Lauspalo",
+        "reply_count": 0,
+        "repost_count": 0,
+        "like_count": 1,
+        "quote_count": 0,
+        "labels": [],
+        "hydrated_at": "2026-04-01T18:51:09.213868+00:00",
+        "record": {
+          "$type": "app.bsky.feed.post",
+          "createdAt": "2026-04-01T18:49:39.129Z",
+          "langs": [
+            "fi"
+          ],
+          "text": "Voiko moderni talous k\u00e4yt\u00e4nn\u00f6ss\u00e4 kasvaa ilman ett\u00e4 velan m\u00e4\u00e4r\u00e4 my\u00f6s kasvaa? Ainut keino ehk\u00e4 jokin tuottavuusr\u00e4j\u00e4hdys, kuten \u00e4\u00e4rimm\u00e4isen kannattava fuusiovoima tai vastaava?"
+        }
+      },
+      "raw_flags": {
+        "has_reply": false,
+        "has_embed": false
+      }
+    },
+    "at://did:plc:73qgdt6gfor27mdo65lgygxh/app.bsky.feed.post/3mihe7wbmh22n": {
+      "raw": {
+        "capture_run_id": "cap_20260401T184939Z_85c99020",
+        "seq": 28756093123,
+        "repo_did": "did:plc:73qgdt6gfor27mdo65lgygxh",
+        "event_time": "2026-04-01T18:49:39.927Z",
+        "operation": "create",
+        "collection": "app.bsky.feed.post",
+        "rkey": "3mihe7wbmh22n",
+        "uri": "at://did:plc:73qgdt6gfor27mdo65lgygxh/app.bsky.feed.post/3mihe7wbmh22n",
+        "cid": "bafyreidpce3ncu35lt5wmzu5ovvghmnrn3r6qzliug6qlr3hlk2va5h6mi",
+        "record_created_at": "2026-04-01T18:49:38.628Z",
+        "has_reply": false,
+        "has_embed": true,
+        "captured_at": "2026-04-01T18:49:40.669261+00:00",
+        "record": {
+          "text": "youtube.com/shorts/mmokh...\n\nGREAT STORY!!!",
+          "$type": "app.bsky.feed.post",
+          "embed": {
+            "$type": "app.bsky.embed.external",
+            "external": {
+              "uri": "https://youtube.com/shorts/mmokhbquBcM?si=0Y4y2nvp61BAF_NG",
+              "thumb": {
+                "ref": {
+                  "$bytes_b64": "AVUSILbgv2ZBUskiehzV00FVRWTmQMAJ3KyYG/B/tXtSWU6F"
+                },
+                "size": 51716,
+                "$type": "blob",
+                "mimeType": "image/jpeg"
+              },
+              "title": "Cher's Secret Singing Debut Da Doo Ron Ron Story via Paul Harvey #shorts",
+              "description": "YouTube video by AmericansPerspective"
+            }
+          },
+          "langs": [
+            "en"
+          ],
+          "facets": [
+            {
+              "index": {
+                "byteEnd": 27,
+                "byteStart": 0
+              },
+              "features": [
+                {
+                  "uri": "https://youtube.com/shorts/mmokhbquBcM?si=0Y4y2nvp61BAF_NG",
+                  "$type": "app.bsky.richtext.facet#link"
+                }
+              ]
+            }
+          ],
+          "createdAt": "2026-04-01T18:49:38.628Z"
+        }
+      },
+      "captured_posts_state": {
+        "uri": "at://did:plc:73qgdt6gfor27mdo65lgygxh/app.bsky.feed.post/3mihe7wbmh22n",
+        "repo_did": "did:plc:73qgdt6gfor27mdo65lgygxh",
+        "cid_at_capture": "bafyreidpce3ncu35lt5wmzu5ovvghmnrn3r6qzliug6qlr3hlk2va5h6mi",
+        "seq": 28756093123,
+        "record_created_at": "2026-04-01T18:49:38.628Z",
+        "captured_at": "2026-04-01T18:49:40.669261+00:00",
+        "hydration_status": "hydrated",
+        "hydration_attempt_count": 1,
+        "last_hydration_attempt_at": "2026-04-01T18:51:09.337723+00:00",
+        "hydrated_at": "2026-04-01T18:51:09.338506+00:00",
+        "hydrate_run_id": "hyd_20260401T185109Z_97b40e6f",
+        "last_error": null
+      },
+      "hydrated": {
+        "hydrate_run_id": "hyd_20260401T185109Z_97b40e6f",
+        "capture_run_id": "cap_20260401T184939Z_85c99020",
+        "uri": "at://did:plc:73qgdt6gfor27mdo65lgygxh/app.bsky.feed.post/3mihe7wbmh22n",
+        "cid": "bafyreidpce3ncu35lt5wmzu5ovvghmnrn3r6qzliug6qlr3hlk2va5h6mi",
+        "indexed_at": "2026-04-01T18:49:40.056Z",
+        "author_did": "did:plc:73qgdt6gfor27mdo65lgygxh",
+        "author_handle": "noriks.bsky.social",
+        "author_display_name": "Noriks \ud83c\udde8\ud83c\udde6  \ud83c\uddfa\ud83c\udde6 \ud83c\uddea\ud83c\uddfa \ud83c\uddf2\ud83c\uddfd \ud83d\udc26\u200d\u2b1b \ud83d\udc08\u200d\u2b1b \u264e\ufe0f",
+        "reply_count": 0,
+        "repost_count": 0,
+        "like_count": 0,
+        "quote_count": 0,
+        "labels": [],
+        "hydrated_at": "2026-04-01T18:51:09.338506+00:00",
+        "record": {
+          "$type": "app.bsky.feed.post",
+          "createdAt": "2026-04-01T18:49:38.628Z",
+          "embed": {
+            "$type": "app.bsky.embed.external",
+            "external": {
+              "description": "YouTube video by AmericansPerspective",
+              "thumb": {
+                "$type": "blob",
+                "ref": {
+                  "$link": "bafkreifw4c7wmqkszerhuhgv2navkrle4zamaco4vsmbx4d7wv5vewkoqu"
+                },
+                "mimeType": "image/jpeg",
+                "size": 51716
+              },
+              "title": "Cher's Secret Singing Debut Da Doo Ron Ron Story via Paul Harvey #shorts",
+              "uri": "https://youtube.com/shorts/mmokhbquBcM?si=0Y4y2nvp61BAF_NG"
+            }
+          },
+          "facets": [
+            {
+              "features": [
+                {
+                  "$type": "app.bsky.richtext.facet#link",
+                  "uri": "https://youtube.com/shorts/mmokhbquBcM?si=0Y4y2nvp61BAF_NG"
+                }
+              ],
+              "index": {
+                "byteEnd": 27,
+                "byteStart": 0
+              }
+            }
+          ],
+          "langs": [
+            "en"
+          ],
+          "text": "youtube.com/shorts/mmokh...\n\nGREAT STORY!!!"
+        }
+      },
+      "raw_flags": {
+        "has_reply": false,
+        "has_embed": true
+      }
+    },
+    "at://did:plc:i4ulcycxlr3yugkorjbrcjtd/app.bsky.feed.post/3mihe6nw3ds2s": {
+      "raw": {
+        "capture_run_id": "cap_20260401T184939Z_85c99020",
+        "seq": 28756093228,
+        "repo_did": "did:plc:i4ulcycxlr3yugkorjbrcjtd",
+        "event_time": "2026-04-01T18:49:39.684Z",
+        "operation": "create",
+        "collection": "app.bsky.feed.post",
+        "rkey": "3mihe6nw3ds2s",
+        "uri": "at://did:plc:i4ulcycxlr3yugkorjbrcjtd/app.bsky.feed.post/3mihe6nw3ds2s",
+        "cid": "bafyreidxpdeyf6x3neojcerrutlsc2yhuxbjkyh3rbhhckkf5mylckj26u",
+        "record_created_at": "2026-04-01T18:48:56.308Z",
+        "has_reply": true,
+        "has_embed": false,
+        "captured_at": "2026-04-01T18:49:40.676609+00:00",
+        "record": {
+          "text": "Why did that man eat that dog?\n\nIt\u2019s clearly in his belly.",
+          "$type": "app.bsky.feed.post",
+          "langs": [
+            "en"
+          ],
+          "reply": {
+            "root": {
+              "cid": "bafyreicwqbdqj5wrv5iy6umtifbkqm7ywenvsjnndtomaaowjlfjzwbviu",
+              "uri": "at://did:plc:rlr4e4zioxivpndzr4mqw4r2/app.bsky.feed.post/3mihcrigqh22x"
+            },
+            "parent": {
+              "cid": "bafyreicwqbdqj5wrv5iy6umtifbkqm7ywenvsjnndtomaaowjlfjzwbviu",
+              "uri": "at://did:plc:rlr4e4zioxivpndzr4mqw4r2/app.bsky.feed.post/3mihcrigqh22x"
+            }
+          },
+          "createdAt": "2026-04-01T18:48:56.308Z"
+        }
+      },
+      "captured_posts_state": {
+        "uri": "at://did:plc:i4ulcycxlr3yugkorjbrcjtd/app.bsky.feed.post/3mihe6nw3ds2s",
+        "repo_did": "did:plc:i4ulcycxlr3yugkorjbrcjtd",
+        "cid_at_capture": "bafyreidxpdeyf6x3neojcerrutlsc2yhuxbjkyh3rbhhckkf5mylckj26u",
+        "seq": 28756093228,
+        "record_created_at": "2026-04-01T18:48:56.308Z",
+        "captured_at": "2026-04-01T18:49:40.676609+00:00",
+        "hydration_status": "hydrated",
+        "hydration_attempt_count": 1,
+        "last_hydration_attempt_at": "2026-04-01T18:51:09.582747+00:00",
+        "hydrated_at": "2026-04-01T18:51:09.583533+00:00",
+        "hydrate_run_id": "hyd_20260401T185109Z_97b40e6f",
+        "last_error": null
+      },
+      "hydrated": {
+        "hydrate_run_id": "hyd_20260401T185109Z_97b40e6f",
+        "capture_run_id": "cap_20260401T184939Z_85c99020",
+        "uri": "at://did:plc:i4ulcycxlr3yugkorjbrcjtd/app.bsky.feed.post/3mihe6nw3ds2s",
+        "cid": "bafyreidxpdeyf6x3neojcerrutlsc2yhuxbjkyh3rbhhckkf5mylckj26u",
+        "indexed_at": "2026-04-01T18:49:40.256Z",
+        "author_did": "did:plc:i4ulcycxlr3yugkorjbrcjtd",
+        "author_handle": "craigthomler.bsky.social",
+        "author_display_name": "Craig Thomler ",
+        "reply_count": 0,
+        "repost_count": 0,
+        "like_count": 0,
+        "quote_count": 0,
+        "labels": [],
+        "hydrated_at": "2026-04-01T18:51:09.583533+00:00",
+        "record": {
+          "$type": "app.bsky.feed.post",
+          "createdAt": "2026-04-01T18:48:56.308Z",
+          "langs": [
+            "en"
+          ],
+          "reply": {
+            "parent": {
+              "cid": "bafyreicwqbdqj5wrv5iy6umtifbkqm7ywenvsjnndtomaaowjlfjzwbviu",
+              "uri": "at://did:plc:rlr4e4zioxivpndzr4mqw4r2/app.bsky.feed.post/3mihcrigqh22x"
+            },
+            "root": {
+              "cid": "bafyreicwqbdqj5wrv5iy6umtifbkqm7ywenvsjnndtomaaowjlfjzwbviu",
+              "uri": "at://did:plc:rlr4e4zioxivpndzr4mqw4r2/app.bsky.feed.post/3mihcrigqh22x"
+            }
+          },
+          "text": "Why did that man eat that dog?\n\nIt\u2019s clearly in his belly."
+        }
+      },
+      "raw_flags": {
+        "has_reply": true,
+        "has_embed": false
+      }
+    }
+  }
+}
