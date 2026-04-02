@@ -22,6 +22,12 @@ def new_hydrate_run_id() -> str:
     return f"hyd_{_timestamp()}_{uuid4().hex[:8]}"
 
 
+def new_actor_run_id() -> str:
+    """Create a time-sortable actor enrichment run identifier."""
+
+    return f"act_{_timestamp()}_{uuid4().hex[:8]}"
+
+
 def new_worker_id(prefix: str = "worker") -> str:
     """Create a short worker identifier for claim ownership."""
 

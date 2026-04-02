@@ -1,0 +1,2 @@
+dataset=raw rows_checked=1 missing_field_rows=1
+issue row_index=1 source=data/phase6_tooling_validation_20260402/bad_raw/bad.jsonl:1 missing_fields=cid

@@ -345,6 +345,60 @@ class MainHydrateIntegrationTests(unittest.TestCase):
         self.assertEqual(run_row["status"], "completed")
         self.assertEqual(run_row["failed_post_count"], 1)
 
+    def test_startup_logs_immediate_mode_warning_for_zero_maturity(self) -> None:
+        exit_code = main(
+            [
+                "--db-path",
+                str(self.db_path),
+                "--log-path",
+                str(self.log_path),
+                "--maturity-hours",
+                "0",
+            ]
+        )
+
+        self.assertEqual(exit_code, 1)
+
+        log_text = self.log_path.read_text(encoding="utf-8")
+        self.assertIn("Hydration maturity window: 0 hour(s)", log_text)
+        self.assertIn("Hydration eligibility cutoff (UTC): captured_at <=", log_text)
+        self.assertIn("Hydration mode: immediate/test-style", log_text)
+
+    def test_startup_logs_production_mode_for_default_maturity(self) -> None:
+        exit_code = main(
+            [
+                "--db-path",
+                str(self.db_path),
+                "--log-path",
+                str(self.log_path),
+            ]
+        )
+
+        self.assertEqual(exit_code, 1)
+
+        log_text = self.log_path.read_text(encoding="utf-8")
+        self.assertIn("Hydration maturity window: 24 hour(s)", log_text)
+        self.assertIn("Hydration eligibility cutoff (UTC): captured_at <=", log_text)
+        self.assertIn("Hydration mode: production-style (24 hours)", log_text)
+
+    def test_startup_logs_low_maturity_override_warning(self) -> None:
+        exit_code = main(
+            [
+                "--db-path",
+                str(self.db_path),
+                "--log-path",
+                str(self.log_path),
+                "--maturity-hours",
+                "6",
+            ]
+        )
+
+        self.assertEqual(exit_code, 1)
+
+        log_text = self.log_path.read_text(encoding="utf-8")
+        self.assertIn("Hydration maturity window: 6 hour(s)", log_text)
+        self.assertIn("Hydration mode: low-maturity override (6 hours)", log_text)
+
 
 if __name__ == "__main__":
     unittest.main()

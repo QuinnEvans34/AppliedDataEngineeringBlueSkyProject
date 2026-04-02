@@ -20,6 +20,7 @@ class PathsConfig:
     raw_posts_dir: Path = Path("data/raw_posts")
     hydrated_posts_dir: Path = Path("data/hydrated_posts")
     hydration_misses_dir: Path = Path("data/hydration_misses")
+    actor_profiles_dir: Path = Path("data/actor_profiles")
     logs_dir: Path = Path("data/logs")
     state_dir: Path = Path("data/state")
     sqlite_db_path: Path = Path("data/state/pipeline_state.db")
@@ -76,6 +77,22 @@ class HydrateConfig:
 
 
 @dataclass(slots=True)
+class ActorConfig:
+    """Settings for the actor/profile enrichment worker."""
+
+    api_base_url: str = "https://public.api.bsky.app"
+    get_profiles_path: str = "/xrpc/app.bsky.actor.getProfiles"
+    claim_batch_size: int = 200
+    claim_ttl_seconds: int = 300
+    request_batch_size: int = 25
+    request_timeout_seconds: float = 15.0
+    poll_interval_seconds: int = 30
+    progress_log_interval_seconds: float = 15.0
+    max_unresolved_attempts: int = 3
+    continue_polling_when_idle: bool = False
+
+
+@dataclass(slots=True)
 class AppConfig:
     """Top-level application config grouped by concern."""
 
@@ -84,6 +101,7 @@ class AppConfig:
     retry: RetryConfig = field(default_factory=RetryConfig)
     firehose: FirehoseConfig = field(default_factory=FirehoseConfig)
     hydrate: HydrateConfig = field(default_factory=HydrateConfig)
+    actor: ActorConfig = field(default_factory=ActorConfig)
 
 
 def load_config() -> AppConfig:

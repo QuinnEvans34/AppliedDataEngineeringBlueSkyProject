@@ -1,0 +1,2 @@
+data/phase6_diagnostic_20260401/raw_posts/cap_20260401T184939Z_85c99020/raw_posts_000001.jsonl.gz	rows=25	bytes=6292
+TOTAL files=1 rows=25 bytes=6292

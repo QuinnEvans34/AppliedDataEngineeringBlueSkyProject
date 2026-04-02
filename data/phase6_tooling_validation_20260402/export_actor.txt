@@ -1,0 +1,1 @@
+dataset=actor exported_rows=2 format=json output=data/phase6_tooling_validation_20260402/actor_sample.json

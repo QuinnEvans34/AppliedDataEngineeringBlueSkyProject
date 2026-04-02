@@ -1,0 +1,120 @@
+[
+  {
+    "actor_run_id": "act_20260401T231425Z_48569e45",
+    "did": "did:plc:2sfzopxqkih7jt4mh37tuuow",
+    "handle": "counciloravalos.bsky.social",
+    "display_name": "Councilor Candace Avalos",
+    "description": "Official account of Portland City Councilor Candace Avalos (she/ella), representing East Portland’s District 1.\n\n🔗 More Info: linktr.ee/counciloravalos\n📘 Online Policy: portland.gov/Disclaimer\n\n#LiveFromPDXCouncil26\n#LiveFromHH26",
+    "followers_count": 3154,
+    "follows_count": 165,
+    "posts_count": 3882,
+    "indexed_at": "2026-03-18T23:24:33.952Z",
+    "created_at": "2024-12-13T09:05:19.242Z",
+    "labels": [],
+    "associated": {
+      "lists": 0,
+      "feedgens": 0,
+      "starterPacks": 0,
+      "labeler": false,
+      "activitySubscription": {
+        "allowSubscriptions": "followers"
+      }
+    },
+    "enriched_at": "2026-04-01T23:14:25.523742+00:00",
+    "profile": {
+      "did": "did:plc:2sfzopxqkih7jt4mh37tuuow",
+      "handle": "counciloravalos.bsky.social",
+      "displayName": "Councilor Candace Avalos",
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2sfzopxqkih7jt4mh37tuuow/bafkreid7xhui2a32xmoljegebq5cnpnernrzxp5fe723zcbjztumuvumbe",
+      "associated": {
+        "lists": 0,
+        "feedgens": 0,
+        "starterPacks": 0,
+        "labeler": false,
+        "activitySubscription": {
+          "allowSubscriptions": "followers"
+        }
+      },
+      "labels": [],
+      "createdAt": "2024-12-13T09:05:19.242Z",
+      "description": "Official account of Portland City Councilor Candace Avalos (she/ella), representing East Portland’s District 1.\n\n🔗 More Info: linktr.ee/counciloravalos\n📘 Online Policy: portland.gov/Disclaimer\n\n#LiveFromPDXCouncil26\n#LiveFromHH26",
+      "indexedAt": "2026-03-18T23:24:33.952Z",
+      "banner": "https://cdn.bsky.app/img/banner/plain/did:plc:2sfzopxqkih7jt4mh37tuuow/bafkreiew7srvybqppcdjbyxdn63xddxlz2f5wouy6gxk7nytvf2vadulpa",
+      "followersCount": 3154,
+      "followsCount": 165,
+      "postsCount": 3882,
+      "pinnedPost": {
+        "cid": "bafyreihxwig3h34xvevwpn3sombbrrjba7mprl7ulg6l2zo7k3gl5vd4mm",
+        "uri": "at://did:plc:2sfzopxqkih7jt4mh37tuuow/app.bsky.feed.post/3lidvmgnfcc2g"
+      }
+    }
+  },
+  {
+    "actor_run_id": "act_20260401T231425Z_48569e45",
+    "did": "did:plc:3lrbxzufyragh44fsfdhcvz7",
+    "handle": "kvrasv.bsky.social",
+    "display_name": "capiroto de coleira e saia",
+    "description": "é muito difícil digitar com essas patas de rato || beyond repair",
+    "followers_count": 311,
+    "follows_count": 156,
+    "posts_count": 9360,
+    "indexed_at": "2026-03-30T18:40:33.553Z",
+    "created_at": "2023-09-20T18:17:08.581Z",
+    "labels": [
+      {
+        "src": "did:plc:3lrbxzufyragh44fsfdhcvz7",
+        "uri": "at://did:plc:3lrbxzufyragh44fsfdhcvz7/app.bsky.actor.profile/self",
+        "cid": "bafyreif73q4z7k6slbucuknzl2nii77twwikp7qz4apmdyevmnytduh75a",
+        "val": "!no-unauthenticated",
+        "cts": "1970-01-01T00:00:00.000Z"
+      }
+    ],
+    "associated": {
+      "lists": 1,
+      "feedgens": 0,
+      "starterPacks": 0,
+      "labeler": false,
+      "chat": {
+        "allowIncoming": "all"
+      },
+      "activitySubscription": {
+        "allowSubscriptions": "none"
+      }
+    },
+    "enriched_at": "2026-04-01T23:14:25.523742+00:00",
+    "profile": {
+      "did": "did:plc:3lrbxzufyragh44fsfdhcvz7",
+      "handle": "kvrasv.bsky.social",
+      "displayName": "capiroto de coleira e saia",
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3lrbxzufyragh44fsfdhcvz7/bafkreihgbevoa3t65q7zxrupgjti7c7rjhmw6krvs6p4tr2csls3synsyy",
+      "associated": {
+        "lists": 1,
+        "feedgens": 0,
+        "starterPacks": 0,
+        "labeler": false,
+        "chat": {
+          "allowIncoming": "all"
+        },
+        "activitySubscription": {
+          "allowSubscriptions": "none"
+        }
+      },
+      "labels": [
+        {
+          "src": "did:plc:3lrbxzufyragh44fsfdhcvz7",
+          "uri": "at://did:plc:3lrbxzufyragh44fsfdhcvz7/app.bsky.actor.profile/self",
+          "cid": "bafyreif73q4z7k6slbucuknzl2nii77twwikp7qz4apmdyevmnytduh75a",
+          "val": "!no-unauthenticated",
+          "cts": "1970-01-01T00:00:00.000Z"
+        }
+      ],
+      "createdAt": "2023-09-20T18:17:08.581Z",
+      "description": "é muito difícil digitar com essas patas de rato || beyond repair",
+      "indexedAt": "2026-03-30T18:40:33.553Z",
+      "banner": "https://cdn.bsky.app/img/banner/plain/did:plc:3lrbxzufyragh44fsfdhcvz7/bafkreifyxyxi75vxxmbj7tm46dlq6lu3ceggplbru2gmcaf2kx3tbxnfqa",
+      "followersCount": 311,
+      "followsCount": 156,
+      "postsCount": 9360
+    }
+  }
+]

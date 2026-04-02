@@ -10,7 +10,7 @@ from __future__ import annotations
 import sqlite3
 from collections.abc import Sequence
 
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2
 
 CAPTURE_RUN_STATUS_VALUES: tuple[str, ...] = (
     "running",
@@ -19,6 +19,12 @@ CAPTURE_RUN_STATUS_VALUES: tuple[str, ...] = (
 )
 
 HYDRATE_RUN_STATUS_VALUES: tuple[str, ...] = (
+    "running",
+    "completed",
+    "failed",
+)
+
+ACTOR_RUN_STATUS_VALUES: tuple[str, ...] = (
     "running",
     "completed",
     "failed",
@@ -34,6 +40,15 @@ HYDRATION_STATUS_VALUES: tuple[str, ...] = (
     "pending",
     "claimed",
     "hydrated",
+    "retryable",
+    "missing",
+    "failed",
+)
+
+ACTOR_ENRICHMENT_STATUS_VALUES: tuple[str, ...] = (
+    "pending",
+    "claimed",
+    "enriched",
     "retryable",
     "missing",
     "failed",
@@ -64,6 +79,21 @@ CREATE TABLE IF NOT EXISTS hydrate_runs (
     missing_post_count INTEGER NOT NULL DEFAULT 0,
     failed_post_count INTEGER NOT NULL DEFAULT 0,
     FOREIGN KEY (capture_run_id) REFERENCES capture_runs(capture_run_id)
+);
+"""
+
+_ACTOR_RUNS_DDL = f"""
+CREATE TABLE IF NOT EXISTS actor_runs (
+    actor_run_id TEXT PRIMARY KEY,
+    started_at TEXT NOT NULL,
+    completed_at TEXT,
+    status TEXT NOT NULL CHECK (status IN {ACTOR_RUN_STATUS_VALUES}),
+    seeded_actor_count INTEGER NOT NULL DEFAULT 0,
+    eligible_actor_count INTEGER NOT NULL DEFAULT 0,
+    enriched_actor_count INTEGER NOT NULL DEFAULT 0,
+    missing_actor_count INTEGER NOT NULL DEFAULT 0,
+    failed_actor_count INTEGER NOT NULL DEFAULT 0,
+    notes TEXT
 );
 """
 
@@ -109,6 +139,24 @@ CREATE TABLE IF NOT EXISTS captured_posts (
 );
 """
 
+_ACTOR_PROFILES_STATE_DDL = f"""
+CREATE TABLE IF NOT EXISTS actor_profiles_state (
+    did TEXT PRIMARY KEY,
+    seeded_at TEXT NOT NULL,
+    source_first_seen TEXT NOT NULL,
+    enrichment_status TEXT NOT NULL DEFAULT 'pending'
+        CHECK (enrichment_status IN {ACTOR_ENRICHMENT_STATUS_VALUES}),
+    enrichment_attempt_count INTEGER NOT NULL DEFAULT 0,
+    last_enrichment_attempt_at TEXT,
+    enriched_at TEXT,
+    actor_run_id TEXT,
+    last_error TEXT,
+    claimed_by_worker TEXT,
+    claim_expires_at TEXT,
+    FOREIGN KEY (actor_run_id) REFERENCES actor_runs(actor_run_id)
+);
+"""
+
 _INDEX_DDLS: tuple[str, ...] = (
     """
     CREATE INDEX IF NOT EXISTS idx_capture_runs_status
@@ -121,6 +169,10 @@ _INDEX_DDLS: tuple[str, ...] = (
     """
     CREATE INDEX IF NOT EXISTS idx_batch_files_run_lookup
     ON batch_files(job_type, run_id, dataset_type, status);
+    """,
+    """
+    CREATE INDEX IF NOT EXISTS idx_actor_runs_status
+    ON actor_runs(status);
     """,
     """
     CREATE INDEX IF NOT EXISTS idx_captured_posts_status_captured_at
@@ -138,13 +190,27 @@ _INDEX_DDLS: tuple[str, ...] = (
     CREATE INDEX IF NOT EXISTS idx_captured_posts_hydrate_run
     ON captured_posts(hydrate_run_id, hydration_status);
     """,
+    """
+    CREATE INDEX IF NOT EXISTS idx_actor_profiles_state_status
+    ON actor_profiles_state(enrichment_status, did);
+    """,
+    """
+    CREATE INDEX IF NOT EXISTS idx_actor_profiles_state_claim_expiration
+    ON actor_profiles_state(claim_expires_at);
+    """,
+    """
+    CREATE INDEX IF NOT EXISTS idx_actor_profiles_state_run
+    ON actor_profiles_state(actor_run_id, enrichment_status);
+    """,
 )
 
 _TABLE_DDLS: tuple[str, ...] = (
     _CAPTURE_RUNS_DDL,
     _HYDRATE_RUNS_DDL,
+    _ACTOR_RUNS_DDL,
     _BATCH_FILES_DDL,
     _CAPTURED_POSTS_DDL,
+    _ACTOR_PROFILES_STATE_DDL,
 )
 
 

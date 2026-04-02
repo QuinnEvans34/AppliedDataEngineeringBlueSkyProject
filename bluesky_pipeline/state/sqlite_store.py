@@ -16,8 +16,13 @@ from typing import Iterable, Sequence
 
 from bluesky_pipeline.models import CapturedPostRecord
 from bluesky_pipeline.state.schema import ensure_schema
-from bluesky_pipeline.utils.ids import new_capture_run_id, new_hydrate_run_id
+from bluesky_pipeline.utils.ids import (
+    new_actor_run_id,
+    new_capture_run_id,
+    new_hydrate_run_id,
+)
 from bluesky_pipeline.utils.time_utils import utc_now, utc_now_iso
+
 
 class SQLiteStore:
     """Connection-oriented SQLite store with explicit transaction boundaries."""
@@ -315,6 +320,142 @@ class SQLiteStore:
         ).fetchone()
 
     # ---------------------------------------------------------------------
+    # Actor enrichment run lifecycle
+    # ---------------------------------------------------------------------
+    def create_actor_run(
+        self,
+        actor_run_id: str | None = None,
+        started_at_iso: str | None = None,
+        notes: str | None = None,
+    ) -> str:
+        """Create an actor enrichment run in `running` state."""
+
+        run_id = actor_run_id or new_actor_run_id()
+        started_at = started_at_iso or utc_now_iso()
+
+        conn = self.connect()
+        conn.execute(
+            """
+            INSERT INTO actor_runs (
+                actor_run_id,
+                started_at,
+                completed_at,
+                status,
+                seeded_actor_count,
+                eligible_actor_count,
+                enriched_actor_count,
+                missing_actor_count,
+                failed_actor_count,
+                notes
+            ) VALUES (?, ?, NULL, 'running', 0, 0, 0, 0, 0, ?)
+            """,
+            (run_id, started_at, notes),
+        )
+        conn.commit()
+        return run_id
+
+    def update_actor_run_progress(
+        self,
+        actor_run_id: str,
+        *,
+        seeded_delta: int = 0,
+        eligible_delta: int = 0,
+        enriched_delta: int = 0,
+        missing_delta: int = 0,
+        failed_delta: int = 0,
+    ) -> None:
+        """Increment actor-run counters while run is active."""
+
+        if not any([seeded_delta, eligible_delta, enriched_delta, missing_delta, failed_delta]):
+            return
+
+        conn = self.connect()
+        cursor = conn.execute(
+            """
+            UPDATE actor_runs
+            SET
+                seeded_actor_count = seeded_actor_count + ?,
+                eligible_actor_count = eligible_actor_count + ?,
+                enriched_actor_count = enriched_actor_count + ?,
+                missing_actor_count = missing_actor_count + ?,
+                failed_actor_count = failed_actor_count + ?
+            WHERE actor_run_id = ? AND status = 'running'
+            """,
+            (
+                seeded_delta,
+                eligible_delta,
+                enriched_delta,
+                missing_delta,
+                failed_delta,
+                actor_run_id,
+            ),
+        )
+        conn.commit()
+
+        if cursor.rowcount == 0:
+            raise LookupError(f"No running actor run found for actor_run_id={actor_run_id}")
+
+    def complete_actor_run(
+        self,
+        actor_run_id: str,
+        status: str = "completed",
+        notes: str | None = None,
+    ) -> None:
+        """Mark an actor run as terminal (`completed` or `failed`)."""
+
+        if status not in {"completed", "failed"}:
+            raise ValueError("Actor run terminal status must be 'completed' or 'failed'")
+        self._set_actor_run_terminal_status(actor_run_id, status=status, notes=notes)
+
+    def fail_actor_run(self, actor_run_id: str, notes: str | None = None) -> None:
+        """Mark an actor run as failed."""
+
+        self._set_actor_run_terminal_status(actor_run_id, status="failed", notes=notes)
+
+    def _set_actor_run_terminal_status(
+        self,
+        actor_run_id: str,
+        *,
+        status: str,
+        notes: str | None,
+    ) -> None:
+        closed_at = utc_now_iso()
+        conn = self.connect()
+        cursor = conn.execute(
+            """
+            UPDATE actor_runs
+            SET
+                status = ?,
+                completed_at = ?,
+                notes = COALESCE(?, notes)
+            WHERE actor_run_id = ? AND status = 'running'
+            """,
+            (status, closed_at, notes, actor_run_id),
+        )
+
+        if cursor.rowcount == 0:
+            existing = self.get_actor_run(actor_run_id)
+            conn.commit()
+            if existing is None:
+                raise LookupError(f"Actor run not found: {actor_run_id}")
+            if existing["status"] == status:
+                return
+            raise ValueError(
+                "Actor run is not in 'running' state and cannot be transitioned "
+                f"to '{status}' (current status={existing['status']})"
+            )
+
+        conn.commit()
+
+    def get_actor_run(self, actor_run_id: str) -> sqlite3.Row | None:
+        """Fetch one actor run by ID."""
+
+        return self.connect().execute(
+            "SELECT * FROM actor_runs WHERE actor_run_id = ?",
+            (actor_run_id,),
+        ).fetchone()
+
+    # ---------------------------------------------------------------------
     # Batch file lifecycle
     # ---------------------------------------------------------------------
     def create_batch_file(
@@ -530,6 +671,336 @@ class SQLiteStore:
             (maturity_cutoff_iso,),
         ).fetchone()
         return int(row["count"])
+
+    # ---------------------------------------------------------------------
+    # Actor enrichment state
+    # ---------------------------------------------------------------------
+    def seed_actor_dids_from_hydrated_then_captured(self, seeded_at_iso: str | None = None) -> tuple[int, int]:
+        """Seed unique actor DIDs into actor state from pipeline-captured data.
+
+        Returns `(inserted_from_hydrated, inserted_from_captured_fallback)`.
+        """
+
+        seeded_at = seeded_at_iso or utc_now_iso()
+        conn = self.connect()
+
+        hydrated_before = conn.total_changes
+        conn.execute(
+            """
+            INSERT INTO actor_profiles_state (
+                did,
+                seeded_at,
+                source_first_seen,
+                enrichment_status,
+                enrichment_attempt_count,
+                last_enrichment_attempt_at,
+                enriched_at,
+                actor_run_id,
+                last_error,
+                claimed_by_worker,
+                claim_expires_at
+            )
+            SELECT DISTINCT
+                repo_did,
+                ?,
+                'hydrated',
+                'pending',
+                0,
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                NULL
+            FROM captured_posts
+            WHERE hydration_status = 'hydrated'
+              AND repo_did IS NOT NULL
+              AND repo_did != ''
+            ON CONFLICT(did) DO NOTHING
+            """,
+            (seeded_at,),
+        )
+        inserted_hydrated = conn.total_changes - hydrated_before
+
+        captured_before = conn.total_changes
+        conn.execute(
+            """
+            INSERT INTO actor_profiles_state (
+                did,
+                seeded_at,
+                source_first_seen,
+                enrichment_status,
+                enrichment_attempt_count,
+                last_enrichment_attempt_at,
+                enriched_at,
+                actor_run_id,
+                last_error,
+                claimed_by_worker,
+                claim_expires_at
+            )
+            SELECT DISTINCT
+                repo_did,
+                ?,
+                'captured',
+                'pending',
+                0,
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                NULL
+            FROM captured_posts
+            WHERE repo_did IS NOT NULL
+              AND repo_did != ''
+            ON CONFLICT(did) DO NOTHING
+            """,
+            (seeded_at,),
+        )
+        inserted_captured = conn.total_changes - captured_before
+        conn.commit()
+
+        return int(inserted_hydrated), int(inserted_captured)
+
+    def get_actor_state(self, did: str) -> sqlite3.Row | None:
+        """Fetch actor enrichment state by DID."""
+
+        return self.connect().execute(
+            "SELECT * FROM actor_profiles_state WHERE did = ?",
+            (did,),
+        ).fetchone()
+
+    def count_pending_actor_dids(self) -> int:
+        """Count actor rows eligible for enrichment claim."""
+
+        row = self.connect().execute(
+            """
+            SELECT COUNT(*) AS count
+            FROM actor_profiles_state
+            WHERE enrichment_status IN ('pending', 'retryable')
+            """
+        ).fetchone()
+        return int(row["count"])
+
+    def claim_actor_dids(
+        self,
+        worker_id: str,
+        limit: int,
+        claim_ttl_seconds: int,
+    ) -> Sequence[sqlite3.Row]:
+        """Claim actor rows in `pending`/`retryable` states for enrichment."""
+
+        if limit <= 0:
+            return []
+        if claim_ttl_seconds <= 0:
+            raise ValueError("claim_ttl_seconds must be > 0")
+
+        now = utc_now()
+        claim_expires_at = (now + timedelta(seconds=claim_ttl_seconds)).isoformat()
+        attempted_at = now.isoformat()
+
+        conn = self.connect()
+        conn.execute("BEGIN IMMEDIATE")
+        try:
+            candidates = conn.execute(
+                """
+                SELECT did
+                FROM actor_profiles_state
+                WHERE enrichment_status IN ('pending', 'retryable')
+                ORDER BY did ASC
+                LIMIT ?
+                """,
+                (limit,),
+            ).fetchall()
+
+            if not candidates:
+                conn.commit()
+                return []
+
+            candidate_dids = [row["did"] for row in candidates]
+            placeholders = ",".join("?" for _ in candidate_dids)
+
+            conn.execute(
+                f"""
+                UPDATE actor_profiles_state
+                SET
+                    enrichment_status = 'claimed',
+                    claimed_by_worker = ?,
+                    claim_expires_at = ?,
+                    last_enrichment_attempt_at = ?,
+                    enrichment_attempt_count = enrichment_attempt_count + 1
+                WHERE did IN ({placeholders})
+                  AND enrichment_status IN ('pending', 'retryable')
+                """,
+                (worker_id, claim_expires_at, attempted_at, *candidate_dids),
+            )
+
+            claimed_rows = conn.execute(
+                f"""
+                SELECT *
+                FROM actor_profiles_state
+                WHERE did IN ({placeholders})
+                  AND enrichment_status = 'claimed'
+                  AND claimed_by_worker = ?
+                ORDER BY did ASC
+                """,
+                (*candidate_dids, worker_id),
+            ).fetchall()
+
+            conn.commit()
+            return claimed_rows
+        except Exception:
+            conn.rollback()
+            raise
+
+    def release_expired_actor_claims(self, now_iso: str) -> int:
+        """Reset expired claimed actors back to `pending` for recovery."""
+
+        conn = self.connect()
+        cursor = conn.execute(
+            """
+            UPDATE actor_profiles_state
+            SET
+                enrichment_status = 'pending',
+                claimed_by_worker = NULL,
+                claim_expires_at = NULL
+            WHERE enrichment_status = 'claimed'
+              AND claim_expires_at IS NOT NULL
+              AND claim_expires_at <= ?
+            """,
+            (now_iso,),
+        )
+        conn.commit()
+        return int(cursor.rowcount)
+
+    def mark_actors_enriched(
+        self,
+        dids: Iterable[str],
+        actor_run_id: str,
+        enriched_at_iso: str,
+    ) -> int:
+        """Transition claimed actor rows to terminal `enriched`."""
+
+        did_list = self._normalize_did_list(dids)
+        if not did_list:
+            return 0
+
+        conn = self.connect()
+        placeholders = ",".join("?" for _ in did_list)
+        cursor = conn.execute(
+            f"""
+            UPDATE actor_profiles_state
+            SET
+                enrichment_status = 'enriched',
+                enriched_at = ?,
+                actor_run_id = ?,
+                last_error = NULL,
+                claimed_by_worker = NULL,
+                claim_expires_at = NULL
+            WHERE did IN ({placeholders})
+              AND enrichment_status = 'claimed'
+            """,
+            (enriched_at_iso, actor_run_id, *did_list),
+        )
+        conn.commit()
+        return int(cursor.rowcount)
+
+    def mark_actors_retryable(
+        self,
+        dids: Iterable[str],
+        error_message: str,
+        attempted_at_iso: str,
+    ) -> int:
+        """Transition claimed actor rows to `retryable`."""
+
+        did_list = self._normalize_did_list(dids)
+        if not did_list:
+            return 0
+
+        conn = self.connect()
+        placeholders = ",".join("?" for _ in did_list)
+        cursor = conn.execute(
+            f"""
+            UPDATE actor_profiles_state
+            SET
+                enrichment_status = 'retryable',
+                last_error = ?,
+                last_enrichment_attempt_at = ?,
+                claimed_by_worker = NULL,
+                claim_expires_at = NULL
+            WHERE did IN ({placeholders})
+              AND enrichment_status = 'claimed'
+            """,
+            (error_message, attempted_at_iso, *did_list),
+        )
+        conn.commit()
+        return int(cursor.rowcount)
+
+    def mark_actors_missing(
+        self,
+        dids: Iterable[str],
+        actor_run_id: str,
+        attempted_at_iso: str,
+        reason: str | None = None,
+    ) -> int:
+        """Transition claimed/retryable actor rows to terminal `missing`."""
+
+        did_list = self._normalize_did_list(dids)
+        if not did_list:
+            return 0
+
+        conn = self.connect()
+        placeholders = ",".join("?" for _ in did_list)
+        cursor = conn.execute(
+            f"""
+            UPDATE actor_profiles_state
+            SET
+                enrichment_status = 'missing',
+                actor_run_id = ?,
+                last_enrichment_attempt_at = ?,
+                last_error = COALESCE(?, last_error),
+                claimed_by_worker = NULL,
+                claim_expires_at = NULL
+            WHERE did IN ({placeholders})
+              AND enrichment_status IN ('claimed', 'retryable')
+            """,
+            (actor_run_id, attempted_at_iso, reason, *did_list),
+        )
+        conn.commit()
+        return int(cursor.rowcount)
+
+    def mark_actors_failed(
+        self,
+        dids: Iterable[str],
+        actor_run_id: str,
+        error_message: str,
+        attempted_at_iso: str,
+    ) -> int:
+        """Transition claimed/retryable actor rows to terminal `failed`."""
+
+        did_list = self._normalize_did_list(dids)
+        if not did_list:
+            return 0
+
+        conn = self.connect()
+        placeholders = ",".join("?" for _ in did_list)
+        cursor = conn.execute(
+            f"""
+            UPDATE actor_profiles_state
+            SET
+                enrichment_status = 'failed',
+                actor_run_id = ?,
+                last_enrichment_attempt_at = ?,
+                last_error = ?,
+                claimed_by_worker = NULL,
+                claim_expires_at = NULL
+            WHERE did IN ({placeholders})
+              AND enrichment_status IN ('claimed', 'retryable')
+            """,
+            (actor_run_id, attempted_at_iso, error_message, *did_list),
+        )
+        conn.commit()
+        return int(cursor.rowcount)
 
     # ---------------------------------------------------------------------
     # Claiming + hydration outcomes
@@ -777,4 +1248,17 @@ class SQLiteStore:
                 continue
             ordered_unique.append(uri)
             seen.add(uri)
+        return ordered_unique
+
+    @staticmethod
+    def _normalize_did_list(dids: Iterable[str]) -> list[str]:
+        """Deduplicate DID iterable while preserving order."""
+
+        ordered_unique: list[str] = []
+        seen: set[str] = set()
+        for did in dids:
+            if did in seen:
+                continue
+            ordered_unique.append(did)
+            seen.add(did)
         return ordered_unique

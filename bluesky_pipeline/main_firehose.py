@@ -10,11 +10,12 @@ Phase 3 responsibilities:
 from __future__ import annotations
 
 import argparse
+import importlib
 import logging
 import time
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterable
+from typing import Any, Callable, Iterable
 
 from bluesky_pipeline.batching.writer import FinalizedBatchFile, GzipJsonlBatchWriter
 from bluesky_pipeline.config import load_config
@@ -39,6 +40,83 @@ class FirehoseCounters:
     extract_errors: int = 0
     duplicates_skipped: int = 0
     unique_posts_written: int = 0
+
+
+def _validate_live_firehose_dependencies(
+    *,
+    mock_frames_path: Path | None,
+    import_module: Callable[[str], Any] = importlib.import_module,
+) -> bool:
+    """Validate required imports/symbols for live firehose decode path.
+
+    Returns `True` when live dependencies were checked.
+    Returns `False` when running in mock-frame mode (check skipped).
+    Raises `RuntimeError` when required imports/symbols are unavailable.
+    """
+
+    if mock_frames_path is not None:
+        return False
+
+    required_symbols: tuple[tuple[str, str, str], ...] = (
+        (
+            "websockets.sync.client",
+            "connect",
+            "live websocket transport",
+        ),
+        (
+            "atproto_firehose.client",
+            "_get_message_frame_from_bytes_or_raise",
+            "binary frame decoding",
+        ),
+        (
+            "atproto_firehose.models",
+            "MessageFrame",
+            "firehose message typing",
+        ),
+        (
+            "atproto_firehose",
+            "parse_subscribe_repos_message",
+            "subscribeRepos message parsing",
+        ),
+        (
+            "atproto_core.car",
+            "CAR",
+            "CAR block decoding",
+        ),
+        (
+            "certifi",
+            "where",
+            "TLS CA bundle support",
+        ),
+    )
+
+    missing: list[str] = []
+
+    for module_path, symbol_name, reason in required_symbols:
+        try:
+            module = import_module(module_path)
+        except Exception as exc:  # pragma: no cover - broad for operator-facing diagnostics
+            missing.append(
+                f"{module_path}.{symbol_name} ({reason}; import failed: {exc})"
+            )
+            continue
+
+        if not hasattr(module, symbol_name):
+            missing.append(f"{module_path}.{symbol_name} ({reason}; symbol missing)")
+
+    if missing:
+        bullet_list = "\n".join(f"- {item}" for item in missing)
+        raise RuntimeError(
+            "Live firehose dependency check failed.\n"
+            "Missing or incompatible requirements:\n"
+            f"{bullet_list}\n"
+            "Install dependencies with:\n"
+            "  python3 -m pip install -r requirements.txt\n"
+            "or:\n"
+            "  python3 -m pip install atproto websockets certifi"
+        )
+
+    return True
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -102,6 +180,9 @@ def main(argv: list[str] | None = None) -> int:
     last_seq_seen: int | None = None
 
     try:
+        if _validate_live_firehose_dependencies(mock_frames_path=args.mock_frames_path):
+            logger.info("Live firehose dependency check passed")
+
         store.connect()
         store.ensure_schema()
 

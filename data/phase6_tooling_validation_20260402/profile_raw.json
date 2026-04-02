@@ -1,0 +1,31 @@
+{
+  "dataset": "raw",
+  "files_count": 1,
+  "rows_count": 25,
+  "missing_required_rows": 0,
+  "missing_required_by_field": {},
+  "null_counts_required_fields": {},
+  "top_key_presence": {
+    "capture_run_id": 25,
+    "seq": 25,
+    "repo_did": 25,
+    "event_time": 25,
+    "operation": 25
+  },
+  "field_distributions": {
+    "operation": {
+      "create": 25
+    },
+    "collection": {
+      "app.bsky.feed.post": 25
+    },
+    "has_reply": {
+      "True": 17,
+      "False": 8
+    },
+    "has_embed": {
+      "False": 21,
+      "True": 4
+    }
+  }
+}

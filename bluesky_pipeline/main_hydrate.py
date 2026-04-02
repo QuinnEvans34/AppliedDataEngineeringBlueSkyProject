@@ -14,6 +14,7 @@ import logging
 import os
 import time
 from dataclasses import dataclass
+from datetime import timedelta
 from pathlib import Path
 from typing import Any, Iterable
 
@@ -24,10 +25,12 @@ from bluesky_pipeline.hydrate.normalizer import normalize_hydrated_post, normali
 from bluesky_pipeline.hydrate.selector import HydrationClaim, HydrationSelector
 from bluesky_pipeline.logging_config import configure_logging
 from bluesky_pipeline.state.sqlite_store import SQLiteStore
-from bluesky_pipeline.utils.time_utils import utc_now_iso
+from bluesky_pipeline.utils.time_utils import utc_now, utc_now_iso
 
 MISSING_REASON_NOT_RETURNED = "not_returned_by_getPosts"
 RETRY_ERROR_REQUEST = "getPosts request failed"
+PRODUCTION_DEFAULT_MATURITY_HOURS = 24
+LOW_MATURITY_WARNING_THRESHOLD_HOURS = 24
 
 
 @dataclass(slots=True)
@@ -63,7 +66,16 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--claim-ttl-seconds", type=int, default=None)
     parser.add_argument("--request-batch-size", type=int, default=None)
     parser.add_argument("--request-timeout-seconds", type=float, default=None)
-    parser.add_argument("--maturity-hours", type=int, default=None)
+    parser.add_argument(
+        "--maturity-hours",
+        type=int,
+        default=None,
+        help=(
+            "Hydration maturity window in hours. "
+            "Defaults to config value (24h production-safe). "
+            "Use 0 only for smoke/immediate testing."
+        ),
+    )
     parser.add_argument("--poll-interval-seconds", type=float, default=None)
     parser.add_argument("--max-unresolved-attempts", type=int, default=None)
     parser.add_argument("--max-rows-per-file", type=int, default=None)
@@ -157,6 +169,7 @@ def main(argv: list[str] | None = None) -> int:
         request_batch_size,
         continue_polling,
     )
+    _log_maturity_startup_context(logger=logger, maturity_hours=maturity_hours)
 
     try:
         store.connect()
@@ -657,6 +670,38 @@ def _log_progress(logger: logging.Logger, counters: HydrationCounters, started_m
         counters.rows_marked_failed,
         requested_rate,
     )
+
+
+def _log_maturity_startup_context(*, logger: logging.Logger, maturity_hours: int) -> None:
+    """Log effective maturity window/cutoff and mode classification for operator safety."""
+
+    now_utc = utc_now()
+    cutoff_utc = now_utc - timedelta(hours=maturity_hours)
+
+    logger.info("Hydration maturity window: %d hour(s)", maturity_hours)
+    logger.info(
+        "Hydration eligibility cutoff (UTC): captured_at <= %s (computed_at=%s)",
+        cutoff_utc.isoformat(),
+        now_utc.isoformat(),
+    )
+
+    if maturity_hours == 0:
+        logger.warning(
+            "Hydration mode: immediate/test-style (maturity-hours=0). "
+            "Freshly captured rows are eligible now."
+        )
+        return
+
+    if maturity_hours < LOW_MATURITY_WARNING_THRESHOLD_HOURS:
+        logger.warning(
+            "Hydration mode: low-maturity override (%d hours). "
+            "Production default is %d hours.",
+            maturity_hours,
+            PRODUCTION_DEFAULT_MATURITY_HOURS,
+        )
+        return
+
+    logger.info("Hydration mode: production-style (%d hours)", maturity_hours)
 
 
 if __name__ == "__main__":
