@@ -31,6 +31,8 @@ class ActorCheckResult:
     pending_retryable: int
     claimed_in_flight: int
     is_complete: bool
+    skipped: bool = False
+    skip_reason: str | None = None
 
 
 @dataclass(frozen=True, slots=True)
@@ -100,7 +102,21 @@ def enforce_completion_gate(
         capture_run_id=capture_run_id,
         maturity_hours=maturity_hours,
     )
-    actor = check_actor_completion(db_path=state_db_path)
+    actor_files_present = manifest.total_file_count("actor_profiles") > 0
+    if actor_files_present:
+        actor = check_actor_completion(db_path=state_db_path)
+    else:
+        actor = ActorCheckResult(
+            actor_rows_total=0,
+            pending_retryable=0,
+            claimed_in_flight=0,
+            is_complete=True,
+            skipped=True,
+            skip_reason=(
+                "No finalized actor_profiles files found under run root; "
+                "actor completion gate intentionally skipped for this validation pass."
+            ),
+        )
 
     if not hydration.is_complete:
         raise RuntimeError(
@@ -367,7 +383,7 @@ def _query_stage_row_count(
     sql = (
         "SELECT COUNT(*) "
         f"FROM @{stage_name}/{stage_prefix} "
-        f"(FILE_FORMAT => (FORMAT_NAME => {file_format_name}))"
+        f"(FILE_FORMAT => {file_format_name})"
     )
     value = session.execute_scalar(sql)
     return int(value or 0)

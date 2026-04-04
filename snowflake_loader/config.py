@@ -33,6 +33,14 @@ class SnowflakeObjectConfig:
             "actor_profiles": "BLUESKY_ACTOR_PROFILES_STAGE",
         }
     )
+    pipe_names: dict[str, str] = field(
+        default_factory=lambda: {
+            "raw_posts": "BLUESKY_RAW_POSTS_PIPE",
+            "hydrated_posts": "BLUESKY_HYDRATED_POSTS_PIPE",
+            "hydration_misses": "BLUESKY_HYDRATION_MISSES_PIPE",
+            "actor_profiles": "BLUESKY_ACTOR_PROFILES_PIPE",
+        }
+    )
     landing_table_names: dict[str, str] = field(
         default_factory=lambda: {
             "raw_posts": "LANDING_RAW_POSTS",
@@ -59,6 +67,8 @@ class LoaderConfig:
         for family in DATASET_FAMILIES:
             if family not in self.objects.stage_names:
                 raise ValueError(f"Missing stage name mapping for dataset family: {family}")
+            if family not in self.objects.pipe_names:
+                raise ValueError(f"Missing pipe name mapping for dataset family: {family}")
             if family not in self.objects.landing_table_names:
                 raise ValueError(f"Missing landing table mapping for dataset family: {family}")
 

@@ -1,0 +1,5 @@
+2026-04-01T12:49:39-0600 | INFO | firehose | Starting firehose capture job
+2026-04-01T12:49:39-0600 | INFO | firehose | Firehose URL: wss://bsky.network/xrpc/com.atproto.sync.subscribeRepos
+2026-04-01T12:49:39-0600 | INFO | firehose | Target unique posts: 25
+2026-04-01T12:49:40-0600 | INFO | firehose | Target reached: 25 unique posts
+2026-04-01T12:49:40-0600 | INFO | firehose | progress frames=230 decoded=230 commit_events=230 ops=234 matches=25 decode_errors=0 extract_errors=0 duplicates=0 unique=25 rows_per_sec=19.53 remaining=0 complete_pct=100.000

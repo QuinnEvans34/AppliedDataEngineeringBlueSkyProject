@@ -1,0 +1,7 @@
+2026-04-01T12:25:25-0600 | INFO | hydrate | Starting hydration worker
+2026-04-01T12:25:25-0600 | INFO | hydrate | Worker ID: hydrator-16877
+2026-04-01T12:25:25-0600 | INFO | hydrate | Hydration endpoint: http://127.0.0.1:8787/xrpc/app.bsky.feed.getPosts
+2026-04-01T12:25:25-0600 | INFO | hydrate | maturity_hours=24 claim_batch_size=10 request_batch_size=25 continue_polling=False
+2026-04-01T12:25:48-0600 | INFO | hydrate | progress polls=1 idle=0 mature_pending=3 released_claims=0 claimed=3 request_batches=1 requested_uris=3 hydrated_rows_written=2 unresolved=1 state_hydrated=2 state_retryable=0 state_missing=1 state_failed=0 requested_per_sec=0.13
+2026-04-01T12:25:48-0600 | INFO | hydrate | No mature eligible posts remain; hydration run is complete.
+2026-04-01T12:25:48-0600 | INFO | hydrate | progress polls=2 idle=1 mature_pending=0 released_claims=0 claimed=3 request_batches=1 requested_uris=3 hydrated_rows_written=2 unresolved=1 state_hydrated=2 state_retryable=0 state_missing=1 state_failed=0 requested_per_sec=0.13

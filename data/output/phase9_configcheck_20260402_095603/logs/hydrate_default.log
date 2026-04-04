@@ -1,0 +1,17 @@
+2026-04-02T09:56:03-0600 | INFO | hydrate | Starting hydration worker
+2026-04-02T09:56:03-0600 | INFO | hydrate | Worker ID: hydrator-7997
+2026-04-02T09:56:03-0600 | INFO | hydrate | Hydration endpoint: https://public.api.bsky.app/xrpc/app.bsky.feed.getPosts
+2026-04-02T09:56:03-0600 | INFO | hydrate | maturity_hours=24 claim_batch_size=200 request_batch_size=25 continue_polling=False
+2026-04-02T09:56:03-0600 | INFO | hydrate | Hydration maturity window: 24 hour(s)
+2026-04-02T09:56:03-0600 | INFO | hydrate | Hydration eligibility cutoff (UTC): captured_at <= 2026-04-01T15:56:03.931348+00:00 (computed_at=2026-04-02T15:56:03.931348+00:00)
+2026-04-02T09:56:03-0600 | INFO | hydrate | Hydration mode: production-style (24 hours)
+2026-04-02T09:56:03-0600 | ERROR | hydrate | Hydration worker failed: No capture runs found. Run firehose capture first or pass --capture-run-id.
+Traceback (most recent call last):
+  File "/Users/quintonevans/Desktop/Neumont/AppliedMachineLearning/ProjectOne/AppliedDataEngineeringBlueSkyProject/bluesky_pipeline/main_hydrate.py", line 177, in main
+    capture_run_id = _resolve_capture_run_id(store, requested_capture_run_id=args.capture_run_id)
+  File "/Users/quintonevans/Desktop/Neumont/AppliedMachineLearning/ProjectOne/AppliedDataEngineeringBlueSkyProject/bluesky_pipeline/main_hydrate.py", line 577, in _resolve_capture_run_id
+    raise RuntimeError(
+        "No capture runs found. Run firehose capture first or pass --capture-run-id."
+    )
+RuntimeError: No capture runs found. Run firehose capture first or pass --capture-run-id.
+2026-04-02T09:56:03-0600 | INFO | hydrate | progress polls=0 idle=0 mature_pending=0 released_claims=0 claimed=0 request_batches=0 requested_uris=0 hydrated_rows_written=0 unresolved=0 state_hydrated=0 state_retryable=0 state_missing=0 state_failed=0 requested_per_sec=0.00

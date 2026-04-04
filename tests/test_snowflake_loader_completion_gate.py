@@ -29,31 +29,39 @@ class SnowflakeLoaderCompletionGateTests(unittest.TestCase):
         with gzip.open(path, "wt", encoding="utf-8") as handle:
             handle.write(json.dumps({"uri": "at://did:plc:test/app.bsky.feed.post/1"}) + "\n")
 
-    def _seed_db(self, *, actor_pending: bool) -> None:
+    def _write_actor_file(self) -> None:
+        path = self.run_root / "actor_profiles" / "act_gate" / "actor_profiles_000001.jsonl.gz"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with gzip.open(path, "wt", encoding="utf-8") as handle:
+            handle.write(json.dumps({"did": "did:plc:test"}) + "\n")
+
+    def _seed_db(self, *, actor_pending: bool, include_actor_table: bool = True) -> None:
         import sqlite3
 
         conn = sqlite3.connect(self.db_path)
         try:
-            conn.executescript(
-                """
-                CREATE TABLE capture_runs (
-                    capture_run_id TEXT PRIMARY KEY,
-                    status TEXT,
-                    started_at TEXT,
-                    completed_at TEXT
-                );
-                CREATE TABLE captured_posts (
-                    uri TEXT PRIMARY KEY,
-                    capture_run_id TEXT,
-                    captured_at TEXT,
-                    hydration_status TEXT
-                );
+            schema_sql = """
+            CREATE TABLE capture_runs (
+                capture_run_id TEXT PRIMARY KEY,
+                status TEXT,
+                started_at TEXT,
+                completed_at TEXT
+            );
+            CREATE TABLE captured_posts (
+                uri TEXT PRIMARY KEY,
+                capture_run_id TEXT,
+                captured_at TEXT,
+                hydration_status TEXT
+            );
+            """
+            if include_actor_table:
+                schema_sql += """
                 CREATE TABLE actor_profiles_state (
                     did TEXT PRIMARY KEY,
                     enrichment_status TEXT
                 );
                 """
-            )
+            conn.executescript(schema_sql)
             conn.execute(
                 "INSERT INTO capture_runs (capture_run_id, status, started_at, completed_at) VALUES (?, 'completed', '2026-04-01T00:00:00+00:00', '2026-04-01T01:00:00+00:00')",
                 ("cap_gate",),
@@ -66,10 +74,11 @@ class SnowflakeLoaderCompletionGateTests(unittest.TestCase):
                     "2026-04-01T00:00:00+00:00",
                 ),
             )
-            conn.execute(
-                "INSERT INTO actor_profiles_state (did, enrichment_status) VALUES (?, ?)",
-                ("did:plc:test", "pending" if actor_pending else "enriched"),
-            )
+            if include_actor_table:
+                conn.execute(
+                    "INSERT INTO actor_profiles_state (did, enrichment_status) VALUES (?, ?)",
+                    ("did:plc:test", "pending" if actor_pending else "enriched"),
+                )
             conn.commit()
         finally:
             conn.close()
@@ -89,6 +98,7 @@ class SnowflakeLoaderCompletionGateTests(unittest.TestCase):
         self.assertTrue(summary.actor.is_complete)
 
     def test_completion_gate_fails_when_actor_rows_are_pending(self) -> None:
+        self._write_actor_file()
         self._seed_db(actor_pending=True)
         manifest = discover_run_manifest(self.run_root)
 
@@ -98,6 +108,20 @@ class SnowflakeLoaderCompletionGateTests(unittest.TestCase):
                 state_db_path=self.db_path,
                 maturity_hours=24,
             )
+
+    def test_completion_gate_skips_actor_when_actor_files_are_absent(self) -> None:
+        self._seed_db(actor_pending=False, include_actor_table=False)
+        manifest = discover_run_manifest(self.run_root)
+
+        summary = enforce_completion_gate(
+            manifest=manifest,
+            state_db_path=self.db_path,
+            maturity_hours=24,
+        )
+
+        self.assertTrue(summary.actor.is_complete)
+        self.assertTrue(summary.actor.skipped)
+        self.assertIsNotNone(summary.actor.skip_reason)
 
 
 if __name__ == "__main__":

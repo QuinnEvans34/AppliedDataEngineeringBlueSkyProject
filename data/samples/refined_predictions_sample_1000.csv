@@ -1,0 +1,9 @@
+uri,engagement_total,true_label,predicted_label,experiment_name,model_family,balanced_resample,is_correct,prob_HIGH,prob_LOW,prob_MEDIUM
+at://did:plc:2sfzopxqkih7jt4mh37tuuow/app.bsky.feed.post/3mihe7wxvdk2i,1.0,MEDIUM,MEDIUM,control_bagged_stump,bagged_stump,False,True,0.329028876309449,0.25946474685445264,0.4115063768360983
+at://did:plc:3lrbxzufyragh44fsfdhcvz7/app.bsky.feed.post/3mihe7uliys2e,1.0,MEDIUM,LOW,control_bagged_stump,bagged_stump,False,False,0.149880841230493,0.7222850713527957,0.12783408741671132
+at://did:plc:6qwef7rd56tmdzwc47jcxmoj/app.bsky.feed.post/3mihe7x7aos27,0.0,LOW,LOW,control_bagged_stump,bagged_stump,False,True,0.12612627553475075,0.7624646572897347,0.11140906717551453
+at://did:plc:6ynu6lrhxwba2tpymrivujsp/app.bsky.feed.post/3mihe7ulg3223,2.0,HIGH,LOW,control_bagged_stump,bagged_stump,False,False,0.16269826400379808,0.6877944565754163,0.1495072794207856
+at://did:plc:73qgdt6gfor27mdo65lgygxh/app.bsky.feed.post/3mihe7wbmh22n,0.0,LOW,LOW,control_bagged_stump,bagged_stump,False,True,0.13942370318879613,0.7230011567379988,0.13757514007320512
+at://did:plc:7ia5gyyqv2will5wxhrdey5h/app.bsky.feed.post/3mihe7xdg3625,0.0,LOW,LOW,control_bagged_stump,bagged_stump,False,True,0.12173208639056163,0.7743177208927983,0.10395019271664002
+at://did:plc:bbnmvfy5qfmn7woxivob6sar/app.bsky.feed.post/3mihe7wzack25,0.0,LOW,LOW,control_bagged_stump,bagged_stump,False,True,0.24259086813169625,0.46340034292762605,0.29400878894067767
+at://did:plc:f4z2nftgrn75h7h3wucdyzaf/app.bsky.feed.post/3mihe7xecie2i,0.0,LOW,LOW,control_bagged_stump,bagged_stump,False,True,0.18097673594035832,0.6137911800316983,0.20523208402794343

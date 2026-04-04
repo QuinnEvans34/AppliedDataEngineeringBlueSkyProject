@@ -118,6 +118,7 @@ def _copy_one_file(
 ) -> int:
     filename_pattern = re.escape(stage_file_name.split("/")[-1])
     stage_prefix = "/".join(stage_file_name.split("/")[:-1])
+    pattern = f".*{filename_pattern}$"
 
     sql = f"""
 COPY INTO {landing_table_name}
@@ -135,22 +136,17 @@ FROM (
         $1,
         METADATA$FILENAME,
         METADATA$FILE_ROW_NUMBER,
-        %s,
-        %s,
-        %s,
+        {_sql_literal(run_tag)},
+        {_sql_literal(dataset_family)},
+        {_sql_literal(load_invocation_id)},
         CURRENT_TIMESTAMP()
     FROM @{stage_name}/{stage_prefix}
-    (
-        FILE_FORMAT => (FORMAT_NAME => {file_format_name}),
-        PATTERN => %s
-    )
 )
+FILE_FORMAT = (FORMAT_NAME = {_sql_literal(file_format_name)})
+PATTERN = {_sql_literal(pattern)}
 ON_ERROR = 'CONTINUE'
 """
-    rows = session.execute(
-        sql,
-        (run_tag, dataset_family, load_invocation_id, f".*{filename_pattern}$"),
-    )
+    rows = session.execute(sql)
     return _extract_rows_loaded(rows)
 
 
@@ -209,3 +205,8 @@ def _extract_rows_loaded(rows: list[object]) -> int:
         if isinstance(row, tuple) and len(row) >= 4 and isinstance(row[3], int):
             total += row[3]
     return total
+
+
+def _sql_literal(value: str) -> str:
+    escaped = value.replace("'", "''")
+    return f"'{escaped}'"

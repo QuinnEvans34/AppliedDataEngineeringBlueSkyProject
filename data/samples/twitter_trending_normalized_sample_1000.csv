@@ -1,0 +1,1001 @@
+num_hours,date,name,counts,trend_name_raw,trend_name_clean,trend_name_clean_no_hash,trend_name_clean_no_dollar,trend_name_alnum,trend_name_token_count,trend_name_char_count,is_blank_raw,is_hashtag,has_special_chars,has_non_ascii,has_url_like,normalized_key_with_hash,normalized_key_no_hash,normalized_key_no_dollar,normalized_date
+11,2024-03-30,Easter,1262842.0,Easter,easter,easter,easter,easter,1,6,False,False,False,False,False,easter,easter,easter,2024-03-30
+2,2024-03-30,Good Friday,488413.0,Good Friday,good friday,good friday,good friday,good friday,2,11,False,False,False,False,False,good friday,good friday,good friday,2024-03-30
+4,2024-03-30,#FreenBecky1stFMVN,476851.0,#FreenBecky1stFMVN,#freenbecky1stfmvn,freenbecky1stfmvn,freenbecky1stfmvn,freenbecky1stfmvn,1,17,False,True,True,False,False,#freenbecky1stfmvn,freenbecky1stfmvn,freenbecky1stfmvn,2024-03-30
+5,2024-03-30,SAROCHA REBECCA IN VIETNAM,458880.0,SAROCHA REBECCA IN VIETNAM,sarocha rebecca in vietnam,sarocha rebecca in vietnam,sarocha rebecca in vietnam,sarocha rebecca in vietnam,4,26,False,False,False,False,False,sarocha rebecca in vietnam,sarocha rebecca in vietnam,sarocha rebecca in vietnam,2024-03-30
+2,2024-03-30,#FHPopFestivalxNuNew,299195.0,#FHPopFestivalxNuNew,#fhpopfestivalxnunew,fhpopfestivalxnunew,fhpopfestivalxnunew,fhpopfestivalxnunew,1,19,False,True,True,False,False,#fhpopfestivalxnunew,fhpopfestivalxnunew,fhpopfestivalxnunew,2024-03-30
+1,2024-03-30,Christian,242972.0,Christian,christian,christian,christian,christian,1,9,False,False,False,False,False,christian,christian,christian,2024-03-30
+10,2024-03-30,Transgender Day of Visibility,241327.0,Transgender Day of Visibility,transgender day of visibility,transgender day of visibility,transgender day of visibility,transgender day of visibility,4,29,False,False,False,False,False,transgender day of visibility,transgender day of visibility,transgender day of visibility,2024-03-30
+3,2024-03-30,wonwoo,218367.0,wonwoo,wonwoo,wonwoo,wonwoo,wonwoo,1,6,False,False,False,False,False,wonwoo,wonwoo,wonwoo,2024-03-30
+6,2024-03-30,Christians,211825.0,Christians,christians,christians,christians,christians,1,10,False,False,False,False,False,christians,christians,christians,2024-03-30
+3,2024-03-30,Chelsea,185466.0,Chelsea,chelsea,chelsea,chelsea,chelsea,1,7,False,False,False,False,False,chelsea,chelsea,chelsea,2024-03-30
+3,2024-03-30,WONWOO,149325.0,WONWOO,wonwoo,wonwoo,wonwoo,wonwoo,1,6,False,False,False,False,False,wonwoo,wonwoo,wonwoo,2024-03-30
+2,2024-03-30,SCOUPS,143656.0,SCOUPS,scoups,scoups,scoups,scoups,1,6,False,False,False,False,False,scoups,scoups,scoups,2024-03-30
+3,2024-03-30,Happy Easter,142929.0,Happy Easter,happy easter,happy easter,happy easter,happy easter,2,12,False,False,False,False,False,happy easter,happy easter,happy easter,2024-03-30
+1,2024-03-30,HOSHI,125890.0,HOSHI,hoshi,hoshi,hoshi,hoshi,1,5,False,False,False,False,False,hoshi,hoshi,hoshi,2024-03-30
+3,2024-03-30,Bayern,97623.0,Bayern,bayern,bayern,bayern,bayern,1,6,False,False,False,False,False,bayern,bayern,bayern,2024-03-30
+10,2024-03-30,#SmackDown,87362.0,#SmackDown,#smackdown,smackdown,smackdown,smackdown,1,9,False,True,True,False,False,#smackdown,smackdown,smackdown,2024-03-30
+2,2024-03-30,woozi,84678.0,woozi,woozi,woozi,woozi,woozi,1,5,False,False,False,False,False,woozi,woozi,woozi,2024-03-30
+10,2024-03-30,Houston,82649.0,Houston,houston,houston,houston,houston,1,7,False,False,False,False,False,houston,houston,houston,2024-03-30
+11,2024-03-30,Duke,82174.0,Duke,duke,duke,duke,duke,1,4,False,False,False,False,False,duke,duke,duke,2024-03-30
+4,2024-03-30,Catholic,77823.0,Catholic,catholic,catholic,catholic,catholic,1,8,False,False,False,False,False,catholic,catholic,catholic,2024-03-30
+4,2024-03-30,Secret Service,77379.0,Secret Service,secret service,secret service,secret service,secret service,2,14,False,False,False,False,False,secret service,secret service,secret service,2024-03-30
+3,2024-03-30,Brentford,76505.0,Brentford,brentford,brentford,brentford,brentford,1,9,False,False,False,False,False,brentford,brentford,brentford,2024-03-30
+3,2024-03-30,cheol,74622.0,cheol,cheol,cheol,cheol,cheol,1,5,False,False,False,False,False,cheol,cheol,cheol,2024-03-30
+5,2024-03-30,Newcastle,74559.0,Newcastle,newcastle,newcastle,newcastle,newcastle,1,9,False,False,False,False,False,newcastle,newcastle,newcastle,2024-03-30
+3,2024-03-30,Leverkusen,73603.0,Leverkusen,leverkusen,leverkusen,leverkusen,leverkusen,1,10,False,False,False,False,False,leverkusen,leverkusen,leverkusen,2024-03-30
+2,2024-03-30,Christianity,72431.0,Christianity,christianity,christianity,christianity,christianity,1,12,False,False,False,False,False,christianity,christianity,christianity,2024-03-30
+4,2024-03-30,Burnley,66384.0,Burnley,burnley,burnley,burnley,burnley,1,7,False,False,False,False,False,burnley,burnley,burnley,2024-03-30
+3,2024-03-30,CHEOL,66044.0,CHEOL,cheol,cheol,cheol,cheol,1,5,False,False,False,False,False,cheol,cheol,cheol,2024-03-30
+1,2024-03-30,Diaz,65874.0,Diaz,diaz,diaz,diaz,diaz,1,4,False,False,False,False,False,diaz,diaz,diaz,2024-03-30
+3,2024-03-30,WOOZI,64818.0,WOOZI,woozi,woozi,woozi,woozi,1,5,False,False,False,False,False,woozi,woozi,woozi,2024-03-30
+1,2024-03-30,Lizzo,64193.0,Lizzo,lizzo,lizzo,lizzo,lizzo,1,5,False,False,False,False,False,lizzo,lizzo,lizzo,2024-03-30
+3,2024-03-30,$MEW,58141.0,$MEW,$mew,$mew,mew,mew,1,4,False,False,True,False,False,$mew,$mew,mew,2024-03-30
+5,2024-03-30,Mets,54923.0,Mets,mets,mets,mets,mets,1,4,False,False,False,False,False,mets,mets,mets,2024-03-30
+1,2024-03-30,Jets,52736.0,Jets,jets,jets,jets,jets,1,4,False,False,False,False,False,jets,jets,jets,2024-03-30
+7,2024-03-30,Tennessee,48296.0,Tennessee,tennessee,tennessee,tennessee,tennessee,1,9,False,False,False,False,False,tennessee,tennessee,tennessee,2024-03-30
+1,2024-03-30,#MUFC,45677.0,#MUFC,#mufc,mufc,mufc,mufc,1,4,False,True,True,False,False,#mufc,mufc,mufc,2024-03-30
+11,2024-03-30,NC State,44405.0,NC State,nc state,nc state,nc state,nc state,2,8,False,False,False,False,False,nc state,nc state,nc state,2024-03-30
+2,2024-03-30,Sabrina,44247.0,Sabrina,sabrina,sabrina,sabrina,sabrina,1,7,False,False,False,False,False,sabrina,sabrina,sabrina,2024-03-30
+5,2024-03-30,West Ham,43956.0,West Ham,west ham,west ham,west ham,west ham,2,8,False,False,False,False,False,west ham,west ham,west ham,2024-03-30
+2,2024-03-30,Chance Perdomo,43657.0,Chance Perdomo,chance perdomo,chance perdomo,chance perdomo,chance perdomo,2,14,False,False,False,False,False,chance perdomo,chance perdomo,chance perdomo,2024-03-30
+1,2024-03-30,Phillies,43569.0,Phillies,phillies,phillies,phillies,phillies,1,8,False,False,False,False,False,phillies,phillies,phillies,2024-03-30
+1,2024-03-30,Braves,40895.0,Braves,braves,braves,braves,braves,1,6,False,False,False,False,False,braves,braves,braves,2024-03-30
+2,2024-03-30,Bianca,39874.0,Bianca,bianca,bianca,bianca,bianca,1,6,False,False,False,False,False,bianca,bianca,bianca,2024-03-30
+2,2024-03-30,Dortmund,38891.0,Dortmund,dortmund,dortmund,dortmund,dortmund,1,8,False,False,False,False,False,dortmund,dortmund,dortmund,2024-03-30
+6,2024-03-30,#wellscharitycoin,38794.0,#wellscharitycoin,#wellscharitycoin,wellscharitycoin,wellscharitycoin,wellscharitycoin,1,16,False,True,True,False,False,#wellscharitycoin,wellscharitycoin,wellscharitycoin,2024-03-30
+3,2024-03-30,Kudus,38084.0,Kudus,kudus,kudus,kudus,kudus,1,5,False,False,False,False,False,kudus,kudus,kudus,2024-03-30
+11,2024-03-30,Brunson,36855.0,Brunson,brunson,brunson,brunson,brunson,1,7,False,False,False,False,False,brunson,brunson,brunson,2024-03-30
+2,2024-03-30,Iowa,34957.0,Iowa,iowa,iowa,iowa,iowa,1,4,False,False,False,False,False,iowa,iowa,iowa,2024-03-30
+3,2024-03-30,#BREMUN,34180.0,#BREMUN,#bremun,bremun,bremun,bremun,1,6,False,True,True,False,False,#bremun,bremun,bremun,2024-03-30
+5,2024-03-30,Good Saturday,33834.0,Good Saturday,good saturday,good saturday,good saturday,good saturday,2,13,False,False,False,False,False,good saturday,good saturday,good saturday,2024-03-30
+6,2024-03-30,Purdue,32611.0,Purdue,purdue,purdue,purdue,purdue,1,6,False,False,False,False,False,purdue,purdue,purdue,2024-03-30
+1,2024-03-30,Tigers,32390.0,Tigers,tigers,tigers,tigers,tigers,1,6,False,False,False,False,False,tigers,tigers,tigers,2024-03-30
+3,2024-03-30,Luton,30754.0,Luton,luton,luton,luton,luton,1,5,False,False,False,False,False,luton,luton,luton,2024-03-30
+3,2024-03-30,Big 4,30693.0,Big 4,big 4,big 4,big 4,big 4,2,5,False,False,False,False,False,big 4,big 4,big 4,2024-03-30
+2,2024-03-30,Gonzaga,30565.0,Gonzaga,gonzaga,gonzaga,gonzaga,gonzaga,1,7,False,False,False,False,False,gonzaga,gonzaga,gonzaga,2024-03-30
+3,2024-03-30,Cole Palmer,30528.0,Cole Palmer,cole palmer,cole palmer,cole palmer,cole palmer,2,11,False,False,False,False,False,cole palmer,cole palmer,cole palmer,2024-03-30
+7,2024-03-30,Spurs,30346.0,Spurs,spurs,spurs,spurs,spurs,1,5,False,False,False,False,False,spurs,spurs,spurs,2024-03-30
+5,2024-03-30,Marquette,30275.0,Marquette,marquette,marquette,marquette,marquette,1,9,False,False,False,False,False,marquette,marquette,marquette,2024-03-30
+7,2024-03-30,Wemby,30081.0,Wemby,wemby,wemby,wemby,wemby,1,5,False,False,False,False,False,wemby,wemby,wemby,2024-03-30
+3,2024-03-30,Jade Cargill,29911.0,Jade Cargill,jade cargill,jade cargill,jade cargill,jade cargill,2,12,False,False,False,False,False,jade cargill,jade cargill,jade cargill,2024-03-30
+9,2024-03-30,Elite 8,29318.0,Elite 8,elite 8,elite 8,elite 8,elite 8,2,7,False,False,False,False,False,elite 8,elite 8,elite 8,2024-03-30
+1,2024-03-30,Palmer,28971.0,Palmer,palmer,palmer,palmer,palmer,1,6,False,False,False,False,False,palmer,palmer,palmer,2024-03-30
+1,2024-03-30,ELITE 8,27025.0,ELITE 8,elite 8,elite 8,elite 8,elite 8,2,7,False,False,False,False,False,elite 8,elite 8,elite 8,2024-03-30
+1,2024-03-30,UConn,25526.0,UConn,uconn,uconn,uconn,uconn,1,5,False,False,False,False,False,uconn,uconn,uconn,2024-03-30
+3,2024-03-30,#CHEBUR,25492.0,#CHEBUR,#chebur,chebur,chebur,chebur,1,6,False,True,True,False,False,#chebur,chebur,chebur,2024-03-30
+7,2024-03-30,Creighton,24503.0,Creighton,creighton,creighton,creighton,creighton,1,9,False,False,False,False,False,creighton,creighton,creighton,2024-03-30
+6,2024-03-30,#DragRace,22836.0,#DragRace,#dragrace,dragrace,dragrace,dragrace,1,8,False,True,True,False,False,#dragrace,dragrace,dragrace,2024-03-30
+2,2024-03-30,Gen V,22325.0,Gen V,gen v,gen v,gen v,gen v,2,5,False,False,False,False,False,gen v,gen v,gen v,2024-03-30
+1,2024-03-30,Naomi,22111.0,Naomi,naomi,naomi,naomi,naomi,1,5,False,False,False,False,False,naomi,naomi,naomi,2024-03-30
+8,2024-03-30,Kathy Griffin,22087.0,Kathy Griffin,kathy griffin,kathy griffin,kathy griffin,kathy griffin,2,13,False,False,False,False,False,kathy griffin,kathy griffin,kathy griffin,2024-03-30
+3,2024-03-30,Kaylee,22035.0,Kaylee,kaylee,kaylee,kaylee,kaylee,1,6,False,False,False,False,False,kaylee,kaylee,kaylee,2024-03-30
+5,2024-03-30,Astros,21370.0,Astros,astros,astros,astros,astros,1,6,False,False,False,False,False,astros,astros,astros,2024-03-30
+3,2024-03-30,TTSMall CENTRAL FILM,21059.0,TTSMall CENTRAL FILM,ttsmall central film,ttsmall central film,ttsmall central film,ttsmall central film,3,20,False,False,False,False,False,ttsmall central film,ttsmall central film,ttsmall central film,2024-03-30
+3,2024-03-30,Knicks,20722.0,Knicks,knicks,knicks,knicks,knicks,1,6,False,False,False,False,False,knicks,knicks,knicks,2024-03-30
+1,2024-03-30,#murderdrones,20248.0,#murderdrones,#murderdrones,murderdrones,murderdrones,murderdrones,1,12,False,True,True,False,False,#murderdrones,murderdrones,murderdrones,2024-03-30
+3,2024-03-30,Poch,19951.0,Poch,poch,poch,poch,poch,1,4,False,False,False,False,False,poch,poch,poch,2024-03-30
+1,2024-03-30,Indiana,19389.0,Indiana,indiana,indiana,indiana,indiana,1,7,False,False,False,False,False,indiana,indiana,indiana,2024-03-30
+1,2024-03-30,#DragRaceUK,19347.0,#DragRaceUK,#dragraceuk,dragraceuk,dragraceuk,dragraceuk,1,10,False,True,True,False,False,#dragraceuk,dragraceuk,dragraceuk,2024-03-30
+2,2024-03-30,Sterling,19340.0,Sterling,sterling,sterling,sterling,sterling,1,8,False,False,False,False,False,sterling,sterling,sterling,2024-03-30
+6,2024-03-30,UCLA,19314.0,UCLA,ucla,ucla,ucla,ucla,1,4,False,False,False,False,False,ucla,ucla,ucla,2024-03-30
+4,2024-03-30,#GagCityPhilly,19277.0,#GagCityPhilly,#gagcityphilly,gagcityphilly,gagcityphilly,gagcityphilly,1,13,False,True,True,False,False,#gagcityphilly,gagcityphilly,gagcityphilly,2024-03-30
+1,2024-03-30,Maher,18335.0,Maher,maher,maher,maher,maher,1,5,False,False,False,False,False,maher,maher,maher,2024-03-30
+1,2024-03-30,Raphinha,18082.0,Raphinha,raphinha,raphinha,raphinha,raphinha,1,8,False,False,False,False,False,raphinha,raphinha,raphinha,2024-03-30
+2,2024-03-30,Napoli,17906.0,Napoli,napoli,napoli,napoli,napoli,1,6,False,False,False,False,False,napoli,napoli,napoli,2024-03-30
+2,2024-03-30,Reddick,17460.0,Reddick,reddick,reddick,reddick,reddick,1,7,False,False,False,False,False,reddick,reddick,reddick,2024-03-30
+5,2024-03-30,Waffle House,17415.0,Waffle House,waffle house,waffle house,waffle house,waffle house,2,12,False,False,False,False,False,waffle house,waffle house,waffle house,2024-03-30
+3,2024-03-30,#NEWWHU,17300.0,#NEWWHU,#newwhu,newwhu,newwhu,newwhu,1,6,False,True,True,False,False,#newwhu,newwhu,newwhu,2024-03-30
+6,2024-03-30,#Caturday,16392.0,#Caturday,#caturday,caturday,caturday,caturday,1,8,False,True,True,False,False,#caturday,caturday,caturday,2024-03-30
+7,2024-03-30,Holy Saturday,16008.0,Holy Saturday,holy saturday,holy saturday,holy saturday,holy saturday,2,13,False,False,False,False,False,holy saturday,holy saturday,holy saturday,2024-03-30
+2,2024-03-30,Mason Mount,15525.0,Mason Mount,mason mount,mason mount,mason mount,mason mount,2,11,False,False,False,False,False,mason mount,mason mount,mason mount,2024-03-30
+1,2024-03-30,MEET DAY,15356.0,MEET DAY,meet day,meet day,meet day,meet day,2,8,False,False,False,False,False,meet day,meet day,meet day,2024-03-30
+4,2024-03-30,Rhys Hoskins,14833.0,Rhys Hoskins,rhys hoskins,rhys hoskins,rhys hoskins,rhys hoskins,2,12,False,False,False,False,False,rhys hoskins,rhys hoskins,rhys hoskins,2024-03-30
+1,2024-03-30,Mudryk,14756.0,Mudryk,mudryk,mudryk,mudryk,mudryk,1,6,False,False,False,False,False,mudryk,mudryk,mudryk,2024-03-30
+6,2024-03-30,Kim Mulkey,14292.0,Kim Mulkey,kim mulkey,kim mulkey,kim mulkey,kim mulkey,2,10,False,False,False,False,False,kim mulkey,kim mulkey,kim mulkey,2024-03-30
+2,2024-03-30,#80million,14227.0,#80million,#80million,80million,80million,80million,1,9,False,True,True,False,False,#80million,80million,80million,2024-03-30
+4,2024-03-30,Apple TV,14073.0,Apple TV,apple tv,apple tv,apple tv,apple tv,2,8,False,False,False,False,False,apple tv,apple tv,apple tv,2024-03-30
+5,2024-03-30,Angel Reese,13564.0,Angel Reese,angel reese,angel reese,angel reese,angel reese,2,11,False,False,False,False,False,angel reese,angel reese,angel reese,2024-03-30
+2,2024-03-30,Hoskins,13507.0,Hoskins,hoskins,hoskins,hoskins,hoskins,1,7,False,False,False,False,False,hoskins,hoskins,hoskins,2024-03-30
+3,2024-03-30,Wolfpack,12799.0,Wolfpack,wolfpack,wolfpack,wolfpack,wolfpack,1,8,False,False,False,False,False,wolfpack,wolfpack,wolfpack,2024-03-30
+2,2024-03-30,Forever Young,12589.0,Forever Young,forever young,forever young,forever young,forever young,2,13,False,False,False,False,False,forever young,forever young,forever young,2024-03-30
+1,2024-03-30,Lange,12475.0,Lange,lange,lange,lange,lange,1,5,False,False,False,False,False,lange,lange,lange,2024-03-30
+2,2024-03-30,NFT Farming,12021.0,NFT Farming,nft farming,nft farming,nft farming,nft farming,2,11,False,False,False,False,False,nft farming,nft farming,nft farming,2024-03-30
+3,2024-03-30,McNeil,11978.0,McNeil,mcneil,mcneil,mcneil,mcneil,1,6,False,False,False,False,False,mcneil,mcneil,mcneil,2024-03-30
+2,2024-03-30,Isak,11751.0,Isak,isak,isak,isak,isak,1,4,False,False,False,False,False,isak,isak,isak,2024-03-30
+1,2024-03-30,Huff,11617.0,Huff,huff,huff,huff,huff,1,4,False,False,False,False,False,huff,huff,huff,2024-03-30
+1,2024-03-30,#NUFC,11470.0,#NUFC,#nufc,nufc,nufc,nufc,1,4,False,True,True,False,False,#nufc,nufc,nufc,2024-03-30
+3,2024-03-30,#VoteForBiden,11031.0,#VoteForBiden,#voteforbiden,voteforbiden,voteforbiden,voteforbiden,1,12,False,True,True,False,False,#voteforbiden,voteforbiden,voteforbiden,2024-03-30
+1,2024-03-30,#SaturdayVibes,10723.0,#SaturdayVibes,#saturdayvibes,saturdayvibes,saturdayvibes,saturdayvibes,1,13,False,True,True,False,False,#saturdayvibes,saturdayvibes,saturdayvibes,2024-03-30
+9,2024-03-30,Shead,10703.0,Shead,shead,shead,shead,shead,1,5,False,False,False,False,False,shead,shead,shead,2024-03-30
+4,2024-03-30,Flau’jae,10680.0,Flau’jae,flau jae,flau jae,flau jae,flau jae,2,8,False,False,True,True,False,flau jae,flau jae,flau jae,2024-03-30
+1,2024-03-30,Ambrose,10661.0,Ambrose,ambrose,ambrose,ambrose,ambrose,1,7,False,False,False,False,False,ambrose,ambrose,ambrose,2024-03-30
+3,2024-03-30,Betts,10444.0,Betts,betts,betts,betts,betts,1,5,False,False,False,False,False,betts,betts,betts,2024-03-30
+2,2024-03-30,Caturday,10174.0,Caturday,caturday,caturday,caturday,caturday,1,8,False,False,False,False,False,caturday,caturday,caturday,2024-03-30
+2,2024-03-30,Nola,9482.0,Nola,nola,nola,nola,nola,1,4,False,False,False,False,False,nola,nola,nola,2024-03-30
+2,2024-03-30,Kalvin Phillips,9463.0,Kalvin Phillips,kalvin phillips,kalvin phillips,kalvin phillips,kalvin phillips,2,15,False,False,False,False,False,kalvin phillips,kalvin phillips,kalvin phillips,2024-03-30
+2,2024-03-30,$BENJI,9354.0,$BENJI,$benji,$benji,benji,benji,1,6,False,False,True,False,False,$benji,$benji,benji,2024-03-30
+2,2024-03-30,Caitlin Clark,8701.0,Caitlin Clark,caitlin clark,caitlin clark,caitlin clark,caitlin clark,2,13,False,False,False,False,False,caitlin clark,caitlin clark,caitlin clark,2024-03-30
+4,2024-03-30,#TheLastDriveIn,8457.0,#TheLastDriveIn,#thelastdrivein,thelastdrivein,thelastdrivein,thelastdrivein,1,14,False,True,True,False,False,#thelastdrivein,thelastdrivein,thelastdrivein,2024-03-30
+3,2024-03-30,Edey,8333.0,Edey,edey,edey,edey,edey,1,4,False,False,False,False,False,edey,edey,edey,2024-03-30
+1,2024-03-30,Paqueta,8323.0,Paqueta,paqueta,paqueta,paqueta,paqueta,1,7,False,False,False,False,False,paqueta,paqueta,paqueta,2024-03-30
+2,2024-03-30,#SaturdayMorning,8282.0,#SaturdayMorning,#saturdaymorning,saturdaymorning,saturdaymorning,saturdaymorning,1,15,False,True,True,False,False,#saturdaymorning,saturdaymorning,saturdaymorning,2024-03-30
+1,2024-03-30,Bowen,8224.0,Bowen,bowen,bowen,bowen,bowen,1,5,False,False,False,False,False,bowen,bowen,bowen,2024-03-30
+2,2024-03-30,Harvey Barnes,7871.0,Harvey Barnes,harvey barnes,harvey barnes,harvey barnes,harvey barnes,2,13,False,False,False,False,False,harvey barnes,harvey barnes,harvey barnes,2024-03-30
+1,2024-03-30,Moyes,7200.0,Moyes,moyes,moyes,moyes,moyes,1,5,False,False,False,False,False,moyes,moyes,moyes,2024-03-30
+5,2024-03-30,Bobby Miller,7028.0,Bobby Miller,bobby miller,bobby miller,bobby miller,bobby miller,2,12,False,False,False,False,False,bobby miller,bobby miller,bobby miller,2024-03-30
+5,2024-03-30,Roach,6946.0,Roach,roach,roach,roach,roach,1,5,False,False,False,False,False,roach,roach,roach,2024-03-30
+1,2024-03-30,#UFCAtlanticCity,6397.0,#UFCAtlanticCity,#ufcatlanticcity,ufcatlanticcity,ufcatlanticcity,ufcatlanticcity,1,15,False,True,True,False,False,#ufcatlanticcity,ufcatlanticcity,ufcatlanticcity,2024-03-30
+2,2024-03-30,#COYS,5714.0,#COYS,#coys,coys,coys,coys,1,4,False,True,True,False,False,#coys,coys,coys,2024-03-30
+3,2024-03-30,Rodon,5521.0,Rodon,rodon,rodon,rodon,rodon,1,5,False,False,False,False,False,rodon,rodon,rodon,2024-03-30
+1,2024-03-30,Shaka,5364.0,Shaka,shaka,shaka,shaka,shaka,1,5,False,False,False,False,False,shaka,shaka,shaka,2024-03-30
+2,2024-03-30,Jared Jones,4983.0,Jared Jones,jared jones,jared jones,jared jones,jared jones,2,11,False,False,False,False,False,jared jones,jared jones,jared jones,2024-03-30
+1,2024-03-30,Mookie,4907.0,Mookie,mookie,mookie,mookie,mookie,1,6,False,False,False,False,False,mookie,mookie,mookie,2024-03-30
+3,2024-03-30,$BOSI,4875.0,$BOSI,$bosi,$bosi,bosi,bosi,1,5,False,False,True,False,False,$bosi,$bosi,bosi,2024-03-30
+3,2024-03-30,#ValdezWilson,4498.0,#ValdezWilson,#valdezwilson,valdezwilson,valdezwilson,valdezwilson,1,12,False,True,True,False,False,#valdezwilson,valdezwilson,valdezwilson,2024-03-30
+1,2024-03-30,Howie,4456.0,Howie,howie,howie,howie,howie,1,5,False,False,False,False,False,howie,howie,howie,2024-03-30
+4,2024-03-30,#MFFL,4214.0,#MFFL,#mffl,mffl,mffl,mffl,1,4,False,True,True,False,False,#mffl,mffl,mffl,2024-03-30
+2,2024-03-30,Larkin,4142.0,Larkin,larkin,larkin,larkin,larkin,1,6,False,False,False,False,False,larkin,larkin,larkin,2024-03-30
+1,2024-03-30,Stanton,4141.0,Stanton,stanton,stanton,stanton,stanton,1,7,False,False,False,False,False,stanton,stanton,stanton,2024-03-30
+2,2024-03-30,Maeda,3873.0,Maeda,maeda,maeda,maeda,maeda,1,5,False,False,False,False,False,maeda,maeda,maeda,2024-03-30
+2,2024-03-30,$PLANET,3755.0,$PLANET,$planet,$planet,planet,planet,1,7,False,False,True,False,False,$planet,$planet,planet,2024-03-30
+3,2024-03-30,DJ Burns,3226.0,DJ Burns,dj burns,dj burns,dj burns,dj burns,2,8,False,False,False,False,False,dj burns,dj burns,dj burns,2024-03-30
+4,2024-03-30,Exum,3217.0,Exum,exum,exum,exum,exum,1,4,False,False,False,False,False,exum,exum,exum,2024-03-30
+1,2024-03-30,#MutantFam,3045.0,#MutantFam,#mutantfam,mutantfam,mutantfam,mutantfam,1,9,False,True,True,False,False,#mutantfam,mutantfam,mutantfam,2024-03-30
+1,2024-03-30,Severino,3007.0,Severino,severino,severino,severino,severino,1,8,False,False,False,False,False,severino,severino,severino,2024-03-30
+2,2024-03-30,Dragon Lee,2715.0,Dragon Lee,dragon lee,dragon lee,dragon lee,dragon lee,2,10,False,False,False,False,False,dragon lee,dragon lee,dragon lee,2024-03-30
+1,2024-03-30,Luis Robert,2458.0,Luis Robert,luis robert,luis robert,luis robert,luis robert,2,11,False,False,False,False,False,luis robert,luis robert,luis robert,2024-03-30
+1,2024-03-30,Ryan Young,1690.0,Ryan Young,ryan young,ryan young,ryan young,ryan young,2,10,False,False,False,False,False,ryan young,ryan young,ryan young,2024-03-30
+2,2024-03-30,Harrison Barnes,1377.0,Harrison Barnes,harrison barnes,harrison barnes,harrison barnes,harrison barnes,2,15,False,False,False,False,False,harrison barnes,harrison barnes,harrison barnes,2024-03-30
+1,2024-03-30,Joey Gase,1240.0,Joey Gase,joey gase,joey gase,joey gase,joey gase,2,9,False,False,False,False,False,joey gase,joey gase,joey gase,2024-03-30
+4,2024-04-04,Chelsea,495772.0,Chelsea,chelsea,chelsea,chelsea,chelsea,1,7,False,False,False,False,False,chelsea,chelsea,chelsea,2024-04-04
+4,2024-04-04,Ethereum,346956.0,Ethereum,ethereum,ethereum,ethereum,ethereum,1,8,False,False,False,False,False,ethereum,ethereum,ethereum,2024-04-04
+6,2024-04-04,NATO,308199.0,NATO,nato,nato,nato,nato,1,4,False,False,False,False,False,nato,nato,nato,2024-04-04
+4,2024-04-04,Cole Palmer,189948.0,Cole Palmer,cole palmer,cole palmer,cole palmer,cole palmer,2,11,False,False,False,False,False,cole palmer,cole palmer,cole palmer,2024-04-04
+4,2024-04-04,#CHEMUN,188621.0,#CHEMUN,#chemun,chemun,chemun,chemun,1,6,False,True,True,False,False,#chemun,chemun,chemun,2024-04-04
+3,2024-04-04,Manchester United,178458.0,Manchester United,manchester united,manchester united,manchester united,manchester united,2,17,False,False,False,False,False,manchester united,manchester united,manchester united,2024-04-04
+4,2024-04-04,Liverpool,151826.0,Liverpool,liverpool,liverpool,liverpool,liverpool,1,9,False,False,False,False,False,liverpool,liverpool,liverpool,2024-04-04
+3,2024-04-04,Edge,135776.0,Edge,edge,edge,edge,edge,1,4,False,False,False,False,False,edge,edge,edge,2024-04-04
+1,2024-04-04,Diggs,125770.0,Diggs,diggs,diggs,diggs,diggs,1,5,False,False,False,False,False,diggs,diggs,diggs,2024-04-04
+1,2024-04-04,Foden,101490.0,Foden,foden,foden,foden,foden,1,5,False,False,False,False,False,foden,foden,foden,2024-04-04
+4,2024-04-04,billie eilish,99204.0,billie eilish,billie eilish,billie eilish,billie eilish,billie eilish,2,13,False,False,False,False,False,billie eilish,billie eilish,billie eilish,2024-04-04
+4,2024-04-04,Cardi,78920.0,Cardi,cardi,cardi,cardi,cardi,1,5,False,False,False,False,False,cardi,cardi,cardi,2024-04-04
+3,2024-04-04,#MUFC,74433.0,#MUFC,#mufc,mufc,mufc,mufc,1,4,False,True,True,False,False,#mufc,mufc,mufc,2024-04-04
+4,2024-04-04,Antony,68005.0,Antony,antony,antony,antony,antony,1,6,False,False,False,False,False,antony,antony,antony,2024-04-04
+2,2024-04-04,Garnacho,65463.0,Garnacho,garnacho,garnacho,garnacho,garnacho,1,8,False,False,False,False,False,garnacho,garnacho,garnacho,2024-04-04
+8,2024-04-04,#jjk256,58983.0,#jjk256,#jjk256,jjk256,jjk256,jjk256,1,6,False,True,True,False,False,#jjk256,jjk256,jjk256,2024-04-04
+2,2024-04-04,Bol Bol,58908.0,Bol Bol,bol bol,bol bol,bol bol,bol bol,2,7,False,False,False,False,False,bol bol,bol bol,bol bol,2024-04-04
+5,2024-04-04,Ashley Biden,57992.0,Ashley Biden,ashley biden,ashley biden,ashley biden,ashley biden,2,12,False,False,False,False,False,ashley biden,ashley biden,ashley biden,2024-04-04
+3,2024-04-04,Ten Hag,55789.0,Ten Hag,ten hag,ten hag,ten hag,ten hag,2,7,False,False,False,False,False,ten hag,ten hag,ten hag,2024-04-04
+2,2024-04-04,App Store,51622.0,App Store,app store,app store,app store,app store,2,9,False,False,False,False,False,app store,app store,app store,2024-04-04
+8,2024-04-04,Yuji,50071.0,Yuji,yuji,yuji,yuji,yuji,1,4,False,False,False,False,False,yuji,yuji,yuji,2024-04-04
+11,2024-04-04,#AEWDynamite,49012.0,#AEWDynamite,#aewdynamite,aewdynamite,aewdynamite,aewdynamite,1,11,False,True,True,False,False,#aewdynamite,aewdynamite,aewdynamite,2024-04-04
+2,2024-04-04,Mac Allister,46493.0,Mac Allister,mac allister,mac allister,mac allister,mac allister,2,12,False,False,False,False,False,mac allister,mac allister,mac allister,2024-04-04
+4,2024-04-04,Maker,43767.0,Maker,maker,maker,maker,maker,1,5,False,False,False,False,False,maker,maker,maker,2024-04-04
+2,2024-04-04,Mets,40761.0,Mets,mets,mets,mets,mets,1,4,False,False,False,False,False,mets,mets,mets,2024-04-04
+3,2024-04-04,Maki,37016.0,Maki,maki,maki,maki,maki,1,4,False,False,False,False,False,maki,maki,maki,2024-04-04
+4,2024-04-04,Bucks,36977.0,Bucks,bucks,bucks,bucks,bucks,1,5,False,False,False,False,False,bucks,bucks,bucks,2024-04-04
+3,2024-04-04,Poch,32122.0,Poch,poch,poch,poch,poch,1,4,False,False,False,False,False,poch,poch,poch,2024-04-04
+2,2024-04-04,Dalot,31380.0,Dalot,dalot,dalot,dalot,dalot,1,5,False,False,False,False,False,dalot,dalot,dalot,2024-04-04
+6,2024-04-04,WWIII,31226.0,WWIII,wwiii,wwiii,wwiii,wwiii,1,5,False,False,False,False,False,wwiii,wwiii,wwiii,2024-04-04
+6,2024-04-04,Good Thursday,29365.0,Good Thursday,good thursday,good thursday,good thursday,good thursday,2,13,False,False,False,False,False,good thursday,good thursday,good thursday,2024-04-04
+17,2024-04-04,Karl Rove,29154.0,Karl Rove,karl rove,karl rove,karl rove,karl rove,2,9,False,False,False,False,False,karl rove,karl rove,karl rove,2024-04-04
+2,2024-04-04,Venus,29077.0,Venus,venus,venus,venus,venus,1,5,False,False,False,False,False,venus,venus,venus,2024-04-04
+6,2024-04-04,Oakland,27091.0,Oakland,oakland,oakland,oakland,oakland,1,7,False,False,False,False,False,oakland,oakland,oakland,2024-04-04
+1,2024-04-04,Raymonte,26238.0,Raymonte,raymonte,raymonte,raymonte,raymonte,1,8,False,False,False,False,False,raymonte,raymonte,raymonte,2024-04-04
+8,2024-04-04,Silver Surfer,26138.0,Silver Surfer,silver surfer,silver surfer,silver surfer,silver surfer,2,13,False,False,False,False,False,silver surfer,silver surfer,silver surfer,2024-04-04
+3,2024-04-04,Caicedo,25622.0,Caicedo,caicedo,caicedo,caicedo,caicedo,1,7,False,False,False,False,False,caicedo,caicedo,caicedo,2024-04-04
+2,2024-04-04,Incredible NFTs,24424.0,Incredible NFTs,incredible nfts,incredible nfts,incredible nfts,incredible nfts,2,15,False,False,False,False,False,incredible nfts,incredible nfts,incredible nfts,2024-04-04
+4,2024-04-04,Devils,24247.0,Devils,devils,devils,devils,devils,1,6,False,False,False,False,False,devils,devils,devils,2024-04-04
+3,2024-04-04,#JJKSpoilers,21778.0,#JJKSpoilers,#jjkspoilers,jjkspoilers,jjkspoilers,jjkspoilers,1,11,False,True,True,False,False,#jjkspoilers,jjkspoilers,jjkspoilers,2024-04-04
+8,2024-04-04,Sacramento,21681.0,Sacramento,sacramento,sacramento,sacramento,sacramento,1,10,False,False,False,False,False,sacramento,sacramento,sacramento,2024-04-04
+1,2024-04-04,Dominican,20716.0,Dominican,dominican,dominican,dominican,dominican,1,9,False,False,False,False,False,dominican,dominican,dominican,2024-04-04
+4,2024-04-04,#TrumpTheDictator,19551.0,#TrumpTheDictator,#trumpthedictator,trumpthedictator,trumpthedictator,trumpthedictator,1,16,False,True,True,False,False,#trumpthedictator,trumpthedictator,trumpthedictator,2024-04-04
+2,2024-04-04,Casemiro,18559.0,Casemiro,casemiro,casemiro,casemiro,casemiro,1,8,False,False,False,False,False,casemiro,casemiro,casemiro,2024-04-04
+4,2024-04-04,Mendoza,17703.0,Mendoza,mendoza,mendoza,mendoza,mendoza,1,7,False,False,False,False,False,mendoza,mendoza,mendoza,2024-04-04
+2,2024-04-04,Trent,17602.0,Trent,trent,trent,trent,trent,1,5,False,False,False,False,False,trent,trent,trent,2024-04-04
+2,2024-04-04,#MHA419,17375.0,#MHA419,#mha419,mha419,mha419,mha419,1,6,False,True,True,False,False,#mha419,mha419,mha419,2024-04-04
+5,2024-04-04,No Labels,17166.0,No Labels,no labels,no labels,no labels,no labels,2,9,False,False,False,False,False,no labels,no labels,no labels,2024-04-04
+3,2024-04-04,#NODOWNTIME2024,16330.0,#NODOWNTIME2024,#nodowntime2024,nodowntime2024,nodowntime2024,nodowntime2024,1,14,False,True,True,False,False,#nodowntime2024,nodowntime2024,nodowntime2024,2024-04-04
+10,2024-04-04,#thursdayvibes,15775.0,#thursdayvibes,#thursdayvibes,thursdayvibes,thursdayvibes,thursdayvibes,1,13,False,True,True,False,False,#thursdayvibes,thursdayvibes,thursdayvibes,2024-04-04
+2,2024-04-04,Knicks,15685.0,Knicks,knicks,knicks,knicks,knicks,1,6,False,False,False,False,False,knicks,knicks,knicks,2024-04-04
+10,2024-04-04,Dan Rather,15171.0,Dan Rather,dan rather,dan rather,dan rather,dan rather,2,10,False,False,False,False,False,dan rather,dan rather,dan rather,2024-04-04
+5,2024-04-04,Aleska,14921.0,Aleska,aleska,aleska,aleska,aleska,1,6,False,False,False,False,False,aleska,aleska,aleska,2024-04-04
+2,2024-04-04,Onana,13729.0,Onana,onana,onana,onana,onana,1,5,False,False,False,False,False,onana,onana,onana,2024-04-04
+1,2024-04-04,#LIVSHU,13687.0,#LIVSHU,#livshu,livshu,livshu,livshu,1,6,False,True,True,False,False,#livshu,livshu,livshu,2024-04-04
+2,2024-04-04,Jericho,13665.0,Jericho,jericho,jericho,jericho,jericho,1,7,False,False,False,False,False,jericho,jericho,jericho,2024-04-04
+10,2024-04-04,Malachi Flynn,12554.0,Malachi Flynn,malachi flynn,malachi flynn,malachi flynn,malachi flynn,2,13,False,False,False,False,False,malachi flynn,malachi flynn,malachi flynn,2024-04-04
+5,2024-04-04,Randle,11995.0,Randle,randle,randle,randle,randle,1,6,False,False,False,False,False,randle,randle,randle,2024-04-04
+1,2024-04-04,Holmes,11895.0,Holmes,holmes,holmes,holmes,holmes,1,6,False,False,False,False,False,holmes,holmes,holmes,2024-04-04
+1,2024-04-04,The Mets,11464.0,The Mets,the mets,the mets,the mets,the mets,2,8,False,False,False,False,False,the mets,the mets,the mets,2024-04-04
+4,2024-04-04,#TalesOfTheEmpire,11319.0,#TalesOfTheEmpire,#talesoftheempire,talesoftheempire,talesoftheempire,talesoftheempire,1,16,False,True,True,False,False,#talesoftheempire,talesoftheempire,talesoftheempire,2024-04-04
+1,2024-04-04,$bomeow,11249.0,$bomeow,$bomeow,$bomeow,bomeow,bomeow,1,7,False,False,True,False,False,$bomeow,$bomeow,bomeow,2024-04-04
+2,2024-04-04,$BOMEOW,11220.0,$BOMEOW,$bomeow,$bomeow,bomeow,bomeow,1,7,False,False,True,False,False,$bomeow,$bomeow,bomeow,2024-04-04
+5,2024-04-04,#Invincible,10791.0,#Invincible,#invincible,invincible,invincible,invincible,1,10,False,True,True,False,False,#invincible,invincible,invincible,2024-04-04
+8,2024-04-04,Cavs,10589.0,Cavs,cavs,cavs,cavs,cavs,1,4,False,False,False,False,False,cavs,cavs,cavs,2024-04-04
+1,2024-04-04,#MHASpoilers,9904.0,#MHASpoilers,#mhaspoilers,mhaspoilers,mhaspoilers,mhaspoilers,1,11,False,True,True,False,False,#mhaspoilers,mhaspoilers,mhaspoilers,2024-04-04
+1,2024-04-04,Julia Garner,9813.0,Julia Garner,julia garner,julia garner,julia garner,julia garner,2,12,False,False,False,False,False,julia garner,julia garner,julia garner,2024-04-04
+2,2024-04-04,$SSNC,9594.0,$SSNC,$ssnc,$ssnc,ssnc,ssnc,1,5,False,False,True,False,False,$ssnc,$ssnc,ssnc,2024-04-04
+1,2024-04-04,Marlins,9080.0,Marlins,marlins,marlins,marlins,marlins,1,7,False,False,False,False,False,marlins,marlins,marlins,2024-04-04
+7,2024-04-04,PONY UP,8947.0,PONY UP,pony up,pony up,pony up,pony up,2,7,False,False,False,False,False,pony up,pony up,pony up,2024-04-04
+5,2024-04-04,Fantom,8910.0,Fantom,fantom,fantom,fantom,fantom,1,6,False,False,False,False,False,fantom,fantom,fantom,2024-04-04
+5,2024-04-04,Adam Copeland,7840.0,Adam Copeland,adam copeland,adam copeland,adam copeland,adam copeland,2,13,False,False,False,False,False,adam copeland,adam copeland,adam copeland,2024-04-04
+2,2024-04-04,Macca,7732.0,Macca,macca,macca,macca,macca,1,5,False,False,False,False,False,macca,macca,macca,2024-04-04
+5,2024-04-04,Rempe,7226.0,Rempe,rempe,rempe,rempe,rempe,1,5,False,False,False,False,False,rempe,rempe,rempe,2024-04-04
+5,2024-04-04,Grizzlies,6448.0,Grizzlies,grizzlies,grizzlies,grizzlies,grizzlies,1,9,False,False,False,False,False,grizzlies,grizzlies,grizzlies,2024-04-04
+1,2024-04-04,Roseanne,6245.0,Roseanne,roseanne,roseanne,roseanne,roseanne,1,8,False,False,False,False,False,roseanne,roseanne,roseanne,2024-04-04
+5,2024-04-04,#Survivor46,6048.0,#Survivor46,#survivor46,survivor46,survivor46,survivor46,1,10,False,True,True,False,False,#survivor46,survivor46,survivor46,2024-04-04
+4,2024-04-04,#ThursdayMotivation,5951.0,#ThursdayMotivation,#thursdaymotivation,thursdaymotivation,thursdaymotivation,thursdaymotivation,1,18,False,True,True,False,False,#thursdaymotivation,thursdaymotivation,thursdaymotivation,2024-04-04
+6,2024-04-04,Hellblade 2,5905.0,Hellblade 2,hellblade 2,hellblade 2,hellblade 2,hellblade 2,2,11,False,False,False,False,False,hellblade 2,hellblade 2,hellblade 2,2024-04-04
+1,2024-04-04,#NJDevils,5848.0,#NJDevils,#njdevils,njdevils,njdevils,njdevils,1,8,False,True,True,False,False,#njdevils,njdevils,njdevils,2024-04-04
+2,2024-04-04,Theta,5829.0,Theta,theta,theta,theta,theta,1,5,False,False,False,False,False,theta,theta,theta,2024-04-04
+1,2024-04-04,Martin Luther King Jr.,5788.0,Martin Luther King Jr.,martin luther king jr,martin luther king jr,martin luther king jr,martin luther king jr,4,21,False,False,True,False,False,martin luther king jr,martin luther king jr,martin luther king jr,2024-04-04
+3,2024-04-04,Hobbs,5439.0,Hobbs,hobbs,hobbs,hobbs,hobbs,1,5,False,False,False,False,False,hobbs,hobbs,hobbs,2024-04-04
+2,2024-04-04,Lara Croft,5248.0,Lara Croft,lara croft,lara croft,lara croft,lara croft,2,10,False,False,False,False,False,lara croft,lara croft,lara croft,2024-04-04
+3,2024-04-04,Yordan,5191.0,Yordan,yordan,yordan,yordan,yordan,1,6,False,False,False,False,False,yordan,yordan,yordan,2024-04-04
+2,2024-04-04,#JBBSX,5169.0,#JBBSX,#jbbsx,jbbsx,jbbsx,jbbsx,1,5,False,True,True,False,False,#jbbsx,jbbsx,jbbsx,2024-04-04
+5,2024-04-04,#thursdaymorning,4932.0,#thursdaymorning,#thursdaymorning,thursdaymorning,thursdaymorning,thursdaymorning,1,15,False,True,True,False,False,#thursdaymorning,thursdaymorning,thursdaymorning,2024-04-04
+1,2024-04-04,She Diddy,4823.0,She Diddy,she diddy,she diddy,she diddy,she diddy,2,9,False,False,False,False,False,she diddy,she diddy,she diddy,2024-04-04
+2,2024-04-04,Bobbi,4760.0,Bobbi,bobbi,bobbi,bobbi,bobbi,1,5,False,False,False,False,False,bobbi,bobbi,bobbi,2024-04-04
+5,2024-04-04,30fps,4714.0,30fps,30fps,30fps,30fps,30fps,1,5,False,False,False,False,False,30fps,30fps,30fps,2024-04-04
+3,2024-04-04,Kehlani,4686.0,Kehlani,kehlani,kehlani,kehlani,kehlani,1,7,False,False,False,False,False,kehlani,kehlani,kehlani,2024-04-04
+5,2024-04-04,John Fisher,4665.0,John Fisher,john fisher,john fisher,john fisher,john fisher,2,11,False,False,False,False,False,john fisher,john fisher,john fisher,2024-04-04
+1,2024-04-04,60fps,4654.0,60fps,60fps,60fps,60fps,60fps,1,5,False,False,False,False,False,60fps,60fps,60fps,2024-04-04
+3,2024-04-04,Ospreay,4376.0,Ospreay,ospreay,ospreay,ospreay,ospreay,1,7,False,False,False,False,False,ospreay,ospreay,ospreay,2024-04-04
+2,2024-04-04,Alpha Male,4271.0,Alpha Male,alpha male,alpha male,alpha male,alpha male,2,10,False,False,False,False,False,alpha male,alpha male,alpha male,2024-04-04
+5,2024-04-04,Soler,4009.0,Soler,soler,soler,soler,soler,1,5,False,False,False,False,False,soler,soler,soler,2024-04-04
+5,2024-04-04,#ThursdayThoughts,3987.0,#ThursdayThoughts,#thursdaythoughts,thursdaythoughts,thursdaythoughts,thursdaythoughts,1,16,False,True,True,False,False,#thursdaythoughts,thursdaythoughts,thursdaythoughts,2024-04-04
+1,2024-04-04,dr. king,3899.0,dr. king,dr king,dr king,dr king,dr king,2,7,False,False,True,False,False,dr king,dr king,dr king,2024-04-04
+1,2024-04-04,#jjkspoiler,3850.0,#jjkspoiler,#jjkspoiler,jjkspoiler,jjkspoiler,jjkspoiler,1,10,False,True,True,False,False,#jjkspoiler,jjkspoiler,jjkspoiler,2024-04-04
+6,2024-04-04,#NickiTrivia,3806.0,#NickiTrivia,#nickitrivia,nickitrivia,nickitrivia,nickitrivia,1,11,False,True,True,False,False,#nickitrivia,nickitrivia,nickitrivia,2024-04-04
+1,2024-04-04,Shalla-Bal,3751.0,Shalla-Bal,shalla bal,shalla bal,shalla bal,shalla bal,2,10,False,False,True,False,False,shalla bal,shalla bal,shalla bal,2024-04-04
+4,2024-04-04,Jay White,3699.0,Jay White,jay white,jay white,jay white,jay white,2,9,False,False,False,False,False,jay white,jay white,jay white,2024-04-04
+2,2024-04-04,FDUSD,3253.0,FDUSD,fdusd,fdusd,fdusd,fdusd,1,5,False,False,False,False,False,fdusd,fdusd,fdusd,2024-04-04
+3,2024-04-04,Mantle,3187.0,Mantle,mantle,mantle,mantle,mantle,1,6,False,False,False,False,False,mantle,mantle,mantle,2024-04-04
+4,2024-04-04,#404day,3047.0,#404day,#404day,404day,404day,404day,1,6,False,True,True,False,False,#404day,404day,404day,2024-04-04
+6,2024-04-04,#TexasHockey,2984.0,#TexasHockey,#texashockey,texashockey,texashockey,texashockey,1,11,False,True,True,False,False,#texashockey,texashockey,texashockey,2024-04-04
+4,2024-04-04,PEMDAS,2923.0,PEMDAS,pemdas,pemdas,pemdas,pemdas,1,6,False,False,False,False,False,pemdas,pemdas,pemdas,2024-04-04
+2,2024-04-04,Barriss,2880.0,Barriss,barriss,barriss,barriss,barriss,1,7,False,False,False,False,False,barriss,barriss,barriss,2024-04-04
+4,2024-04-04,Larue,2869.0,Larue,larue,larue,larue,larue,1,5,False,False,False,False,False,larue,larue,larue,2024-04-04
+2,2024-04-04,#TheMaskedSinger,2802.0,#TheMaskedSinger,#themaskedsinger,themaskedsinger,themaskedsinger,themaskedsinger,1,15,False,True,True,False,False,#themaskedsinger,themaskedsinger,themaskedsinger,2024-04-04
+2,2024-04-04,Sutter Health Park,2683.0,Sutter Health Park,sutter health park,sutter health park,sutter health park,sutter health park,3,18,False,False,False,False,False,sutter health park,sutter health park,sutter health park,2024-04-04
+4,2024-04-04,NFL Network,2601.0,NFL Network,nfl network,nfl network,nfl network,nfl network,2,11,False,False,False,False,False,nfl network,nfl network,nfl network,2024-04-04
+1,2024-04-04,#RepDetroit,2489.0,#RepDetroit,#repdetroit,repdetroit,repdetroit,repdetroit,1,10,False,True,True,False,False,#repdetroit,repdetroit,repdetroit,2024-04-04
+4,2024-04-04,Monero,2294.0,Monero,monero,monero,monero,monero,1,6,False,False,False,False,False,monero,monero,monero,2024-04-04
+4,2024-04-04,Happy 404,2273.0,Happy 404,happy 404,happy 404,happy 404,happy 404,2,9,False,False,False,False,False,happy 404,happy 404,happy 404,2024-04-04
+5,2024-04-04,Dick Stroker,2129.0,Dick Stroker,dick stroker,dick stroker,dick stroker,dick stroker,2,12,False,False,False,False,False,dick stroker,dick stroker,dick stroker,2024-04-04
+2,2024-04-04,Baty,2109.0,Baty,baty,baty,baty,baty,1,4,False,False,False,False,False,baty,baty,baty,2024-04-04
+1,2024-04-04,Ozark,2086.0,Ozark,ozark,ozark,ozark,ozark,1,5,False,False,False,False,False,ozark,ozark,ozark,2024-04-04
+1,2024-04-04,Galactus,1992.0,Galactus,galactus,galactus,galactus,galactus,1,8,False,False,False,False,False,galactus,galactus,galactus,2024-04-04
+3,2024-04-04,Gilbert Arenas,1974.0,Gilbert Arenas,gilbert arenas,gilbert arenas,gilbert arenas,gilbert arenas,2,14,False,False,False,False,False,gilbert arenas,gilbert arenas,gilbert arenas,2024-04-04
+1,2024-04-04,Julius Randle,1965.0,Julius Randle,julius randle,julius randle,julius randle,julius randle,2,13,False,False,False,False,False,julius randle,julius randle,julius randle,2024-04-04
+1,2024-04-04,#MorningJoe,1883.0,#MorningJoe,#morningjoe,morningjoe,morningjoe,morningjoe,1,10,False,True,True,False,False,#morningjoe,morningjoe,morningjoe,2024-04-04
+2,2024-04-04,Glasnow,1760.0,Glasnow,glasnow,glasnow,glasnow,glasnow,1,7,False,False,False,False,False,glasnow,glasnow,glasnow,2024-04-04
+5,2024-04-04,Juan Williams,1692.0,Juan Williams,juan williams,juan williams,juan williams,juan williams,2,13,False,False,False,False,False,juan williams,juan williams,juan williams,2024-04-04
+2,2024-04-04,Snow in April,1556.0,Snow in April,snow in april,snow in april,snow in april,snow in april,3,13,False,False,False,False,False,snow in april,snow in april,snow in april,2024-04-04
+1,2024-04-04,Pete Alonso,1354.0,Pete Alonso,pete alonso,pete alonso,pete alonso,pete alonso,2,11,False,False,False,False,False,pete alonso,pete alonso,pete alonso,2024-04-04
+2,2024-04-04,$CDOG,1282.0,$CDOG,$cdog,$cdog,cdog,cdog,1,5,False,False,True,False,False,$cdog,$cdog,cdog,2024-04-04
+1,2024-04-04,#my600lblife,1269.0,#my600lblife,#my600lblife,my600lblife,my600lblife,my600lblife,1,11,False,True,True,False,False,#my600lblife,my600lblife,my600lblife,2024-04-04
+1,2024-04-04,Lance Archer,1238.0,Lance Archer,lance archer,lance archer,lance archer,lance archer,2,12,False,False,False,False,False,lance archer,lance archer,lance archer,2024-04-04
+1,2024-04-04,Cole Ragans,1186.0,Cole Ragans,cole ragans,cole ragans,cole ragans,cole ragans,2,11,False,False,False,False,False,cole ragans,cole ragans,cole ragans,2024-04-04
+1,2024-04-04,#ChicagoPD,1142.0,#ChicagoPD,#chicagopd,chicagopd,chicagopd,chicagopd,1,9,False,True,True,False,False,#chicagopd,chicagopd,chicagopd,2024-04-04
+1,2024-04-04,Agent 47,1122.0,Agent 47,agent 47,agent 47,agent 47,agent 47,2,8,False,False,False,False,False,agent 47,agent 47,agent 47,2024-04-04
+1,2024-04-04,Billy Gunn,1120.0,Billy Gunn,billy gunn,billy gunn,billy gunn,billy gunn,2,10,False,False,False,False,False,billy gunn,billy gunn,billy gunn,2024-04-04
+1,2024-04-04,$MCU,1118.0,$MCU,$mcu,$mcu,mcu,mcu,1,4,False,False,True,False,False,$mcu,$mcu,mcu,2024-04-04
+1,2024-04-04,THORChain,1084.0,THORChain,thorchain,thorchain,thorchain,thorchain,1,9,False,False,False,False,False,thorchain,thorchain,thorchain,2024-04-04
+1,2024-04-04,Tonkin,1048.0,Tonkin,tonkin,tonkin,tonkin,tonkin,1,6,False,False,False,False,False,tonkin,tonkin,tonkin,2024-04-04
+1,2024-04-04,$WAL,1042.0,$WAL,$wal,$wal,wal,wal,1,4,False,False,True,False,False,$wal,$wal,wal,2024-04-04
+9,2024-04-11,OJ Simpson,411359.0,OJ Simpson,oj simpson,oj simpson,oj simpson,oj simpson,2,10,False,False,False,False,False,oj simpson,oj simpson,oj simpson,2024-04-11
+1,2024-04-11,Barca,309514.0,Barca,barca,barca,barca,barca,1,5,False,False,False,False,False,barca,barca,barca,2024-04-11
+7,2024-04-11,FISA,256775.0,FISA,fisa,fisa,fisa,fisa,1,4,False,False,False,False,False,fisa,fisa,fisa,2024-04-11
+1,2024-04-11,Cancer,251750.0,Cancer,cancer,cancer,cancer,cancer,1,6,False,False,False,False,False,cancer,cancer,cancer,2024-04-11
+8,2024-04-11,Messi,216688.0,Messi,messi,messi,messi,messi,1,5,False,False,False,False,False,messi,messi,messi,2024-04-11
+11,2024-04-11,Punk,205815.0,Punk,punk,punk,punk,punk,1,4,False,False,False,False,False,punk,punk,punk,2024-04-11
+2,2024-04-11,Liverpool,196129.0,Liverpool,liverpool,liverpool,liverpool,liverpool,1,9,False,False,False,False,False,liverpool,liverpool,liverpool,2024-04-11
+2,2024-04-11,GoDIN,145888.0,GoDIN,godin,godin,godin,godin,1,5,False,False,False,False,False,godin,godin,godin,2024-04-11
+4,2024-04-11,$MAGE,129597.0,$MAGE,$mage,$mage,mage,mage,1,5,False,False,True,False,False,$mage,$mage,mage,2024-04-11
+3,2024-04-11,$MSTAR,116741.0,$MSTAR,$mstar,$mstar,mstar,mstar,1,6,False,False,True,False,False,$mstar,$mstar,mstar,2024-04-11
+6,2024-04-11,Tony,116295.0,Tony,tony,tony,tony,tony,1,4,False,False,False,False,False,tony,tony,tony,2024-04-11
+8,2024-04-11,#XMen97,115079.0,#XMen97,#xmen97,xmen97,xmen97,xmen97,1,6,False,True,True,False,False,#xmen97,xmen97,xmen97,2024-04-11
+1,2024-04-11,Dembele,114940.0,Dembele,dembele,dembele,dembele,dembele,1,7,False,False,False,False,False,dembele,dembele,dembele,2024-04-11
+4,2024-04-11,Atalanta,107107.0,Atalanta,atalanta,atalanta,atalanta,atalanta,1,8,False,False,False,False,False,atalanta,atalanta,atalanta,2024-04-11
+1,2024-04-11,CM Punk,99558.0,CM Punk,cm punk,cm punk,cm punk,cm punk,2,7,False,False,False,False,False,cm punk,cm punk,cm punk,2024-04-11
+4,2024-04-11,Fallout,96861.0,Fallout,fallout,fallout,fallout,fallout,1,7,False,False,False,False,False,fallout,fallout,fallout,2024-04-11
+3,2024-04-11,Tiger,94072.0,Tiger,tiger,tiger,tiger,tiger,1,5,False,False,False,False,False,tiger,tiger,tiger,2024-04-11
+6,2024-04-11,Monterrey,77933.0,Monterrey,monterrey,monterrey,monterrey,monterrey,1,9,False,False,False,False,False,monterrey,monterrey,monterrey,2024-04-11
+8,2024-04-11,#AEWDynamite,77020.0,#AEWDynamite,#aewdynamite,aewdynamite,aewdynamite,aewdynamite,1,11,False,True,True,False,False,#aewdynamite,aewdynamite,aewdynamite,2024-04-11
+2,2024-04-11,#Reリベンジ,73479.0,#Reリベンジ,#reリベンジ,reリベンジ,reリベンジ,re,1,6,False,True,True,True,False,#reリベンジ,reリベンジ,reリベンジ,2024-04-11
+3,2024-04-11,#SKZ_WHY,72566.0,#SKZ_WHY,#skz why,skz why,skz why,skz why,2,7,False,True,True,False,False,#skz why,skz why,skz why,2024-04-11
+10,2024-04-11,Perry,69887.0,Perry,perry,perry,perry,perry,1,5,False,False,False,False,False,perry,perry,perry,2024-04-11
+1,2024-04-11,Goodbye Twitter,63141.0,Goodbye Twitter,goodbye twitter,goodbye twitter,goodbye twitter,goodbye twitter,2,15,False,False,False,False,False,goodbye twitter,goodbye twitter,goodbye twitter,2024-04-11
+2,2024-04-11,Luka,62093.0,Luka,luka,luka,luka,luka,1,4,False,False,False,False,False,luka,luka,luka,2024-04-11
+3,2024-04-11,Klopp,56554.0,Klopp,klopp,klopp,klopp,klopp,1,5,False,False,False,False,False,klopp,klopp,klopp,2024-04-11
+8,2024-04-11,Inter Miami,51623.0,Inter Miami,inter miami,inter miami,inter miami,inter miami,2,11,False,False,False,False,False,inter miami,inter miami,inter miami,2024-04-11
+3,2024-04-11,Anfield,50956.0,Anfield,anfield,anfield,anfield,anfield,1,7,False,False,False,False,False,anfield,anfield,anfield,2024-04-11
+6,2024-04-11,Ohtani,47605.0,Ohtani,ohtani,ohtani,ohtani,ohtani,1,6,False,False,False,False,False,ohtani,ohtani,ohtani,2024-04-11
+11,2024-04-11,#themasters,46041.0,#themasters,#themasters,themasters,themasters,themasters,1,10,False,True,True,False,False,#themasters,themasters,themasters,2024-04-11
+6,2024-04-11,Bruce,40493.0,Bruce,bruce,bruce,bruce,bruce,1,5,False,False,False,False,False,bruce,bruce,bruce,2024-04-11
+2,2024-04-11,Leverkusen,40111.0,Leverkusen,leverkusen,leverkusen,leverkusen,leverkusen,1,10,False,False,False,False,False,leverkusen,leverkusen,leverkusen,2024-04-11
+5,2024-04-11,The Juice,39286.0,The Juice,the juice,the juice,the juice,the juice,2,9,False,False,False,False,False,the juice,the juice,the juice,2024-04-11
+3,2024-04-11,Norm,37711.0,Norm,norm,norm,norm,norm,1,4,False,False,False,False,False,norm,norm,norm,2024-04-11
+3,2024-04-11,Chris Brown,37476.0,Chris Brown,chris brown,chris brown,chris brown,chris brown,2,11,False,False,False,False,False,chris brown,chris brown,chris brown,2024-04-11
+6,2024-04-11,#GagCityBoston,36198.0,#GagCityBoston,#gagcityboston,gagcityboston,gagcityboston,gagcityboston,1,13,False,True,True,False,False,#gagcityboston,gagcityboston,gagcityboston,2024-04-11
+14,2024-04-11,#NationalPetDay,35080.0,#NationalPetDay,#nationalpetday,nationalpetday,nationalpetday,nationalpetday,1,14,False,True,True,False,False,#nationalpetday,nationalpetday,nationalpetday,2024-04-11
+3,2024-04-11,Jack Perry,32973.0,Jack Perry,jack perry,jack perry,jack perry,jack perry,2,10,False,False,False,False,False,jack perry,jack perry,jack perry,2024-04-11
+3,2024-04-11,Denver,32649.0,Denver,denver,denver,denver,denver,1,6,False,False,False,False,False,denver,denver,denver,2024-04-11
+1,2024-04-11,Boxes,31112.0,Boxes,boxes,boxes,boxes,boxes,1,5,False,False,False,False,False,boxes,boxes,boxes,2024-04-11
+2,2024-04-11,Shohei,30614.0,Shohei,shohei,shohei,shohei,shohei,1,6,False,False,False,False,False,shohei,shohei,shohei,2024-04-11
+1,2024-04-11,Jackson Holliday,30366.0,Jackson Holliday,jackson holliday,jackson holliday,jackson holliday,jackson holliday,2,16,False,False,False,False,False,jackson holliday,jackson holliday,jackson holliday,2024-04-11
+7,2024-04-11,Nuggets,30037.0,Nuggets,nuggets,nuggets,nuggets,nuggets,1,7,False,False,False,False,False,nuggets,nuggets,nuggets,2024-04-11
+4,2024-04-11,Royals,28992.0,Royals,royals,royals,royals,royals,1,6,False,False,False,False,False,royals,royals,royals,2024-04-11
+7,2024-04-11,Ippei,27741.0,Ippei,ippei,ippei,ippei,ippei,1,5,False,False,False,False,False,ippei,ippei,ippei,2024-04-11
+5,2024-04-11,Good Thursday,27536.0,Good Thursday,good thursday,good thursday,good thursday,good thursday,2,13,False,False,False,False,False,good thursday,good thursday,good thursday,2024-04-11
+3,2024-04-11,#FilmCraftxOneconnection,27180.0,#FilmCraftxOneconnection,#filmcraftxoneconnection,filmcraftxoneconnection,filmcraftxoneconnection,filmcraftxoneconnection,1,23,False,True,True,False,False,#filmcraftxoneconnection,filmcraftxoneconnection,filmcraftxoneconnection,2024-04-11
+2,2024-04-11,STRAY KIDS WHY OUT NOW,27105.0,STRAY KIDS WHY OUT NOW,stray kids why out now,stray kids why out now,stray kids why out now,stray kids why out now,5,22,False,False,False,False,False,stray kids why out now,stray kids why out now,stray kids why out now,2024-04-11
+1,2024-04-11,Suarez,27091.0,Suarez,suarez,suarez,suarez,suarez,1,6,False,False,False,False,False,suarez,suarez,suarez,2024-04-11
+8,2024-04-11,Bronco,26472.0,Bronco,bronco,bronco,bronco,bronco,1,6,False,False,False,False,False,bronco,bronco,bronco,2024-04-11
+2,2024-04-11,#Bridgerton,25535.0,#Bridgerton,#bridgerton,bridgerton,bridgerton,bridgerton,1,10,False,True,True,False,False,#bridgerton,bridgerton,bridgerton,2024-04-11
+10,2024-04-11,New Vegas,25330.0,New Vegas,new vegas,new vegas,new vegas,new vegas,2,9,False,False,False,False,False,new vegas,new vegas,new vegas,2024-04-11
+4,2024-04-11,FILM X CRAFT,25204.0,FILM X CRAFT,film x craft,film x craft,film x craft,film x craft,3,12,False,False,False,False,False,film x craft,film x craft,film x craft,2024-04-11
+5,2024-04-11,Mavs,24910.0,Mavs,mavs,mavs,mavs,mavs,1,4,False,False,False,False,False,mavs,mavs,mavs,2024-04-11
+2,2024-04-11,Cannes,24605.0,Cannes,cannes,cannes,cannes,cannes,1,6,False,False,False,False,False,cannes,cannes,cannes,2024-04-11
+8,2024-04-11,Jokic,23727.0,Jokic,jokic,jokic,jokic,jokic,1,5,False,False,False,False,False,jokic,jokic,jokic,2024-04-11
+7,2024-04-11,Clippers,22763.0,Clippers,clippers,clippers,clippers,clippers,1,8,False,False,False,False,False,clippers,clippers,clippers,2024-04-11
+3,2024-04-11,Wolves,22236.0,Wolves,wolves,wolves,wolves,wolves,1,6,False,False,False,False,False,wolves,wolves,wolves,2024-04-11
+9,2024-04-11,Tony Khan,21338.0,Tony Khan,tony khan,tony khan,tony khan,tony khan,2,9,False,False,False,False,False,tony khan,tony khan,tony khan,2024-04-11
+4,2024-04-11,Ron Goldman,20665.0,Ron Goldman,ron goldman,ron goldman,ron goldman,ron goldman,2,11,False,False,False,False,False,ron goldman,ron goldman,ron goldman,2024-04-11
+5,2024-04-11,#AEWDymamite,19313.0,#AEWDymamite,#aewdymamite,aewdymamite,aewdymamite,aewdymamite,1,11,False,True,True,False,False,#aewdymamite,aewdymamite,aewdymamite,2024-04-11
+1,2024-04-11,Reacher,19152.0,Reacher,reacher,reacher,reacher,reacher,1,7,False,False,False,False,False,reacher,reacher,reacher,2024-04-11
+10,2024-04-11,#FalloutOnPrime,19075.0,#FalloutOnPrime,#falloutonprime,falloutonprime,falloutonprime,falloutonprime,1,14,False,True,True,False,False,#falloutonprime,falloutonprime,falloutonprime,2024-04-11
+1,2024-04-11,Penelope,18592.0,Penelope,penelope,penelope,penelope,penelope,1,8,False,False,False,False,False,penelope,penelope,penelope,2024-04-11
+6,2024-04-11,Khloe,18378.0,Khloe,khloe,khloe,khloe,khloe,1,5,False,False,False,False,False,khloe,khloe,khloe,2024-04-11
+1,2024-04-11,Kyrie,18378.0,Kyrie,kyrie,kyrie,kyrie,kyrie,1,5,False,False,False,False,False,kyrie,kyrie,kyrie,2024-04-11
+4,2024-04-11,$TAO,18296.0,$TAO,$tao,$tao,tao,tao,1,4,False,False,True,False,False,$tao,$tao,tao,2024-04-11
+6,2024-04-11,Nicole and Ron,17978.0,Nicole and Ron,nicole and ron,nicole and ron,nicole and ron,nicole and ron,3,14,False,False,False,False,False,nicole and ron,nicole and ron,nicole and ron,2024-04-11
+5,2024-04-11,$ESE,16552.0,$ESE,$ese,$ese,ese,ese,1,4,False,False,True,False,False,$ese,$ese,ese,2024-04-11
+1,2024-04-11,Bolton,16222.0,Bolton,bolton,bolton,bolton,bolton,1,6,False,False,False,False,False,bolton,bolton,bolton,2024-04-11
+1,2024-04-11,#LIVATA,15054.0,#LIVATA,#livata,livata,livata,livata,1,6,False,True,True,False,False,#livata,livata,livata,2024-04-11
+7,2024-04-11,#MHA420,14601.0,#MHA420,#mha420,mha420,mha420,mha420,1,6,False,True,True,False,False,#mha420,mha420,mha420,2024-04-11
+4,2024-04-11,Norm Macdonald,14018.0,Norm Macdonald,norm macdonald,norm macdonald,norm macdonald,norm macdonald,2,14,False,False,False,False,False,norm macdonald,norm macdonald,norm macdonald,2024-04-11
+1,2024-04-11,Caitlyn Jenner,13243.0,Caitlyn Jenner,caitlyn jenner,caitlyn jenner,caitlyn jenner,caitlyn jenner,2,14,False,False,False,False,False,caitlyn jenner,caitlyn jenner,caitlyn jenner,2024-04-11
+1,2024-04-11,Augusta,13218.0,Augusta,augusta,augusta,augusta,augusta,1,7,False,False,False,False,False,augusta,augusta,augusta,2024-04-11
+1,2024-04-11,#PassUkraineAidNOW,13207.0,#PassUkraineAidNOW,#passukraineaidnow,passukraineaidnow,passukraineaidnow,passukraineaidnow,1,17,False,True,True,False,False,#passukraineaidnow,passukraineaidnow,passukraineaidnow,2024-04-11
+2,2024-04-11,Scott Drew,11854.0,Scott Drew,scott drew,scott drew,scott drew,scott drew,2,10,False,False,False,False,False,scott drew,scott drew,scott drew,2024-04-11
+4,2024-04-11,Ospreay,11645.0,Ospreay,ospreay,ospreay,ospreay,ospreay,1,7,False,False,False,False,False,ospreay,ospreay,ospreay,2024-04-11
+3,2024-04-11,Kodak,10987.0,Kodak,kodak,kodak,kodak,kodak,1,5,False,False,False,False,False,kodak,kodak,kodak,2024-04-11
+1,2024-04-11,Mister Cee,10986.0,Mister Cee,mister cee,mister cee,mister cee,mister cee,2,10,False,False,False,False,False,mister cee,mister cee,mister cee,2024-04-11
+2,2024-04-11,Ron and Nicole,10662.0,Ron and Nicole,ron and nicole,ron and nicole,ron and nicole,ron and nicole,3,14,False,False,False,False,False,ron and nicole,ron and nicole,ron and nicole,2024-04-11
+3,2024-04-11,Bryson,10598.0,Bryson,bryson,bryson,bryson,bryson,1,6,False,False,False,False,False,bryson,bryson,bryson,2024-04-11
+2,2024-04-11,Jrue,9046.0,Jrue,jrue,jrue,jrue,jrue,1,4,False,False,False,False,False,jrue,jrue,jrue,2024-04-11
+4,2024-04-11,Wayans,8808.0,Wayans,wayans,wayans,wayans,wayans,1,6,False,False,False,False,False,wayans,wayans,wayans,2024-04-11
+1,2024-04-11,Scary Movie,8457.0,Scary Movie,scary movie,scary movie,scary movie,scary movie,2,11,False,False,False,False,False,scary movie,scary movie,scary movie,2024-04-11
+2,2024-04-11,Scottie,8109.0,Scottie,scottie,scottie,scottie,scottie,1,7,False,False,False,False,False,scottie,scottie,scottie,2024-04-11
+5,2024-04-11,#thursdayvibes,7952.0,#thursdayvibes,#thursdayvibes,thursdayvibes,thursdayvibes,thursdayvibes,1,13,False,True,True,False,False,#thursdayvibes,thursdayvibes,thursdayvibes,2024-04-11
+6,2024-04-11,Gobert,7909.0,Gobert,gobert,gobert,gobert,gobert,1,6,False,False,False,False,False,gobert,gobert,gobert,2024-04-11
+2,2024-04-11,Aaron Hernandez,7142.0,Aaron Hernandez,aaron hernandez,aaron hernandez,aaron hernandez,aaron hernandez,2,15,False,False,False,False,False,aaron hernandez,aaron hernandez,aaron hernandez,2024-04-11
+3,2024-04-11,Young Bucks,7024.0,Young Bucks,young bucks,young bucks,young bucks,young bucks,2,11,False,False,False,False,False,young bucks,young bucks,young bucks,2024-04-11
+5,2024-04-11,#Survivor46,6705.0,#Survivor46,#survivor46,survivor46,survivor46,survivor46,1,10,False,True,True,False,False,#survivor46,survivor46,survivor46,2024-04-11
+1,2024-04-11,Ari Lennox,6529.0,Ari Lennox,ari lennox,ari lennox,ari lennox,ari lennox,2,10,False,False,False,False,False,ari lennox,ari lennox,ari lennox,2024-04-11
+4,2024-04-11,Mase,6445.0,Mase,mase,mase,mase,mase,1,4,False,False,False,False,False,mase,mase,mase,2024-04-11
+1,2024-04-11,Eloise,5771.0,Eloise,eloise,eloise,eloise,eloise,1,6,False,False,False,False,False,eloise,eloise,eloise,2024-04-11
+3,2024-04-11,Made in America,5473.0,Made in America,made in america,made in america,made in america,made in america,3,15,False,False,False,False,False,made in america,made in america,made in america,2024-04-11
+2,2024-04-11,Penta,5408.0,Penta,penta,penta,penta,penta,1,5,False,False,False,False,False,penta,penta,penta,2024-04-11
+1,2024-04-11,John Bolton,4960.0,John Bolton,john bolton,john bolton,john bolton,john bolton,2,11,False,False,False,False,False,john bolton,john bolton,john bolton,2024-04-11
+3,2024-04-11,Jungle Boy,4709.0,Jungle Boy,jungle boy,jungle boy,jungle boy,jungle boy,2,10,False,False,False,False,False,jungle boy,jungle boy,jungle boy,2024-04-11
+6,2024-04-11,Rodney King,4673.0,Rodney King,rodney king,rodney king,rodney king,rodney king,2,11,False,False,False,False,False,rodney king,rodney king,rodney king,2024-04-11
+2,2024-04-11,$GFT,4614.0,$GFT,$gft,$gft,gft,gft,1,4,False,False,True,False,False,$gft,$gft,gft,2024-04-11
+1,2024-04-11,Jericho,4520.0,Jericho,jericho,jericho,jericho,jericho,1,7,False,False,False,False,False,jericho,jericho,jericho,2024-04-11
+1,2024-04-11,$gft,4420.0,$gft,$gft,$gft,gft,gft,1,4,False,False,True,False,False,$gft,$gft,gft,2024-04-11
+2,2024-04-11,Samoa Joe,4311.0,Samoa Joe,samoa joe,samoa joe,samoa joe,samoa joe,2,9,False,False,False,False,False,samoa joe,samoa joe,samoa joe,2024-04-11
+1,2024-04-11,#ChuckySeason3,4087.0,#ChuckySeason3,#chuckyseason3,chuckyseason3,chuckyseason3,chuckyseason3,1,13,False,True,True,False,False,#chuckyseason3,chuckyseason3,chuckyseason3,2024-04-11
+2,2024-04-11,Marlene,4059.0,Marlene,marlene,marlene,marlene,marlene,1,7,False,False,False,False,False,marlene,marlene,marlene,2024-04-11
+4,2024-04-11,Naked Gun,3968.0,Naked Gun,naked gun,naked gun,naked gun,naked gun,2,9,False,False,False,False,False,naked gun,naked gun,naked gun,2024-04-11
+2,2024-04-11,Rizzo,3921.0,Rizzo,rizzo,rizzo,rizzo,rizzo,1,5,False,False,False,False,False,rizzo,rizzo,rizzo,2024-04-11
+2,2024-04-11,#AbbottElementary,3809.0,#AbbottElementary,#abbottelementary,abbottelementary,abbottelementary,abbottelementary,1,16,False,True,True,False,False,#abbottelementary,abbottelementary,abbottelementary,2024-04-11
+3,2024-04-11,Jason Day,3795.0,Jason Day,jason day,jason day,jason day,jason day,2,9,False,False,False,False,False,jason day,jason day,jason day,2024-04-11
+2,2024-04-11,Quavo,3732.0,Quavo,quavo,quavo,quavo,quavo,1,5,False,False,False,False,False,quavo,quavo,quavo,2024-04-11
+1,2024-04-11,Copeland,3638.0,Copeland,copeland,copeland,copeland,copeland,1,8,False,False,False,False,False,copeland,copeland,copeland,2024-04-11
+6,2024-04-11,Christian Braun,3508.0,Christian Braun,christian braun,christian braun,christian braun,christian braun,2,15,False,False,False,False,False,christian braun,christian braun,christian braun,2024-04-11
+2,2024-04-11,Shibata,3390.0,Shibata,shibata,shibata,shibata,shibata,1,7,False,False,False,False,False,shibata,shibata,shibata,2024-04-11
+4,2024-04-11,LAPD,3318.0,LAPD,lapd,lapd,lapd,lapd,1,4,False,False,False,False,False,lapd,lapd,lapd,2024-04-11
+1,2024-04-11,#thursdaymorning,3120.0,#thursdaymorning,#thursdaymorning,thursdaymorning,thursdaymorning,thursdaymorning,1,15,False,True,True,False,False,#thursdaymorning,thursdaymorning,thursdaymorning,2024-04-11
+3,2024-04-11,Bones Hyland,3097.0,Bones Hyland,bones hyland,bones hyland,bones hyland,bones hyland,2,12,False,False,False,False,False,bones hyland,bones hyland,bones hyland,2024-04-11
+3,2024-04-11,$SPECT,3088.0,$SPECT,$spect,$spect,spect,spect,1,6,False,False,True,False,False,$spect,$spect,spect,2024-04-11
+1,2024-04-11,Mark Pope,2803.0,Mark Pope,mark pope,mark pope,mark pope,mark pope,2,9,False,False,False,False,False,mark pope,mark pope,mark pope,2024-04-11
+2,2024-04-11,Hendricks,2664.0,Hendricks,hendricks,hendricks,hendricks,hendricks,1,9,False,False,False,False,False,hendricks,hendricks,hendricks,2024-04-11
+3,2024-04-11,Brotherhood of Steel,2602.0,Brotherhood of Steel,brotherhood of steel,brotherhood of steel,brotherhood of steel,brotherhood of steel,3,20,False,False,False,False,False,brotherhood of steel,brotherhood of steel,brotherhood of steel,2024-04-11
+2,2024-04-11,Symba,2586.0,Symba,symba,symba,symba,symba,1,5,False,False,False,False,False,symba,symba,symba,2024-04-11
+2,2024-04-11,Hunter Brown,2553.0,Hunter Brown,hunter brown,hunter brown,hunter brown,hunter brown,2,12,False,False,False,False,False,hunter brown,hunter brown,hunter brown,2024-04-11
+1,2024-04-11,Caron,2549.0,Caron,caron,caron,caron,caron,1,5,False,False,False,False,False,caron,caron,caron,2024-04-11
+2,2024-04-11,#TheMaskedSinger,2329.0,#TheMaskedSinger,#themaskedsinger,themaskedsinger,themaskedsinger,themaskedsinger,1,15,False,True,True,False,False,#themaskedsinger,themaskedsinger,themaskedsinger,2024-04-11
+2,2024-04-11,Hertz,2304.0,Hertz,hertz,hertz,hertz,hertz,1,5,False,False,False,False,False,hertz,hertz,hertz,2024-04-11
+1,2024-04-11,#MAFS,2272.0,#MAFS,#mafs,mafs,mafs,mafs,1,4,False,True,True,False,False,#mafs,mafs,mafs,2024-04-11
+2,2024-04-11,#ThursdayThoughts,2211.0,#ThursdayThoughts,#thursdaythoughts,thursdaythoughts,thursdaythoughts,thursdaythoughts,1,16,False,True,True,False,False,#thursdaythoughts,thursdaythoughts,thursdaythoughts,2024-04-11
+1,2024-04-11,Chris Hero,2154.0,Chris Hero,chris hero,chris hero,chris hero,chris hero,2,10,False,False,False,False,False,chris hero,chris hero,chris hero,2024-04-11
+1,2024-04-11,#ThursdayMotivation,2003.0,#ThursdayMotivation,#thursdaymotivation,thursdaymotivation,thursdaymotivation,thursdaymotivation,1,18,False,True,True,False,False,#thursdaymotivation,thursdaymotivation,thursdaymotivation,2024-04-11
+2,2024-04-11,Hunter Greene,2001.0,Hunter Greene,hunter greene,hunter greene,hunter greene,hunter greene,2,13,False,False,False,False,False,hunter greene,hunter greene,hunter greene,2024-04-11
+1,2024-04-11,#my600lblife,1924.0,#my600lblife,#my600lblife,my600lblife,my600lblife,my600lblife,1,11,False,True,True,False,False,#my600lblife,my600lblife,my600lblife,2024-04-11
+2,2024-04-11,Stroman,1861.0,Stroman,stroman,stroman,stroman,stroman,1,7,False,False,False,False,False,stroman,stroman,stroman,2024-04-11
+1,2024-04-11,Breadwinner,1686.0,Breadwinner,breadwinner,breadwinner,breadwinner,breadwinner,1,11,False,False,False,False,False,breadwinner,breadwinner,breadwinner,2024-04-11
+1,2024-04-11,#RokuProSeriesTV,1558.0,#RokuProSeriesTV,#rokuproseriestv,rokuproseriestv,rokuproseriestv,rokuproseriestv,1,15,False,True,True,False,False,#rokuproseriestv,rokuproseriestv,rokuproseriestv,2024-04-11
+1,2024-04-11,$GNOME,1516.0,$GNOME,$gnome,$gnome,gnome,gnome,1,6,False,False,True,False,False,$gnome,$gnome,gnome,2024-04-11
+1,2024-04-11,Dick Cheney,1465.0,Dick Cheney,dick cheney,dick cheney,dick cheney,dick cheney,2,11,False,False,False,False,False,dick cheney,dick cheney,dick cheney,2024-04-11
+1,2024-04-11,Nick Chubb,1438.0,Nick Chubb,nick chubb,nick chubb,nick chubb,nick chubb,2,10,False,False,False,False,False,nick chubb,nick chubb,nick chubb,2024-04-11
+1,2024-04-11,Core PPI,1309.0,Core PPI,core ppi,core ppi,core ppi,core ppi,2,8,False,False,False,False,False,core ppi,core ppi,core ppi,2024-04-11
+7,2024-05-17,Diddy,487885.0,Diddy,diddy,diddy,diddy,diddy,1,5,False,False,False,False,False,diddy,diddy,diddy,2024-05-17
+6,2024-05-17,Congress,441409.0,Congress,congress,congress,congress,congress,1,8,False,False,False,False,False,congress,congress,congress,2024-05-17
+24,2024-05-17,Alito,384685.0,Alito,alito,alito,alito,alito,1,5,False,False,False,False,False,alito,alito,alito,2024-05-17
+11,2024-05-17,billie,283910.0,billie,billie,billie,billie,billie,1,6,False,False,False,False,False,billie,billie,billie,2024-05-17
+2,2024-05-17,Butker,245301.0,Butker,butker,butker,butker,butker,1,6,False,False,False,False,False,butker,butker,butker,2024-05-17
+11,2024-05-17,Scottie,205829.0,Scottie,scottie,scottie,scottie,scottie,1,7,False,False,False,False,False,scottie,scottie,scottie,2024-05-17
+7,2024-05-17,THE GREATEST,172211.0,THE GREATEST,the greatest,the greatest,the greatest,the greatest,2,12,False,False,False,False,False,the greatest,the greatest,the greatest,2024-05-17
+20,2024-05-17,Crockett,170540.0,Crockett,crockett,crockett,crockett,crockett,1,8,False,False,False,False,False,crockett,crockett,crockett,2024-05-17
+4,2024-05-17,Scottie Scheffler,133561.0,Scottie Scheffler,scottie scheffler,scottie scheffler,scottie scheffler,scottie scheffler,2,17,False,False,False,False,False,scottie scheffler,scottie scheffler,scottie scheffler,2024-05-17
+1,2024-05-17,Xavi,103500.0,Xavi,xavi,xavi,xavi,xavi,1,4,False,False,False,False,False,xavi,xavi,xavi,2024-05-17
+6,2024-05-17,Greene,101942.0,Greene,greene,greene,greene,greene,1,6,False,False,False,False,False,greene,greene,greene,2024-05-17
+7,2024-05-17,Barron,84356.0,Barron,barron,barron,barron,barron,1,6,False,False,False,False,False,barron,barron,barron,2024-05-17
+6,2024-05-17,Houston,84057.0,Houston,houston,houston,houston,houston,1,7,False,False,False,False,False,houston,houston,houston,2024-05-17
+5,2024-05-17,Tiger,83591.0,Tiger,tiger,tiger,tiger,tiger,1,5,False,False,False,False,False,tiger,tiger,tiger,2024-05-17
+9,2024-05-17,Game 7,72138.0,Game 7,game 7,game 7,game 7,game 7,2,6,False,False,False,False,False,game 7,game 7,game 7,2024-05-17
+2,2024-05-17,Cops,70883.0,Cops,cops,cops,cops,cops,1,4,False,False,False,False,False,cops,cops,cops,2024-05-17
+8,2024-05-17,Rangers,65259.0,Rangers,rangers,rangers,rangers,rangers,1,7,False,False,False,False,False,rangers,rangers,rangers,2024-05-17
+3,2024-05-17,Nuggets,62454.0,Nuggets,nuggets,nuggets,nuggets,nuggets,1,7,False,False,False,False,False,nuggets,nuggets,nuggets,2024-05-17
+8,2024-05-17,Wolves,61170.0,Wolves,wolves,wolves,wolves,wolves,1,6,False,False,False,False,False,wolves,wolves,wolves,2024-05-17
+2,2024-05-17,Daniel Perry,60270.0,Daniel Perry,daniel perry,daniel perry,daniel perry,daniel perry,2,12,False,False,False,False,False,daniel perry,daniel perry,daniel perry,2024-05-17
+7,2024-05-17,Valhalla,54807.0,Valhalla,valhalla,valhalla,valhalla,valhalla,1,8,False,False,False,False,False,valhalla,valhalla,valhalla,2024-05-17
+5,2024-05-17,Ghetto,54028.0,Ghetto,ghetto,ghetto,ghetto,ghetto,1,6,False,False,False,False,False,ghetto,ghetto,ghetto,2024-05-17
+3,2024-05-17,Good Friday,53819.0,Good Friday,good friday,good friday,good friday,good friday,2,11,False,False,False,False,False,good friday,good friday,good friday,2024-05-17
+7,2024-05-17,Louisville,46775.0,Louisville,louisville,louisville,louisville,louisville,1,10,False,False,False,False,False,louisville,louisville,louisville,2024-05-17
+3,2024-05-17,NCAA,45031.0,NCAA,ncaa,ncaa,ncaa,ncaa,1,4,False,False,False,False,False,ncaa,ncaa,ncaa,2024-05-17
+5,2024-05-17,Fever,43251.0,Fever,fever,fever,fever,fever,1,5,False,False,False,False,False,fever,fever,fever,2024-05-17
+3,2024-05-17,Young Sheldon,43057.0,Young Sheldon,young sheldon,young sheldon,young sheldon,young sheldon,2,13,False,False,False,False,False,young sheldon,young sheldon,young sheldon,2024-05-17
+2,2024-05-17,Greg Abbott,40357.0,Greg Abbott,greg abbott,greg abbott,greg abbott,greg abbott,2,11,False,False,False,False,False,greg abbott,greg abbott,greg abbott,2024-05-17
+3,2024-05-17,#StockholmTSTheErasTour,37814.0,#StockholmTSTheErasTour,#stockholmtstheerastour,stockholmtstheerastour,stockholmtstheerastour,stockholmtstheerastour,1,22,False,True,True,False,False,#stockholmtstheerastour,stockholmtstheerastour,stockholmtstheerastour,2024-05-17
+5,2024-05-17,Canes,37558.0,Canes,canes,canes,canes,canes,1,5,False,False,False,False,False,canes,canes,canes,2024-05-17
+1,2024-05-17,Marjorie Taylor Greene,37395.0,Marjorie Taylor Greene,marjorie taylor greene,marjorie taylor greene,marjorie taylor greene,marjorie taylor greene,3,22,False,False,False,False,False,marjorie taylor greene,marjorie taylor greene,marjorie taylor greene,2024-05-17
+3,2024-05-17,College Football 25,36296.0,College Football 25,college football 25,college football 25,college football 25,college football 25,3,19,False,False,False,False,False,college football 25,college football 25,college football 25,2024-05-17
+8,2024-05-17,CHIHIRO,30603.0,CHIHIRO,chihiro,chihiro,chihiro,chihiro,1,7,False,False,False,False,False,chihiro,chihiro,chihiro,2024-05-17
+1,2024-05-17,Katy Tur,30098.0,Katy Tur,katy tur,katy tur,katy tur,katy tur,2,8,False,False,False,False,False,katy tur,katy tur,katy tur,2024-05-17
+7,2024-05-17,Jasmine Crockett,30032.0,Jasmine Crockett,jasmine crockett,jasmine crockett,jasmine crockett,jasmine crockett,2,16,False,False,False,False,False,jasmine crockett,jasmine crockett,jasmine crockett,2024-05-17
+4,2024-05-17,iMessage,29875.0,iMessage,imessage,imessage,imessage,imessage,1,8,False,False,False,False,False,imessage,imessage,imessage,2024-05-17
+1,2024-05-17,Timberwolves,29584.0,Timberwolves,timberwolves,timberwolves,timberwolves,timberwolves,1,12,False,False,False,False,False,timberwolves,timberwolves,timberwolves,2024-05-17
+6,2024-05-17,Kim Porter,28915.0,Kim Porter,kim porter,kim porter,kim porter,kim porter,2,10,False,False,False,False,False,kim porter,kim porter,kim porter,2024-05-17
+2,2024-05-17,The PGA,27211.0,The PGA,the pga,the pga,the pga,the pga,2,7,False,False,False,False,False,the pga,the pga,the pga,2024-05-17
+1,2024-05-17,Megalopolis,27057.0,Megalopolis,megalopolis,megalopolis,megalopolis,megalopolis,1,11,False,False,False,False,False,megalopolis,megalopolis,megalopolis,2024-05-17
+3,2024-05-17,Raskin,26923.0,Raskin,raskin,raskin,raskin,raskin,1,6,False,False,False,False,False,raskin,raskin,raskin,2024-05-17
+3,2024-05-17,PGA Championship,26294.0,PGA Championship,pga championship,pga championship,pga championship,pga championship,2,16,False,False,False,False,False,pga championship,pga championship,pga championship,2024-05-17
+4,2024-05-17,#CFB25,25140.0,#CFB25,#cfb25,cfb25,cfb25,cfb25,1,5,False,True,True,False,False,#cfb25,cfb25,cfb25,2024-05-17
+9,2024-05-17,#BridgertonS3,24585.0,#BridgertonS3,#bridgertons3,bridgertons3,bridgertons3,bridgertons3,1,12,False,True,True,False,False,#bridgertons3,bridgertons3,bridgertons3,2024-05-17
+1,2024-05-17,Shani Louk,23834.0,Shani Louk,shani louk,shani louk,shani louk,shani louk,2,10,False,False,False,False,False,shani louk,shani louk,shani louk,2024-05-17
+3,2024-05-17,Igor,23566.0,Igor,igor,igor,igor,igor,1,4,False,False,False,False,False,igor,igor,igor,2024-05-17
+4,2024-05-17,#HitMeHardAndSoft,23523.0,#HitMeHardAndSoft,#hitmehardandsoft,hitmehardandsoft,hitmehardandsoft,hitmehardandsoft,1,16,False,True,True,False,False,#hitmehardandsoft,hitmehardandsoft,hitmehardandsoft,2024-05-17
+7,2024-05-17,Kreider,23084.0,Kreider,kreider,kreider,kreider,kreider,1,7,False,False,False,False,False,kreider,kreider,kreider,2024-05-17
+1,2024-05-17,The Nuggets,21918.0,The Nuggets,the nuggets,the nuggets,the nuggets,the nuggets,2,11,False,False,False,False,False,the nuggets,the nuggets,the nuggets,2024-05-17
+6,2024-05-17,Paul Pelosi,20964.0,Paul Pelosi,paul pelosi,paul pelosi,paul pelosi,paul pelosi,2,11,False,False,False,False,False,paul pelosi,paul pelosi,paul pelosi,2024-05-17
+5,2024-05-17,Paul Skenes,20644.0,Paul Skenes,paul skenes,paul skenes,paul skenes,paul skenes,2,11,False,False,False,False,False,paul skenes,paul skenes,paul skenes,2024-05-17
+4,2024-05-17,#BellatorParis,20348.0,#BellatorParis,#bellatorparis,bellatorparis,bellatorparis,bellatorparis,1,13,False,True,True,False,False,#bellatorparis,bellatorparis,bellatorparis,2024-05-17
+5,2024-05-17,Madden,19881.0,Madden,madden,madden,madden,madden,1,6,False,False,False,False,False,madden,madden,madden,2024-05-17
+4,2024-05-17,Puff,19366.0,Puff,puff,puff,puff,puff,1,4,False,False,False,False,False,puff,puff,puff,2024-05-17
+9,2024-05-17,#FridayMotivation,19299.0,#FridayMotivation,#fridaymotivation,fridaymotivation,fridaymotivation,fridaymotivation,1,16,False,True,True,False,False,#fridaymotivation,fridaymotivation,fridaymotivation,2024-05-17
+3,2024-05-17,#hitmehardandsoft,18654.0,#hitmehardandsoft,#hitmehardandsoft,hitmehardandsoft,hitmehardandsoft,hitmehardandsoft,1,16,False,True,True,False,False,#hitmehardandsoft,hitmehardandsoft,hitmehardandsoft,2024-05-17
+9,2024-05-17,#FursuitFriday,17833.0,#FursuitFriday,#fursuitfriday,fursuitfriday,fursuitfriday,fursuitfriday,1,13,False,True,True,False,False,#fursuitfriday,fursuitfriday,fursuitfriday,2024-05-17
+7,2024-05-17,BIRDS OF A FEATHER,16403.0,BIRDS OF A FEATHER,birds of a feather,birds of a feather,birds of a feather,birds of a feather,4,18,False,False,False,False,False,birds of a feather,birds of a feather,birds of a feather,2024-05-17
+1,2024-05-17,Caitlin Clark,16312.0,Caitlin Clark,caitlin clark,caitlin clark,caitlin clark,caitlin clark,2,13,False,False,False,False,False,caitlin clark,caitlin clark,caitlin clark,2024-05-17
+9,2024-05-17,#BleachBlondeBadBuiltButchBody,15976.0,#BleachBlondeBadBuiltButchBody,#bleachblondebadbuiltbutchbody,bleachblondebadbuiltbutchbody,bleachblondebadbuiltbutchbody,bleachblondebadbuiltbutchbody,1,29,False,True,True,False,False,#bleachblondebadbuiltbutchbody,bleachblondebadbuiltbutchbody,bleachblondebadbuiltbutchbody,2024-05-17
+2,2024-05-17,#911onABC,15153.0,#911onABC,#911onabc,911onabc,911onabc,911onabc,1,8,False,True,True,False,False,#911onabc,911onabc,911onabc,2024-05-17
+6,2024-05-17,LMPD,14129.0,LMPD,lmpd,lmpd,lmpd,lmpd,1,4,False,False,False,False,False,lmpd,lmpd,lmpd,2024-05-17
+8,2024-05-17,#FridayFeelings,13906.0,#FridayFeelings,#fridayfeelings,fridayfeelings,fridayfeelings,fridayfeelings,1,14,False,True,True,False,False,#fridayfeelings,fridayfeelings,fridayfeelings,2024-05-17
+5,2024-05-17,L'Oreal,13587.0,L'Oreal,l oreal,l oreal,l oreal,l oreal,2,7,False,False,True,False,False,l oreal,l oreal,l oreal,2024-05-17
+7,2024-05-17,Elly,13152.0,Elly,elly,elly,elly,elly,1,4,False,False,False,False,False,elly,elly,elly,2024-05-17
+3,2024-05-17,I THINK HE KNOWS,12784.0,I THINK HE KNOWS,i think he knows,i think he knows,i think he knows,i think he knows,4,16,False,False,False,False,False,i think he knows,i think he knows,i think he knows,2024-05-17
+6,2024-05-17,THE DINER,12730.0,THE DINER,the diner,the diner,the diner,the diner,2,9,False,False,False,False,False,the diner,the diner,the diner,2024-05-17
+3,2024-05-17,Silk,12670.0,Silk,silk,silk,silk,silk,1,4,False,False,False,False,False,silk,silk,silk,2024-05-17
+1,2024-05-17,ALL RISE,12627.0,ALL RISE,all rise,all rise,all rise,all rise,2,8,False,False,False,False,False,all rise,all rise,all rise,2024-05-17
+4,2024-05-17,Caresha,12425.0,Caresha,caresha,caresha,caresha,caresha,1,7,False,False,False,False,False,caresha,caresha,caresha,2024-05-17
+1,2024-05-17,AK-47,11857.0,AK-47,ak 47,ak 47,ak 47,ak 47,2,5,False,False,True,False,False,ak 47,ak 47,ak 47,2024-05-17
+3,2024-05-17,$BASED,11483.0,$BASED,$based,$based,based,based,1,6,False,False,True,False,False,$based,$based,based,2024-05-17
+5,2024-05-17,L'AMOUR DE MA VIE,11471.0,L'AMOUR DE MA VIE,l amour de ma vie,l amour de ma vie,l amour de ma vie,l amour de ma vie,5,17,False,False,True,False,False,l amour de ma vie,l amour de ma vie,l amour de ma vie,2024-05-17
+3,2024-05-17,#ACMawards,10067.0,#ACMawards,#acmawards,acmawards,acmawards,acmawards,1,9,False,True,True,False,False,#acmawards,acmawards,acmawards,2024-05-17
+1,2024-05-17,Congratulations Barron,10052.0,Congratulations Barron,congratulations barron,congratulations barron,congratulations barron,congratulations barron,2,22,False,False,False,False,False,congratulations barron,congratulations barron,congratulations barron,2024-05-17
+2,2024-05-17,Full Swing,9900.0,Full Swing,full swing,full swing,full swing,full swing,2,10,False,False,False,False,False,full swing,full swing,full swing,2024-05-17
+1,2024-05-17,#HITMEHARDANDSOFT,9151.0,#HITMEHARDANDSOFT,#hitmehardandsoft,hitmehardandsoft,hitmehardandsoft,hitmehardandsoft,1,16,False,True,True,False,False,#hitmehardandsoft,hitmehardandsoft,hitmehardandsoft,2024-05-17
+4,2024-05-17,Dabney Coleman,8811.0,Dabney Coleman,dabney coleman,dabney coleman,dabney coleman,dabney coleman,2,14,False,False,False,False,False,dabney coleman,dabney coleman,dabney coleman,2024-05-17
+7,2024-05-17,#CriticalRoleSpoilers,8503.0,#CriticalRoleSpoilers,#criticalrolespoilers,criticalrolespoilers,criticalrolespoilers,criticalrolespoilers,1,20,False,True,True,False,False,#criticalrolespoilers,criticalrolespoilers,criticalrolespoilers,2024-05-17
+3,2024-05-17,Xander,8495.0,Xander,xander,xander,xander,xander,1,6,False,False,False,False,False,xander,xander,xander,2024-05-17
+3,2024-05-17,Brother Love,8151.0,Brother Love,brother love,brother love,brother love,brother love,2,12,False,False,False,False,False,brother love,brother love,brother love,2024-05-17
+2,2024-05-17,David DePape,7131.0,David DePape,david depape,david depape,david depape,david depape,2,12,False,False,False,False,False,david depape,david depape,david depape,2024-05-17
+4,2024-05-17,#PGAChampionship,6342.0,#PGAChampionship,#pgachampionship,pgachampionship,pgachampionship,pgachampionship,1,15,False,True,True,False,False,#pgachampionship,pgachampionship,pgachampionship,2024-05-17
+1,2024-05-17,Tfue,6070.0,Tfue,tfue,tfue,tfue,tfue,1,4,False,False,False,False,False,tfue,tfue,tfue,2024-05-17
+1,2024-05-17,Patchy,5485.0,Patchy,patchy,patchy,patchy,patchy,1,6,False,False,False,False,False,patchy,patchy,patchy,2024-05-17
+2,2024-05-17,#NoQuitInNY,5332.0,#NoQuitInNY,#noquitinny,noquitinny,noquitinny,noquitinny,1,10,False,True,True,False,False,#noquitinny,noquitinny,noquitinny,2024-05-17
+1,2024-05-17,#TTPDFirstDraft,5228.0,#TTPDFirstDraft,#ttpdfirstdraft,ttpdfirstdraft,ttpdfirstdraft,ttpdfirstdraft,1,14,False,True,True,False,False,#ttpdfirstdraft,ttpdfirstdraft,ttpdfirstdraft,2024-05-17
+2,2024-05-17,Aliyah,4807.0,Aliyah,aliyah,aliyah,aliyah,aliyah,1,6,False,False,False,False,False,aliyah,aliyah,aliyah,2024-05-17
+5,2024-05-17,#YoungSheldon,4646.0,#YoungSheldon,#youngsheldon,youngsheldon,youngsheldon,youngsheldon,1,12,False,True,True,False,False,#youngsheldon,youngsheldon,youngsheldon,2024-05-17
+1,2024-05-17,Verizon,4484.0,Verizon,verizon,verizon,verizon,verizon,1,7,False,False,False,False,False,verizon,verizon,verizon,2024-05-17
+1,2024-05-17,#CauseChaos,4323.0,#CauseChaos,#causechaos,causechaos,causechaos,causechaos,1,10,False,True,True,False,False,#causechaos,causechaos,causechaos,2024-05-17
+2,2024-05-17,#FridayFeeling,4135.0,#FridayFeeling,#fridayfeeling,fridayfeeling,fridayfeeling,fridayfeeling,1,13,False,True,True,False,False,#fridayfeeling,fridayfeeling,fridayfeeling,2024-05-17
+2,2024-05-17,Martinook,4017.0,Martinook,martinook,martinook,martinook,martinook,1,9,False,False,False,False,False,martinook,martinook,martinook,2024-05-17
+3,2024-05-17,Stewie,3848.0,Stewie,stewie,stewie,stewie,stewie,1,6,False,False,False,False,False,stewie,stewie,stewie,2024-05-17
+2,2024-05-17,Yachty,3581.0,Yachty,yachty,yachty,yachty,yachty,1,6,False,False,False,False,False,yachty,yachty,yachty,2024-05-17
+2,2024-05-17,Breanna Stewart,3366.0,Breanna Stewart,breanna stewart,breanna stewart,breanna stewart,breanna stewart,2,15,False,False,False,False,False,breanna stewart,breanna stewart,breanna stewart,2024-05-17
+1,2024-05-17,Patchy Mix,3256.0,Patchy Mix,patchy mix,patchy mix,patchy mix,patchy mix,2,10,False,False,False,False,False,patchy mix,patchy mix,patchy mix,2024-05-17
+1,2024-05-17,Boosie,3229.0,Boosie,boosie,boosie,boosie,boosie,1,6,False,False,False,False,False,boosie,boosie,boosie,2024-05-17
+2,2024-05-17,Detective Gillis,3198.0,Detective Gillis,detective gillis,detective gillis,detective gillis,detective gillis,2,16,False,False,False,False,False,detective gillis,detective gillis,detective gillis,2024-05-17
+3,2024-05-17,Andersen,3106.0,Andersen,andersen,andersen,andersen,andersen,1,8,False,False,False,False,False,andersen,andersen,andersen,2024-05-17
+4,2024-05-17,#SummerHouse,3096.0,#SummerHouse,#summerhouse,summerhouse,summerhouse,summerhouse,1,11,False,True,True,False,False,#summerhouse,summerhouse,summerhouse,2024-05-17
+1,2024-05-17,Cloak & Dagger,2818.0,Cloak & Dagger,cloak dagger,cloak dagger,cloak dagger,cloak dagger,2,12,False,False,True,False,False,cloak dagger,cloak dagger,cloak dagger,2024-05-17
+1,2024-05-17,Finally Friday,2759.0,Finally Friday,finally friday,finally friday,finally friday,finally friday,2,14,False,False,False,False,False,finally friday,finally friday,finally friday,2024-05-17
+3,2024-05-17,#LetsGoBucs,2699.0,#LetsGoBucs,#letsgobucs,letsgobucs,letsgobucs,letsgobucs,1,10,False,True,True,False,False,#letsgobucs,letsgobucs,letsgobucs,2024-05-17
+1,2024-05-17,Aaron Judge,2505.0,Aaron Judge,aaron judge,aaron judge,aaron judge,aaron judge,2,11,False,False,False,False,False,aaron judge,aaron judge,aaron judge,2024-05-17
+1,2024-05-17,#FridayVibes,2401.0,#FridayVibes,#fridayvibes,fridayvibes,fridayvibes,fridayvibes,1,11,False,True,True,False,False,#fridayvibes,fridayvibes,fridayvibes,2024-05-17
+1,2024-05-17,$PLATE,2329.0,$PLATE,$plate,$plate,plate,plate,1,6,False,False,True,False,False,$plate,$plate,plate,2024-05-17
+1,2024-05-17,Team Builder,2247.0,Team Builder,team builder,team builder,team builder,team builder,2,12,False,False,False,False,False,team builder,team builder,team builder,2024-05-17
+2,2024-05-17,Jaden McDaniels,2245.0,Jaden McDaniels,jaden mcdaniels,jaden mcdaniels,jaden mcdaniels,jaden mcdaniels,2,15,False,False,False,False,False,jaden mcdaniels,jaden mcdaniels,jaden mcdaniels,2024-05-17
+2,2024-05-17,Diddler,1913.0,Diddler,diddler,diddler,diddler,diddler,1,7,False,False,False,False,False,diddler,diddler,diddler,2024-05-17
+2,2024-05-17,JT Miller,1880.0,JT Miller,jt miller,jt miller,jt miller,jt miller,2,9,False,False,False,False,False,jt miller,jt miller,jt miller,2024-05-17
+3,2024-05-17,#askBillie,1795.0,#askBillie,#askbillie,askbillie,askbillie,askbillie,1,9,False,True,True,False,False,#askbillie,askbillie,askbillie,2024-05-17
+1,2024-05-17,T-Mobile,1775.0,T-Mobile,t mobile,t mobile,t mobile,t mobile,2,8,False,False,True,False,False,t mobile,t mobile,t mobile,2024-05-17
+1,2024-05-17,#fridaymorning,1698.0,#fridaymorning,#fridaymorning,fridaymorning,fridaymorning,fridaymorning,1,13,False,True,True,False,False,#fridaymorning,fridaymorning,fridaymorning,2024-05-17
+2,2024-05-17,Jeff Darlington,1659.0,Jeff Darlington,jeff darlington,jeff darlington,jeff darlington,jeff darlington,2,15,False,False,False,False,False,jeff darlington,jeff darlington,jeff darlington,2024-05-17
+1,2024-05-17,Jung Hoo Lee,1146.0,Jung Hoo Lee,jung hoo lee,jung hoo lee,jung hoo lee,jung hoo lee,3,12,False,False,False,False,False,jung hoo lee,jung hoo lee,jung hoo lee,2024-05-17
+3,2024-05-17,Kyle Hendricks,1136.0,Kyle Hendricks,kyle hendricks,kyle hendricks,kyle hendricks,kyle hendricks,2,14,False,False,False,False,False,kyle hendricks,kyle hendricks,kyle hendricks,2024-05-17
+2,2024-05-24,No. Twitter,1193726.0,No. Twitter,no twitter,no twitter,no twitter,no twitter,2,10,False,False,True,False,False,no twitter,no twitter,no twitter,2024-05-24
+19,2024-05-24,Bronx,985431.0,Bronx,bronx,bronx,bronx,bronx,1,5,False,False,False,False,False,bronx,bronx,bronx,2024-05-24
+8,2024-05-24,#RightPlaceWrongPerson,670454.0,#RightPlaceWrongPerson,#rightplacewrongperson,rightplacewrongperson,rightplacewrongperson,rightplacewrongperson,1,21,False,True,True,False,False,#rightplacewrongperson,rightplacewrongperson,rightplacewrongperson,2024-05-24
+5,2024-05-24,#RM_LOST,505493.0,#RM_LOST,#rm lost,rm lost,rm lost,rm lost,2,7,False,True,True,False,False,#rm lost,rm lost,rm lost,2024-05-24
+10,2024-05-24,namjoon,501094.0,namjoon,namjoon,namjoon,namjoon,namjoon,1,7,False,False,False,False,False,namjoon,namjoon,namjoon,2024-05-24
+3,2024-05-24,#23point5FinalEP,469679.0,#23point5FinalEP,#23point5finalep,23point5finalep,23point5finalep,23point5finalep,1,15,False,True,True,False,False,#23point5finalep,23point5finalep,23point5finalep,2024-05-24
+2,2024-05-24,Doge,315347.0,Doge,doge,doge,doge,doge,1,4,False,False,False,False,False,doge,doge,doge,2024-05-24
+7,2024-05-24,Xavi,290850.0,Xavi,xavi,xavi,xavi,xavi,1,4,False,False,False,False,False,xavi,xavi,xavi,2024-05-24
+1,2024-05-24,LOVTITUDE FANMEETING,279698.0,LOVTITUDE FANMEETING,lovtitude fanmeeting,lovtitude fanmeeting,lovtitude fanmeeting,lovtitude fanmeeting,2,20,False,False,False,False,False,lovtitude fanmeeting,lovtitude fanmeeting,lovtitude fanmeeting,2024-05-24
+2,2024-05-24,#NARSBLUSHxFreenBecky,279419.0,#NARSBLUSHxFreenBecky,#narsblushxfreenbecky,narsblushxfreenbecky,narsblushxfreenbecky,narsblushxfreenbecky,1,20,False,True,True,False,False,#narsblushxfreenbecky,narsblushxfreenbecky,narsblushxfreenbecky,2024-05-24
+2,2024-05-24,FB MADE YOU BLUSH,259580.0,FB MADE YOU BLUSH,fb made you blush,fb made you blush,fb made you blush,fb made you blush,4,17,False,False,False,False,False,fb made you blush,fb made you blush,fb made you blush,2024-05-24
+12,2024-05-24,Kabosu,207782.0,Kabosu,kabosu,kabosu,kabosu,kabosu,1,6,False,False,False,False,False,kabosu,kabosu,kabosu,2024-05-24
+4,2024-05-24,The ICJ,128291.0,The ICJ,the icj,the icj,the icj,the icj,2,7,False,False,False,False,False,the icj,the icj,the icj,2024-05-24
+1,2024-05-24,ETH ETF,123537.0,ETH ETF,eth etf,eth etf,eth etf,eth etf,2,7,False,False,False,False,False,eth etf,eth etf,eth etf,2024-05-24
+1,2024-05-24,Travis,123025.0,Travis,travis,travis,travis,travis,1,6,False,False,False,False,False,travis,travis,travis,2024-05-24
+2,2024-05-24,Flick,113576.0,Flick,flick,flick,flick,flick,1,5,False,False,False,False,False,flick,flick,flick,2024-05-24
+7,2024-05-24,Gaga,109084.0,Gaga,gaga,gaga,gaga,gaga,1,4,False,False,False,False,False,gaga,gaga,gaga,2024-05-24
+1,2024-05-24,QSMP,88250.0,QSMP,qsmp,qsmp,qsmp,qsmp,1,4,False,False,False,False,False,qsmp,qsmp,qsmp,2024-05-24
+12,2024-05-24,Memorial Day,87471.0,Memorial Day,memorial day,memorial day,memorial day,memorial day,2,12,False,False,False,False,False,memorial day,memorial day,memorial day,2024-05-24
+8,2024-05-24,Clancy,76935.0,Clancy,clancy,clancy,clancy,clancy,1,6,False,False,False,False,False,clancy,clancy,clancy,2024-05-24
+4,2024-05-24,Laporta,75627.0,Laporta,laporta,laporta,laporta,laporta,1,7,False,False,False,False,False,laporta,laporta,laporta,2024-05-24
+2,2024-05-24,Ten Hag,70692.0,Ten Hag,ten hag,ten hag,ten hag,ten hag,2,7,False,False,False,False,False,ten hag,ten hag,ten hag,2024-05-24
+7,2024-05-24,tyler,69850.0,tyler,tyler,tyler,tyler,tyler,1,5,False,False,False,False,False,tyler,tyler,tyler,2024-05-24
+13,2024-05-24,Kevin Hart,64685.0,Kevin Hart,kevin hart,kevin hart,kevin hart,kevin hart,2,10,False,False,False,False,False,kevin hart,kevin hart,kevin hart,2024-05-24
+1,2024-05-24,#BlackOps6,61391.0,#BlackOps6,#blackops6,blackops6,blackops6,blackops6,1,9,False,True,True,False,False,#blackops6,blackops6,blackops6,2024-05-24
+3,2024-05-24,#LisbonTStheErasTour,58469.0,#LisbonTStheErasTour,#lisbontstheerastour,lisbontstheerastour,lisbontstheerastour,lisbontstheerastour,1,19,False,True,True,False,False,#lisbontstheerastour,lisbontstheerastour,lisbontstheerastour,2024-05-24
+4,2024-05-24,Good Friday,55172.0,Good Friday,good friday,good friday,good friday,good friday,2,11,False,False,False,False,False,good friday,good friday,good friday,2024-05-24
+4,2024-05-24,#ThinkDeeply,50248.0,#ThinkDeeply,#thinkdeeply,thinkdeeply,thinkdeeply,thinkdeeply,1,11,False,True,True,False,False,#thinkdeeply,thinkdeeply,thinkdeeply,2024-05-24
+8,2024-05-24,Kai Cenat,50069.0,Kai Cenat,kai cenat,kai cenat,kai cenat,kai cenat,2,9,False,False,False,False,False,kai cenat,kai cenat,kai cenat,2024-05-24
+1,2024-05-24,Waking,45722.0,Waking,waking,waking,waking,waking,1,6,False,False,False,False,False,waking,waking,waking,2024-05-24
+6,2024-05-24,Tatum,44821.0,Tatum,tatum,tatum,tatum,tatum,1,5,False,False,False,False,False,tatum,tatum,tatum,2024-05-24
+7,2024-05-24,Haiti,41479.0,Haiti,haiti,haiti,haiti,haiti,1,5,False,False,False,False,False,haiti,haiti,haiti,2024-05-24
+4,2024-05-24,Dealing,40380.0,Dealing,dealing,dealing,dealing,dealing,1,7,False,False,False,False,False,dealing,dealing,dealing,2024-05-24
+4,2024-05-24,twenty one pilots,37282.0,twenty one pilots,twenty one pilots,twenty one pilots,twenty one pilots,twenty one pilots,3,17,False,False,False,False,False,twenty one pilots,twenty one pilots,twenty one pilots,2024-05-24
+2,2024-05-24,THE WAY I LOVED YOU,35555.0,THE WAY I LOVED YOU,the way i loved you,the way i loved you,the way i loved you,the way i loved you,5,19,False,False,False,False,False,the way i loved you,the way i loved you,the way i loved you,2024-05-24
+2,2024-05-24,Tier 1,34772.0,Tier 1,tier 1,tier 1,tier 1,tier 1,2,6,False,False,False,False,False,tier 1,tier 1,tier 1,2024-05-24
+3,2024-05-24,Accidentally,34628.0,Accidentally,accidentally,accidentally,accidentally,accidentally,1,12,False,False,False,False,False,accidentally,accidentally,accidentally,2024-05-24
+5,2024-05-24,#911onABC,33116.0,#911onABC,#911onabc,911onabc,911onabc,911onabc,1,8,False,True,True,False,False,#911onabc,911onabc,911onabc,2024-05-24
+6,2024-05-24,Hochul,32635.0,Hochul,hochul,hochul,hochul,hochul,1,6,False,False,False,False,False,hochul,hochul,hochul,2024-05-24
+8,2024-05-24,Super Size Me,32425.0,Super Size Me,super size me,super size me,super size me,super size me,3,13,False,False,False,False,False,super size me,super size me,super size me,2024-05-24
+9,2024-05-24,Morgan Spurlock,32101.0,Morgan Spurlock,morgan spurlock,morgan spurlock,morgan spurlock,morgan spurlock,2,15,False,False,False,False,False,morgan spurlock,morgan spurlock,morgan spurlock,2024-05-24
+6,2024-05-24,#RPWP,31758.0,#RPWP,#rpwp,rpwp,rpwp,rpwp,1,4,False,True,True,False,False,#rpwp,rpwp,rpwp,2024-05-24
+3,2024-05-24,Angel Reese,31732.0,Angel Reese,angel reese,angel reese,angel reese,angel reese,2,11,False,False,False,False,False,angel reese,angel reese,angel reese,2024-05-24
+4,2024-05-24,Furiosa,30238.0,Furiosa,furiosa,furiosa,furiosa,furiosa,1,7,False,False,False,False,False,furiosa,furiosa,furiosa,2024-05-24
+11,2024-05-24,BBL Drizzy,28028.0,BBL Drizzy,bbl drizzy,bbl drizzy,bbl drizzy,bbl drizzy,2,10,False,False,False,False,False,bbl drizzy,bbl drizzy,bbl drizzy,2024-05-24
+1,2024-05-24,Turner,27332.0,Turner,turner,turner,turner,turner,1,6,False,False,False,False,False,turner,turner,turner,2024-05-24
+2,2024-05-24,#Station19,25398.0,#Station19,#station19,station19,station19,station19,1,9,False,True,True,False,False,#station19,station19,station19,2024-05-24
+7,2024-05-24,Jaylen Brown,24886.0,Jaylen Brown,jaylen brown,jaylen brown,jaylen brown,jaylen brown,2,12,False,False,False,False,False,jaylen brown,jaylen brown,jaylen brown,2024-05-24
+5,2024-05-24,#NickiAnnouncement,24845.0,#NickiAnnouncement,#nickiannouncement,nickiannouncement,nickiannouncement,nickiannouncement,1,17,False,True,True,False,False,#nickiannouncement,nickiannouncement,nickiannouncement,2024-05-24
+4,2024-05-24,Uvalde,24794.0,Uvalde,uvalde,uvalde,uvalde,uvalde,1,6,False,False,False,False,False,uvalde,uvalde,uvalde,2024-05-24
+1,2024-05-24,Buck,23898.0,Buck,buck,buck,buck,buck,1,4,False,False,False,False,False,buck,buck,buck,2024-05-24
+4,2024-05-24,Venmo,23743.0,Venmo,venmo,venmo,venmo,venmo,1,5,False,False,False,False,False,venmo,venmo,venmo,2024-05-24
+8,2024-05-24,Sexyy Red,22227.0,Sexyy Red,sexyy red,sexyy red,sexyy red,sexyy red,2,9,False,False,False,False,False,sexyy red,sexyy red,sexyy red,2024-05-24
+1,2024-05-24,HOW SWEET OUT NOW,21824.0,HOW SWEET OUT NOW,how sweet out now,how sweet out now,how sweet out now,how sweet out now,4,17,False,False,False,False,False,how sweet out now,how sweet out now,how sweet out now,2024-05-24
+3,2024-05-24,Sheff G,21421.0,Sheff G,sheff g,sheff g,sheff g,sheff g,2,7,False,False,False,False,False,sheff g,sheff g,sheff g,2024-05-24
+1,2024-05-24,$APTR,21086.0,$APTR,$aptr,$aptr,aptr,aptr,1,5,False,False,True,False,False,$aptr,$aptr,aptr,2024-05-24
+8,2024-05-24,#FursuitFriday,20390.0,#FursuitFriday,#fursuitfriday,fursuitfriday,fursuitfriday,fursuitfriday,1,13,False,True,True,False,False,#fursuitfriday,fursuitfriday,fursuitfriday,2024-05-24
+7,2024-05-24,Tyga,19935.0,Tyga,tyga,tyga,tyga,tyga,1,4,False,False,False,False,False,tyga,tyga,tyga,2024-05-24
+6,2024-05-24,Knives Out,19134.0,Knives Out,knives out,knives out,knives out,knives out,2,10,False,False,False,False,False,knives out,knives out,knives out,2024-05-24
+3,2024-05-24,#GenshinSpecialProgram,18927.0,#GenshinSpecialProgram,#genshinspecialprogram,genshinspecialprogram,genshinspecialprogram,genshinspecialprogram,1,21,False,True,True,False,False,#genshinspecialprogram,genshinspecialprogram,genshinspecialprogram,2024-05-24
+2,2024-05-24,Media Matters,18887.0,Media Matters,media matters,media matters,media matters,media matters,2,13,False,False,False,False,False,media matters,media matters,media matters,2024-05-24
+1,2024-05-24,New Yorkers,18369.0,New Yorkers,new yorkers,new yorkers,new yorkers,new yorkers,2,11,False,False,False,False,False,new yorkers,new yorkers,new yorkers,2024-05-24
+2,2024-05-24,Natlan,18128.0,Natlan,natlan,natlan,natlan,natlan,1,6,False,False,False,False,False,natlan,natlan,natlan,2024-05-24
+1,2024-05-24,$CAT,15813.0,$CAT,$cat,$cat,cat,cat,1,4,False,False,True,False,False,$cat,$cat,cat,2024-05-24
+1,2024-05-24,Travis Scott,15013.0,Travis Scott,travis scott,travis scott,travis scott,travis scott,2,12,False,False,False,False,False,travis scott,travis scott,travis scott,2024-05-24
+2,2024-05-24,COME BACK BE HERE,14287.0,COME BACK BE HERE,come back be here,come back be here,come back be here,come back be here,4,17,False,False,False,False,False,come back be here,come back be here,come back be here,2024-05-24
+2,2024-05-24,Otter,13637.0,Otter,otter,otter,otter,otter,1,5,False,False,False,False,False,otter,otter,otter,2024-05-24
+4,2024-05-24,#BidenFightsPriceGouging,13327.0,#BidenFightsPriceGouging,#bidenfightspricegouging,bidenfightspricegouging,bidenfightspricegouging,bidenfightspricegouging,1,23,False,True,True,False,False,#bidenfightspricegouging,bidenfightspricegouging,bidenfightspricegouging,2024-05-24
+5,2024-05-24,Kelce,13255.0,Kelce,kelce,kelce,kelce,kelce,1,5,False,False,False,False,False,kelce,kelce,kelce,2024-05-24
+1,2024-05-24,Jamaica,13054.0,Jamaica,jamaica,jamaica,jamaica,jamaica,1,7,False,False,False,False,False,jamaica,jamaica,jamaica,2024-05-24
+6,2024-05-24,Kylie,12977.0,Kylie,kylie,kylie,kylie,kylie,1,5,False,False,False,False,False,kylie,kylie,kylie,2024-05-24
+1,2024-05-24,143 Democrats,12953.0,143 Democrats,143 democrats,143 democrats,143 democrats,143 democrats,2,13,False,False,False,False,False,143 democrats,143 democrats,143 democrats,2024-05-24
+3,2024-05-24,Lethal Company,12702.0,Lethal Company,lethal company,lethal company,lethal company,lethal company,2,14,False,False,False,False,False,lethal company,lethal company,lethal company,2024-05-24
+1,2024-05-24,U My Everything,12617.0,U My Everything,u my everything,u my everything,u my everything,u my everything,3,15,False,False,False,False,False,u my everything,u my everything,u my everything,2024-05-24
+3,2024-05-24,Benoit Blanc,11920.0,Benoit Blanc,benoit blanc,benoit blanc,benoit blanc,benoit blanc,2,12,False,False,False,False,False,benoit blanc,benoit blanc,benoit blanc,2024-05-24
+1,2024-05-24,Jayson Tatum,11508.0,Jayson Tatum,jayson tatum,jayson tatum,jayson tatum,jayson tatum,2,12,False,False,False,False,False,jayson tatum,jayson tatum,jayson tatum,2024-05-24
+4,2024-05-24,Nicolle,10660.0,Nicolle,nicolle,nicolle,nicolle,nicolle,1,7,False,False,False,False,False,nicolle,nicolle,nicolle,2024-05-24
+8,2024-05-24,McDavid,10060.0,McDavid,mcdavid,mcdavid,mcdavid,mcdavid,1,7,False,False,False,False,False,mcdavid,mcdavid,mcdavid,2024-05-24
+1,2024-05-24,Wake Up Dead Man,10017.0,Wake Up Dead Man,wake up dead man,wake up dead man,wake up dead man,wake up dead man,4,16,False,False,False,False,False,wake up dead man,wake up dead man,wake up dead man,2024-05-24
+2,2024-05-24,FRESH OUT THE SLAMMER,9526.0,FRESH OUT THE SLAMMER,fresh out the slammer,fresh out the slammer,fresh out the slammer,fresh out the slammer,4,21,False,False,False,False,False,fresh out the slammer,fresh out the slammer,fresh out the slammer,2024-05-24
+4,2024-05-24,RIP Doge,9174.0,RIP Doge,rip doge,rip doge,rip doge,rip doge,2,8,False,False,False,False,False,rip doge,rip doge,rip doge,2024-05-24
+1,2024-05-24,Garry,8803.0,Garry,garry,garry,garry,garry,1,5,False,False,False,False,False,garry,garry,garry,2024-05-24
+9,2024-05-24,Vince Staples,8599.0,Vince Staples,vince staples,vince staples,vince staples,vince staples,2,13,False,False,False,False,False,vince staples,vince staples,vince staples,2024-05-24
+1,2024-05-24,#twentyonepilots,8582.0,#twentyonepilots,#twentyonepilots,twentyonepilots,twentyonepilots,twentyonepilots,1,15,False,True,True,False,False,#twentyonepilots,twentyonepilots,twentyonepilots,2024-05-24
+3,2024-05-24,Siakam,8494.0,Siakam,siakam,siakam,siakam,siakam,1,6,False,False,False,False,False,siakam,siakam,siakam,2024-05-24
+1,2024-05-24,Staten Island,8325.0,Staten Island,staten island,staten island,staten island,staten island,2,13,False,False,False,False,False,staten island,staten island,staten island,2024-05-24
+1,2024-05-24,Brito,8285.0,Brito,brito,brito,brito,brito,1,5,False,False,False,False,False,brito,brito,brito,2024-05-24
+1,2024-05-24,#furiosa,7564.0,#furiosa,#furiosa,furiosa,furiosa,furiosa,1,7,False,True,True,False,False,#furiosa,furiosa,furiosa,2024-05-24
+1,2024-05-24,Katy Tur,7435.0,Katy Tur,katy tur,katy tur,katy tur,katy tur,2,8,False,False,False,False,False,katy tur,katy tur,katy tur,2024-05-24
+3,2024-05-24,$BCCOIN,7375.0,$BCCOIN,$bccoin,$bccoin,bccoin,bccoin,1,7,False,False,True,False,False,$bccoin,$bccoin,bccoin,2024-05-24
+2,2024-05-24,#skytown,7164.0,#skytown,#skytown,skytown,skytown,skytown,1,7,False,True,True,False,False,#skytown,skytown,skytown,2024-05-24
+3,2024-05-24,$FDOGE,6831.0,$FDOGE,$fdoge,$fdoge,fdoge,fdoge,1,6,False,False,True,False,False,$fdoge,$fdoge,fdoge,2024-05-24
+5,2024-05-24,#CriticalRoleSpoilers,6827.0,#CriticalRoleSpoilers,#criticalrolespoilers,criticalrolespoilers,criticalrolespoilers,criticalrolespoilers,1,20,False,True,True,False,False,#criticalrolespoilers,criticalrolespoilers,criticalrolespoilers,2024-05-24
+6,2024-05-24,Rush Hour,6802.0,Rush Hour,rush hour,rush hour,rush hour,rush hour,2,9,False,False,False,False,False,rush hour,rush hour,rush hour,2024-05-24
+2,2024-05-24,HIGH INFIDELITY,6584.0,HIGH INFIDELITY,high infidelity,high infidelity,high infidelity,high infidelity,2,15,False,False,False,False,False,high infidelity,high infidelity,high infidelity,2024-05-24
+4,2024-05-24,#TexasHockey,6537.0,#TexasHockey,#texashockey,texashockey,texashockey,texashockey,1,11,False,True,True,False,False,#texashockey,texashockey,texashockey,2024-05-24
+2,2024-05-24,#TTPDLiveFromParis,6436.0,#TTPDLiveFromParis,#ttpdlivefromparis,ttpdlivefromparis,ttpdlivefromparis,ttpdlivefromparis,1,17,False,True,True,False,False,#ttpdlivefromparis,ttpdlivefromparis,ttpdlivefromparis,2024-05-24
+2,2024-05-24,THE OTHER SIDE OF THE DOOR,6425.0,THE OTHER SIDE OF THE DOOR,the other side of the door,the other side of the door,the other side of the door,the other side of the door,6,26,False,False,False,False,False,the other side of the door,the other side of the door,the other side of the door,2024-05-24
+2,2024-05-24,Tier 2,6297.0,Tier 2,tier 2,tier 2,tier 2,tier 2,2,6,False,False,False,False,False,tier 2,tier 2,tier 2,2024-05-24
+2,2024-05-24,Higgins,6166.0,Higgins,higgins,higgins,higgins,higgins,1,7,False,False,False,False,False,higgins,higgins,higgins,2024-05-24
+1,2024-05-24,#okwx,5864.0,#okwx,#okwx,okwx,okwx,okwx,1,4,False,True,True,False,False,#okwx,okwx,okwx,2024-05-24
+1,2024-05-24,$jirt,5580.0,$jirt,$jirt,$jirt,jirt,jirt,1,5,False,False,True,False,False,$jirt,$jirt,jirt,2024-05-24
+5,2024-05-24,Spence,5540.0,Spence,spence,spence,spence,spence,1,6,False,False,False,False,False,spence,spence,spence,2024-05-24
+2,2024-05-24,#FridayMotivation,5163.0,#FridayMotivation,#fridaymotivation,fridaymotivation,fridaymotivation,fridaymotivation,1,16,False,True,True,False,False,#fridaymotivation,fridaymotivation,fridaymotivation,2024-05-24
+1,2024-05-24,DeWine,5087.0,DeWine,dewine,dewine,dewine,dewine,1,6,False,False,False,False,False,dewine,dewine,dewine,2024-05-24
+4,2024-05-24,#PMSLive,5056.0,#PMSLive,#pmslive,pmslive,pmslive,pmslive,1,7,False,True,True,False,False,#pmslive,pmslive,pmslive,2024-05-24
+1,2024-05-24,Rockies,4726.0,Rockies,rockies,rockies,rockies,rockies,1,7,False,False,False,False,False,rockies,rockies,rockies,2024-05-24
+2,2024-05-24,Glass Onion,4709.0,Glass Onion,glass onion,glass onion,glass onion,glass onion,2,11,False,False,False,False,False,glass onion,glass onion,glass onion,2024-05-24
+1,2024-05-24,marisol,4631.0,marisol,marisol,marisol,marisol,marisol,1,7,False,False,False,False,False,marisol,marisol,marisol,2024-05-24
+4,2024-05-24,Rick Carlisle,4521.0,Rick Carlisle,rick carlisle,rick carlisle,rick carlisle,rick carlisle,2,13,False,False,False,False,False,rick carlisle,rick carlisle,rick carlisle,2024-05-24
+1,2024-05-24,#DifferentHere,4467.0,#DifferentHere,#differenthere,differenthere,differenthere,differenthere,1,13,False,True,True,False,False,#differenthere,differenthere,differenthere,2024-05-24
+1,2024-05-24,#AEWRampage,4381.0,#AEWRampage,#aewrampage,aewrampage,aewrampage,aewrampage,1,10,False,True,True,False,False,#aewrampage,aewrampage,aewrampage,2024-05-24
+1,2024-05-24,Rowan,4144.0,Rowan,rowan,rowan,rowan,rowan,1,5,False,False,False,False,False,rowan,rowan,rowan,2024-05-24
+1,2024-05-24,#FridayFeeling,4139.0,#FridayFeeling,#fridayfeeling,fridayfeeling,fridayfeeling,fridayfeeling,1,13,False,True,True,False,False,#fridayfeeling,fridayfeeling,fridayfeeling,2024-05-24
+2,2024-05-24,#FridayVibes,3970.0,#FridayVibes,#fridayvibes,fridayvibes,fridayvibes,fridayvibes,1,11,False,True,True,False,False,#fridayvibes,fridayvibes,fridayvibes,2024-05-24
+1,2024-05-24,Tillman,3922.0,Tillman,tillman,tillman,tillman,tillman,1,7,False,False,False,False,False,tillman,tillman,tillman,2024-05-24
+1,2024-05-24,Jrue,3809.0,Jrue,jrue,jrue,jrue,jrue,1,4,False,False,False,False,False,jrue,jrue,jrue,2024-05-24
+1,2024-05-24,$JIRT,3732.0,$JIRT,$jirt,$jirt,jirt,jirt,1,5,False,False,True,False,False,$jirt,$jirt,jirt,2024-05-24
+3,2024-05-24,Brissett,3704.0,Brissett,brissett,brissett,brissett,brissett,1,8,False,False,False,False,False,brissett,brissett,brissett,2024-05-24
+2,2024-05-24,Chicago Sky,3698.0,Chicago Sky,chicago sky,chicago sky,chicago sky,chicago sky,2,11,False,False,False,False,False,chicago sky,chicago sky,chicago sky,2024-05-24
+2,2024-05-24,Seguin,3637.0,Seguin,seguin,seguin,seguin,seguin,1,6,False,False,False,False,False,seguin,seguin,seguin,2024-05-24
+1,2024-05-24,Wheel of Fortune,3432.0,Wheel of Fortune,wheel of fortune,wheel of fortune,wheel of fortune,wheel of fortune,3,16,False,False,False,False,False,wheel of fortune,wheel of fortune,wheel of fortune,2024-05-24
+3,2024-05-24,Myles Turner,3422.0,Myles Turner,myles turner,myles turner,myles turner,myles turner,2,12,False,False,False,False,False,myles turner,myles turner,myles turner,2024-05-24
+2,2024-05-24,#NIKKEGoldenCoinRush,3315.0,#NIKKEGoldenCoinRush,#nikkegoldencoinrush,nikkegoldencoinrush,nikkegoldencoinrush,nikkegoldencoinrush,1,19,False,True,True,False,False,#nikkegoldencoinrush,nikkegoldencoinrush,nikkegoldencoinrush,2024-05-24
+1,2024-05-24,RSBN,3179.0,RSBN,rsbn,rsbn,rsbn,rsbn,1,4,False,False,False,False,False,rsbn,rsbn,rsbn,2024-05-24
+1,2024-05-24,TWILY,3103.0,TWILY,twily,twily,twily,twily,1,5,False,False,False,False,False,twily,twily,twily,2024-05-24
+2,2024-05-24,#Celtics,3028.0,#Celtics,#celtics,celtics,celtics,celtics,1,7,False,True,True,False,False,#celtics,celtics,celtics,2024-05-24
+4,2024-05-24,Fundora,2962.0,Fundora,fundora,fundora,fundora,fundora,1,7,False,False,False,False,False,fundora,fundora,fundora,2024-05-24
+3,2024-05-24,#bucciovertimechallenge,2907.0,#bucciovertimechallenge,#bucciovertimechallenge,bucciovertimechallenge,bucciovertimechallenge,bucciovertimechallenge,1,22,False,True,True,False,False,#bucciovertimechallenge,bucciovertimechallenge,bucciovertimechallenge,2024-05-24
+1,2024-05-24,McGee,2788.0,McGee,mcgee,mcgee,mcgee,mcgee,1,5,False,False,False,False,False,mcgee,mcgee,mcgee,2024-05-24
+1,2024-05-24,Ian Garry,2776.0,Ian Garry,ian garry,ian garry,ian garry,ian garry,2,9,False,False,False,False,False,ian garry,ian garry,ian garry,2024-05-24
+1,2024-05-24,#greysanatomy,2576.0,#greysanatomy,#greysanatomy,greysanatomy,greysanatomy,greysanatomy,1,12,False,True,True,False,False,#greysanatomy,greysanatomy,greysanatomy,2024-05-24
+1,2024-05-24,Hauser,2462.0,Hauser,hauser,hauser,hauser,hauser,1,6,False,False,False,False,False,hauser,hauser,hauser,2024-05-24
+1,2024-05-24,Duff,2331.0,Duff,duff,duff,duff,duff,1,4,False,False,False,False,False,duff,duff,duff,2024-05-24
+3,2024-05-24,Rich Paul,2261.0,Rich Paul,rich paul,rich paul,rich paul,rich paul,2,9,False,False,False,False,False,rich paul,rich paul,rich paul,2024-05-24
+1,2024-05-24,#SummerHouse,2081.0,#SummerHouse,#summerhouse,summerhouse,summerhouse,summerhouse,1,11,False,True,True,False,False,#summerhouse,summerhouse,summerhouse,2024-05-24
+1,2024-05-24,Kornet,2028.0,Kornet,kornet,kornet,kornet,kornet,1,6,False,False,False,False,False,kornet,kornet,kornet,2024-05-24
+1,2024-05-24,$BROOT,1781.0,$BROOT,$broot,$broot,broot,broot,1,6,False,False,True,False,False,$broot,$broot,broot,2024-05-24
+2,2024-05-24,Kakko,1673.0,Kakko,kakko,kakko,kakko,kakko,1,5,False,False,False,False,False,kakko,kakko,kakko,2024-05-24
+1,2024-05-24,Chaz Lanier,1650.0,Chaz Lanier,chaz lanier,chaz lanier,chaz lanier,chaz lanier,2,11,False,False,False,False,False,chaz lanier,chaz lanier,chaz lanier,2024-05-24
+1,2024-05-24,#JSFamilyVacation,1400.0,#JSFamilyVacation,#jsfamilyvacation,jsfamilyvacation,jsfamilyvacation,jsfamilyvacation,1,16,False,True,True,False,False,#jsfamilyvacation,jsfamilyvacation,jsfamilyvacation,2024-05-24
+1,2024-05-24,Safaree,1359.0,Safaree,safaree,safaree,safaree,safaree,1,7,False,False,False,False,False,safaree,safaree,safaree,2024-05-24
+1,2024-05-24,#NuralNetwork,1293.0,#NuralNetwork,#nuralnetwork,nuralnetwork,nuralnetwork,nuralnetwork,1,12,False,True,True,False,False,#nuralnetwork,nuralnetwork,nuralnetwork,2024-05-24
+1,2024-05-24,#wheeloffortune,1170.0,#wheeloffortune,#wheeloffortune,wheeloffortune,wheeloffortune,wheeloffortune,1,14,False,True,True,False,False,#wheeloffortune,wheeloffortune,wheeloffortune,2024-05-24
+1,2024-05-24,Billy Zane,1145.0,Billy Zane,billy zane,billy zane,billy zane,billy zane,2,10,False,False,False,False,False,billy zane,billy zane,billy zane,2024-05-24
+1,2024-05-24,#ANIMALWELL,1078.0,#ANIMALWELL,#animalwell,animalwell,animalwell,animalwell,1,10,False,True,True,False,False,#animalwell,animalwell,animalwell,2024-05-24
+18,2024-03-26,Diddy,1072529.0,Diddy,diddy,diddy,diddy,diddy,1,5,False,False,False,False,False,diddy,diddy,diddy,2024-03-26
+7,2024-03-26,Ship,552838.0,Ship,ship,ship,ship,ship,1,4,False,False,False,False,False,ship,ship,ship,2024-03-26
+5,2024-03-26,#Chapter27WithLalisa,491432.0,#Chapter27WithLalisa,#chapter27withlalisa,chapter27withlalisa,chapter27withlalisa,chapter27withlalisa,1,19,False,True,True,False,False,#chapter27withlalisa,chapter27withlalisa,chapter27withlalisa,2024-03-26
+5,2024-03-26,#AllRounderLisaDay,463616.0,#AllRounderLisaDay,#allrounderlisaday,allrounderlisaday,allrounderlisaday,allrounderlisaday,1,17,False,True,True,False,False,#allrounderlisaday,allrounderlisaday,allrounderlisaday,2024-03-26
+6,2024-03-26,Maria,308000.0,Maria,maria,maria,maria,maria,1,5,False,False,False,False,False,maria,maria,maria,2024-03-26
+2,2024-03-26,Endrick,237462.0,Endrick,endrick,endrick,endrick,endrick,1,7,False,False,False,False,False,endrick,endrick,endrick,2024-03-26
+1,2024-03-26,Mayor,237418.0,Mayor,mayor,mayor,mayor,mayor,1,5,False,False,False,False,False,mayor,mayor,mayor,2024-03-26
+8,2024-03-26,Francis Scott,226063.0,Francis Scott,francis scott,francis scott,francis scott,francis scott,2,13,False,False,False,False,False,francis scott,francis scott,francis scott,2024-03-26
+4,2024-03-26,The Baltimore,208173.0,The Baltimore,the baltimore,the baltimore,the baltimore,the baltimore,2,13,False,False,False,False,False,the baltimore,the baltimore,the baltimore,2024-03-26
+12,2024-03-26,#WWERaw,181727.0,#WWERaw,#wweraw,wweraw,wweraw,wweraw,1,6,False,True,True,False,False,#wweraw,wweraw,wweraw,2024-03-26
+1,2024-03-26,More Info,164657.0,More Info,more info,more info,more info,more info,2,9,False,False,False,False,False,more info,more info,more info,2024-03-26
+1,2024-03-26,Cargo,120355.0,Cargo,cargo,cargo,cargo,cargo,1,5,False,False,False,False,False,cargo,cargo,cargo,2024-03-26
+7,2024-03-26,Pete,109218.0,Pete,pete,pete,pete,pete,1,4,False,False,False,False,False,pete,pete,pete,2024-03-26
+3,2024-03-26,Baltimore Maryland,104674.0,Baltimore Maryland,baltimore maryland,baltimore maryland,baltimore maryland,baltimore maryland,2,18,False,False,False,False,False,baltimore maryland,baltimore maryland,baltimore maryland,2024-03-26
+10,2024-03-26,The Rock,97352.0,The Rock,the rock,the rock,the rock,the rock,2,8,False,False,False,False,False,the rock,the rock,the rock,2024-03-26
+3,2024-03-26,Lamine,96123.0,Lamine,lamine,lamine,lamine,lamine,1,6,False,False,False,False,False,lamine,lamine,lamine,2024-03-26
+1,2024-03-26,Julian Assange,91085.0,Julian Assange,julian assange,julian assange,julian assange,julian assange,2,14,False,False,False,False,False,julian assange,julian assange,julian assange,2024-03-26
+3,2024-03-26,Drew,89525.0,Drew,drew,drew,drew,drew,1,4,False,False,False,False,False,drew,drew,drew,2024-03-26
+1,2024-03-26,Lamine Yamal,87136.0,Lamine Yamal,lamine yamal,lamine yamal,lamine yamal,lamine yamal,2,12,False,False,False,False,False,lamine yamal,lamine yamal,lamine yamal,2024-03-26
+5,2024-03-26,Epstein,84483.0,Epstein,epstein,epstein,epstein,epstein,1,7,False,False,False,False,False,epstein,epstein,epstein,2024-03-26
+2,2024-03-26,Rachel,81703.0,Rachel,rachel,rachel,rachel,rachel,1,6,False,False,False,False,False,rachel,rachel,rachel,2024-03-26
+1,2024-03-26,Feds,78502.0,Feds,feds,feds,feds,feds,1,4,False,False,False,False,False,feds,feds,feds,2024-03-26
+1,2024-03-26,Grass,69792.0,Grass,grass,grass,grass,grass,1,5,False,False,False,False,False,grass,grass,grass,2024-03-26
+2,2024-03-26,Homeland Security,63735.0,Homeland Security,homeland security,homeland security,homeland security,homeland security,2,17,False,False,False,False,False,homeland security,homeland security,homeland security,2024-03-26
+10,2024-03-26,#TheBachelor,60067.0,#TheBachelor,#thebachelor,thebachelor,thebachelor,thebachelor,1,11,False,True,True,False,False,#thebachelor,thebachelor,thebachelor,2024-03-26
+11,2024-03-26,Dali,59867.0,Dali,dali,dali,dali,dali,1,4,False,False,False,False,False,dali,dali,dali,2024-03-26
+12,2024-03-26,Singapore,57925.0,Singapore,singapore,singapore,singapore,singapore,1,9,False,False,False,False,False,singapore,singapore,singapore,2024-03-26
+6,2024-03-26,Joey,56350.0,Joey,joey,joey,joey,joey,1,4,False,False,False,False,False,joey,joey,joey,2024-03-26
+9,2024-03-26,#baltimorebridge,55525.0,#baltimorebridge,#baltimorebridge,baltimorebridge,baltimorebridge,baltimorebridge,1,15,False,True,True,False,False,#baltimorebridge,baltimorebridge,baltimorebridge,2024-03-26
+5,2024-03-26,RFK Jr.,55341.0,RFK Jr.,rfk jr,rfk jr,rfk jr,rfk jr,2,6,False,False,True,False,False,rfk jr,rfk jr,rfk jr,2024-03-26
+5,2024-03-26,Kucoin,52157.0,Kucoin,kucoin,kucoin,kucoin,kucoin,1,6,False,False,False,False,False,kucoin,kucoin,kucoin,2024-03-26
+11,2024-03-26,Daisy,50217.0,Daisy,daisy,daisy,daisy,daisy,1,5,False,False,False,False,False,daisy,daisy,daisy,2024-03-26
+1,2024-03-26,Air Drop,48319.0,Air Drop,air drop,air drop,air drop,air drop,2,8,False,False,False,False,False,air drop,air drop,air drop,2024-03-26
+9,2024-03-26,Iowa,48178.0,Iowa,iowa,iowa,iowa,iowa,1,4,False,False,False,False,False,iowa,iowa,iowa,2024-03-26
+2,2024-03-26,Rosales,47786.0,Rosales,rosales,rosales,rosales,rosales,1,7,False,False,False,False,False,rosales,rosales,rosales,2024-03-26
+2,2024-03-26,#REBIRTHDAY,47775.0,#REBIRTHDAY,#rebirthday,rebirthday,rebirthday,rebirthday,1,10,False,True,True,False,False,#rebirthday,rebirthday,rebirthday,2024-03-26
+1,2024-03-26,Kennedy,47655.0,Kennedy,kennedy,kennedy,kennedy,kennedy,1,7,False,False,False,False,False,kennedy,kennedy,kennedy,2024-03-26
+8,2024-03-26,Celtics,46108.0,Celtics,celtics,celtics,celtics,celtics,1,7,False,False,False,False,False,celtics,celtics,celtics,2024-03-26
+3,2024-03-26,Tulsi,38538.0,Tulsi,tulsi,tulsi,tulsi,tulsi,1,5,False,False,False,False,False,tulsi,tulsi,tulsi,2024-03-26
+7,2024-03-26,Bibles,37417.0,Bibles,bibles,bibles,bibles,bibles,1,6,False,False,False,False,False,bibles,bibles,bibles,2024-03-26
+7,2024-03-26,Bad Boys,37254.0,Bad Boys,bad boys,bad boys,bad boys,bad boys,2,8,False,False,False,False,False,bad boys,bad boys,bad boys,2024-03-26
+4,2024-03-26,CM Punk,35925.0,CM Punk,cm punk,cm punk,cm punk,cm punk,2,7,False,False,False,False,False,cm punk,cm punk,cm punk,2024-03-26
+2,2024-03-26,Seth,35017.0,Seth,seth,seth,seth,seth,1,4,False,False,False,False,False,seth,seth,seth,2024-03-26
+1,2024-03-26,Shohei,34843.0,Shohei,shohei,shohei,shohei,shohei,1,6,False,False,False,False,False,shohei,shohei,shohei,2024-03-26
+6,2024-03-26,Mayday,33368.0,Mayday,mayday,mayday,mayday,mayday,1,6,False,False,False,False,False,mayday,mayday,mayday,2024-03-26
+1,2024-03-26,Reward Program,32517.0,Reward Program,reward program,reward program,reward program,reward program,2,14,False,False,False,False,False,reward program,reward program,reward program,2024-03-26
+6,2024-03-26,Nicole Shanahan,31128.0,Nicole Shanahan,nicole shanahan,nicole shanahan,nicole shanahan,nicole shanahan,2,15,False,False,False,False,False,nicole shanahan,nicole shanahan,nicole shanahan,2024-03-26
+6,2024-03-26,Hawks,29230.0,Hawks,hawks,hawks,hawks,hawks,1,5,False,False,False,False,False,hawks,hawks,hawks,2024-03-26
+5,2024-03-26,Good Tuesday,29001.0,Good Tuesday,good tuesday,good tuesday,good tuesday,good tuesday,2,12,False,False,False,False,False,good tuesday,good tuesday,good tuesday,2024-03-26
+6,2024-03-26,Suns,21751.0,Suns,suns,suns,suns,suns,1,4,False,False,False,False,False,suns,suns,suns,2024-03-26
+4,2024-03-26,Alito,21238.0,Alito,alito,alito,alito,alito,1,5,False,False,False,False,False,alito,alito,alito,2024-03-26
+7,2024-03-26,Patapsco River,21218.0,Patapsco River,patapsco river,patapsco river,patapsco river,patapsco river,2,14,False,False,False,False,False,patapsco river,patapsco river,patapsco river,2024-03-26
+8,2024-03-26,Caitlin Clark,18877.0,Caitlin Clark,caitlin clark,caitlin clark,caitlin clark,caitlin clark,2,13,False,False,False,False,False,caitlin clark,caitlin clark,caitlin clark,2024-03-26
+1,2024-03-26,Key Bridge,18784.0,Key Bridge,key bridge,key bridge,key bridge,key bridge,2,10,False,False,False,False,False,key bridge,key bridge,key bridge,2024-03-26
+6,2024-03-26,Idaho,17679.0,Idaho,idaho,idaho,idaho,idaho,1,5,False,False,False,False,False,idaho,idaho,idaho,2024-03-26
+7,2024-03-26,West Virginia,17344.0,West Virginia,west virginia,west virginia,west virginia,west virginia,2,13,False,False,False,False,False,west virginia,west virginia,west virginia,2024-03-26
+3,2024-03-26,Antigua,17242.0,Antigua,antigua,antigua,antigua,antigua,1,7,False,False,False,False,False,antigua,antigua,antigua,2024-03-26
+8,2024-03-26,Port of Baltimore,17078.0,Port of Baltimore,port of baltimore,port of baltimore,port of baltimore,port of baltimore,3,17,False,False,False,False,False,port of baltimore,port of baltimore,port of baltimore,2024-03-26
+8,2024-03-26,#SouthParkXboxSweepstakes,16792.0,#SouthParkXboxSweepstakes,#southparkxboxsweepstakes,southparkxboxsweepstakes,southparkxboxsweepstakes,southparkxboxsweepstakes,1,24,False,True,True,False,False,#southparkxboxsweepstakes,southparkxboxsweepstakes,southparkxboxsweepstakes,2024-03-26
+6,2024-03-26,Scaramucci,16614.0,Scaramucci,scaramucci,scaramucci,scaramucci,scaramucci,1,10,False,False,False,False,False,scaramucci,scaramucci,scaramucci,2024-03-26
+5,2024-03-26,Baltimore Harbor,16453.0,Baltimore Harbor,baltimore harbor,baltimore harbor,baltimore harbor,baltimore harbor,2,16,False,False,False,False,False,baltimore harbor,baltimore harbor,baltimore harbor,2024-03-26
+7,2024-03-26,Kelsey,15931.0,Kelsey,kelsey,kelsey,kelsey,kelsey,1,6,False,False,False,False,False,kelsey,kelsey,kelsey,2024-03-26
+2,2024-03-26,Ippei,15569.0,Ippei,ippei,ippei,ippei,ippei,1,5,False,False,False,False,False,ippei,ippei,ippei,2024-03-26
+6,2024-03-26,#tuesdayvibe,15507.0,#tuesdayvibe,#tuesdayvibe,tuesdayvibe,tuesdayvibe,tuesdayvibe,1,11,False,True,True,False,False,#tuesdayvibe,tuesdayvibe,tuesdayvibe,2024-03-26
+4,2024-03-26,The Diddler,15244.0,The Diddler,the diddler,the diddler,the diddler,the diddler,2,11,False,False,False,False,False,the diddler,the diddler,the diddler,2024-03-26
+1,2024-03-26,Cassie,14878.0,Cassie,cassie,cassie,cassie,cassie,1,6,False,False,False,False,False,cassie,cassie,cassie,2024-03-26
+5,2024-03-26,Clippers,14552.0,Clippers,clippers,clippers,clippers,clippers,1,8,False,False,False,False,False,clippers,clippers,clippers,2024-03-26
+3,2024-03-26,Lukaku,14185.0,Lukaku,lukaku,lukaku,lukaku,lukaku,1,6,False,False,False,False,False,lukaku,lukaku,lukaku,2024-03-26
+2,2024-03-26,Paige,13559.0,Paige,paige,paige,paige,paige,1,5,False,False,False,False,False,paige,paige,paige,2024-03-26
+7,2024-03-26,Jenn,13199.0,Jenn,jenn,jenn,jenn,jenn,1,4,False,False,False,False,False,jenn,jenn,jenn,2024-03-26
+4,2024-03-26,HAPPY BIRTHDAY CHICA,11971.0,HAPPY BIRTHDAY CHICA,happy birthday chica,happy birthday chica,happy birthday chica,happy birthday chica,3,20,False,False,False,False,False,happy birthday chica,happy birthday chica,happy birthday chica,2024-03-26
+1,2024-03-26,#TuesdayVibe,11543.0,#TuesdayVibe,#tuesdayvibe,tuesdayvibe,tuesdayvibe,tuesdayvibe,1,11,False,True,True,False,False,#tuesdayvibe,tuesdayvibe,tuesdayvibe,2024-03-26
+2,2024-03-26,$DJT,10425.0,$DJT,$djt,$djt,djt,djt,1,4,False,False,True,False,False,$djt,$djt,djt,2024-03-26
+3,2024-03-26,Cape Verde,9553.0,Cape Verde,cape verde,cape verde,cape verde,cape verde,2,10,False,False,False,False,False,cape verde,cape verde,cape verde,2024-03-26
+4,2024-03-26,Jhene,9322.0,Jhene,jhene,jhene,jhene,jhene,1,5,False,False,False,False,False,jhene,jhene,jhene,2024-03-26
+4,2024-03-26,Habitat,9104.0,Habitat,habitat,habitat,habitat,habitat,1,7,False,False,False,False,False,habitat,habitat,habitat,2024-03-26
+2,2024-03-26,Jontay Porter,8684.0,Jontay Porter,jontay porter,jontay porter,jontay porter,jontay porter,2,13,False,False,False,False,False,jontay porter,jontay porter,jontay porter,2024-03-26
+5,2024-03-26,Praying for Baltimore,8640.0,Praying for Baltimore,praying for baltimore,praying for baltimore,praying for baltimore,praying for baltimore,3,21,False,False,False,False,False,praying for baltimore,praying for baltimore,praying for baltimore,2024-03-26
+2,2024-03-26,Prayers for Baltimore,8608.0,Prayers for Baltimore,prayers for baltimore,prayers for baltimore,prayers for baltimore,prayers for baltimore,3,21,False,False,False,False,False,prayers for baltimore,prayers for baltimore,prayers for baltimore,2024-03-26
+1,2024-03-26,#Maddow,8226.0,#Maddow,#maddow,maddow,maddow,maddow,1,6,False,True,True,False,False,#maddow,maddow,maddow,2024-03-26
+5,2024-03-26,Dollar Tree,7886.0,Dollar Tree,dollar tree,dollar tree,dollar tree,dollar tree,2,11,False,False,False,False,False,dollar tree,dollar tree,dollar tree,2024-03-26
+7,2024-03-26,East Palestine,7838.0,East Palestine,east palestine,east palestine,east palestine,east palestine,2,14,False,False,False,False,False,east palestine,east palestine,east palestine,2024-03-26
+1,2024-03-26,Singaporean,7792.0,Singaporean,singaporean,singaporean,singaporean,singaporean,1,11,False,False,False,False,False,singaporean,singaporean,singaporean,2024-03-26
+1,2024-03-26,Ride or Die,7300.0,Ride or Die,ride or die,ride or die,ride or die,ride or die,3,11,False,False,False,False,False,ride or die,ride or die,ride or die,2024-03-26
+6,2024-03-26,Krispy Kreme,7256.0,Krispy Kreme,krispy kreme,krispy kreme,krispy kreme,krispy kreme,2,12,False,False,False,False,False,krispy kreme,krispy kreme,krispy kreme,2024-03-26
+1,2024-03-26,Cesar Conde,7202.0,Cesar Conde,cesar conde,cesar conde,cesar conde,cesar conde,2,11,False,False,False,False,False,cesar conde,cesar conde,cesar conde,2024-03-26
+4,2024-03-26,Mayor Pete,7072.0,Mayor Pete,mayor pete,mayor pete,mayor pete,mayor pete,2,10,False,False,False,False,False,mayor pete,mayor pete,mayor pete,2024-03-26
+6,2024-03-26,Crowder,6981.0,Crowder,crowder,crowder,crowder,crowder,1,7,False,False,False,False,False,crowder,crowder,crowder,2024-03-26
+1,2024-03-26,Donte,6438.0,Donte,donte,donte,donte,donte,1,5,False,False,False,False,False,donte,donte,donte,2024-03-26
+1,2024-03-26,Puff Daddy,5990.0,Puff Daddy,puff daddy,puff daddy,puff daddy,puff daddy,2,10,False,False,False,False,False,puff daddy,puff daddy,puff daddy,2024-03-26
+4,2024-03-26,Tink,5822.0,Tink,tink,tink,tink,tink,1,4,False,False,False,False,False,tink,tink,tink,2024-03-26
+1,2024-03-26,Sri Lanka,5817.0,Sri Lanka,sri lanka,sri lanka,sri lanka,sri lanka,2,9,False,False,False,False,False,sri lanka,sri lanka,sri lanka,2024-03-26
+5,2024-03-26,Anthony Mackie,5699.0,Anthony Mackie,anthony mackie,anthony mackie,anthony mackie,anthony mackie,2,14,False,False,False,False,False,anthony mackie,anthony mackie,anthony mackie,2024-03-26
+1,2024-03-26,Syracuse,5662.0,Syracuse,syracuse,syracuse,syracuse,syracuse,1,8,False,False,False,False,False,syracuse,syracuse,syracuse,2024-03-26
+1,2024-03-26,$SCPT,5639.0,$SCPT,$scpt,$scpt,scpt,scpt,1,5,False,False,True,False,False,$scpt,$scpt,scpt,2024-03-26
+3,2024-03-26,Pete Buttigieg,5601.0,Pete Buttigieg,pete buttigieg,pete buttigieg,pete buttigieg,pete buttigieg,2,14,False,False,False,False,False,pete buttigieg,pete buttigieg,pete buttigieg,2024-03-26
+1,2024-03-26,RIDE OR DIE,5561.0,RIDE OR DIE,ride or die,ride or die,ride or die,ride or die,3,11,False,False,False,False,False,ride or die,ride or die,ride or die,2024-03-26
+5,2024-03-26,I-695,5546.0,I-695,i 695,i 695,i 695,i 695,2,5,False,False,True,False,False,i 695,i 695,i 695,2024-03-26
+1,2024-03-26,God Bless the USA,5420.0,God Bless the USA,god bless the usa,god bless the usa,god bless the usa,god bless the usa,4,17,False,False,False,False,False,god bless the usa,god bless the usa,god bless the usa,2024-03-26
+8,2024-03-26,#barbiehumana,4994.0,#barbiehumana,#barbiehumana,barbiehumana,barbiehumana,barbiehumana,1,12,False,True,True,False,False,#barbiehumana,barbiehumana,barbiehumana,2024-03-26
+3,2024-03-26,$AEVO,4990.0,$AEVO,$aevo,$aevo,aevo,aevo,1,5,False,False,True,False,False,$aevo,$aevo,aevo,2024-03-26
+1,2024-03-26,Christmas Day,4298.0,Christmas Day,christmas day,christmas day,christmas day,christmas day,2,13,False,False,False,False,False,christmas day,christmas day,christmas day,2024-03-26
+3,2024-03-26,#SCOTUS,4293.0,#SCOTUS,#scotus,scotus,scotus,scotus,1,6,False,True,True,False,False,#scotus,scotus,scotus,2024-03-26
+2,2024-03-26,Joe Buden,4235.0,Joe Buden,joe buden,joe buden,joe buden,joe buden,2,9,False,False,False,False,False,joe buden,joe buden,joe buden,2024-03-26
+1,2024-03-26,Lara Logan,3881.0,Lara Logan,lara logan,lara logan,lara logan,lara logan,2,10,False,False,False,False,False,lara logan,lara logan,lara logan,2024-03-26
+2,2024-03-26,Cordarrelle Patterson,3863.0,Cordarrelle Patterson,cordarrelle patterson,cordarrelle patterson,cordarrelle patterson,cordarrelle patterson,2,21,False,False,False,False,False,cordarrelle patterson,cordarrelle patterson,cordarrelle patterson,2024-03-26
+2,2024-03-26,Juju Watkins,3343.0,Juju Watkins,juju watkins,juju watkins,juju watkins,juju watkins,2,12,False,False,False,False,False,juju watkins,juju watkins,juju watkins,2024-03-26
+2,2024-03-26,Lee Greenwood,3108.0,Lee Greenwood,lee greenwood,lee greenwood,lee greenwood,lee greenwood,2,13,False,False,False,False,False,lee greenwood,lee greenwood,lee greenwood,2024-03-26
+2,2024-03-26,#TuesdayFeeling,3107.0,#TuesdayFeeling,#tuesdayfeeling,tuesdayfeeling,tuesdayfeeling,tuesdayfeeling,1,14,False,True,True,False,False,#tuesdayfeeling,tuesdayfeeling,tuesdayfeeling,2024-03-26
+1,2024-03-26,"Baltimore, MD",2772.0,"Baltimore, MD",baltimore md,baltimore md,baltimore md,baltimore md,2,12,False,False,True,False,False,baltimore md,baltimore md,baltimore md,2024-03-26
+1,2024-03-26,port of baltimore,2723.0,port of baltimore,port of baltimore,port of baltimore,port of baltimore,port of baltimore,3,17,False,False,False,False,False,port of baltimore,port of baltimore,port of baltimore,2024-03-26
+1,2024-03-26,mayor pete,2612.0,mayor pete,mayor pete,mayor pete,mayor pete,mayor pete,2,10,False,False,False,False,False,mayor pete,mayor pete,mayor pete,2024-03-26
+1,2024-03-26,#AirMaxDay,2487.0,#AirMaxDay,#airmaxday,airmaxday,airmaxday,airmaxday,1,9,False,True,True,False,False,#airmaxday,airmaxday,airmaxday,2024-03-26
+1,2024-03-26,Erin Hawley,2084.0,Erin Hawley,erin hawley,erin hawley,erin hawley,erin hawley,2,11,False,False,False,False,False,erin hawley,erin hawley,erin hawley,2024-03-26
+2,2024-03-26,Bmore,2069.0,Bmore,bmore,bmore,bmore,bmore,1,5,False,False,False,False,False,bmore,bmore,bmore,2024-03-26
+2,2024-03-26,Cherishing,1667.0,Cherishing,cherishing,cherishing,cherishing,cherishing,1,10,False,False,False,False,False,cherishing,cherishing,cherishing,2024-03-26
+1,2024-03-26,#airmaxday,1659.0,#airmaxday,#airmaxday,airmaxday,airmaxday,airmaxday,1,9,False,True,True,False,False,#airmaxday,airmaxday,airmaxday,2024-03-26
+2,2024-03-26,Ty Lue,1323.0,Ty Lue,ty lue,ty lue,ty lue,ty lue,2,6,False,False,False,False,False,ty lue,ty lue,ty lue,2024-03-26
+1,2024-03-26,Star Spangled Banner,1117.0,Star Spangled Banner,star spangled banner,star spangled banner,star spangled banner,star spangled banner,3,20,False,False,False,False,False,star spangled banner,star spangled banner,star spangled banner,2024-03-26
+5,2024-04-25,Hybe,525046.0,Hybe,hybe,hybe,hybe,hybe,1,4,False,False,False,False,False,hybe,hybe,hybe,2024-04-25
+10,2024-04-25,Supreme Court,426984.0,Supreme Court,supreme court,supreme court,supreme court,supreme court,2,13,False,False,False,False,False,supreme court,supreme court,supreme court,2024-04-25
+6,2024-04-25,NAMJOON,314025.0,NAMJOON,namjoon,namjoon,namjoon,namjoon,1,7,False,False,False,False,False,namjoon,namjoon,namjoon,2024-04-25
+4,2024-04-25,#RightPlaceWrongPerson,292480.0,#RightPlaceWrongPerson,#rightplacewrongperson,rightplacewrongperson,rightplacewrongperson,rightplacewrongperson,1,21,False,True,True,False,False,#rightplacewrongperson,rightplacewrongperson,rightplacewrongperson,2024-04-25
+7,2024-04-25,Arizona,268309.0,Arizona,arizona,arizona,arizona,arizona,1,7,False,False,False,False,False,arizona,arizona,arizona,2024-04-25
+1,2024-04-25,Liverpool,228361.0,Liverpool,liverpool,liverpool,liverpool,liverpool,1,9,False,False,False,False,False,liverpool,liverpool,liverpool,2024-04-25
+11,2024-04-25,SCOTUS,199687.0,SCOTUS,scotus,scotus,scotus,scotus,1,6,False,False,False,False,False,scotus,scotus,scotus,2024-04-25
+8,2024-04-25,Heat,169901.0,Heat,heat,heat,heat,heat,1,4,False,False,False,False,False,heat,heat,heat,2024-04-25
+8,2024-04-25,Emory,167765.0,Emory,emory,emory,emory,emory,1,5,False,False,False,False,False,emory,emory,emory,2024-04-25
+6,2024-04-25,Stars,165172.0,Stars,stars,stars,stars,stars,1,5,False,False,False,False,False,stars,stars,stars,2024-04-25
+1,2024-04-25,Everton,143986.0,Everton,everton,everton,everton,everton,1,7,False,False,False,False,False,everton,everton,everton,2024-04-25
+1,2024-04-25,min heejin,141296.0,min heejin,min heejin,min heejin,min heejin,min heejin,2,10,False,False,False,False,False,min heejin,min heejin,min heejin,2024-04-25
+3,2024-04-25,#FATEPLUS_IN_ANAHEIM,140653.0,#FATEPLUS_IN_ANAHEIM,#fateplus in anaheim,fateplus in anaheim,fateplus in anaheim,fateplus in anaheim,3,19,False,True,True,False,False,#fateplus in anaheim,fateplus in anaheim,fateplus in anaheim,2024-04-25
+2,2024-04-25,Min Heejin,127871.0,Min Heejin,min heejin,min heejin,min heejin,min heejin,2,10,False,False,False,False,False,min heejin,min heejin,min heejin,2024-04-25
+4,2024-04-25,HEE JIN,125971.0,HEE JIN,hee jin,hee jin,hee jin,hee jin,2,7,False,False,False,False,False,hee jin,hee jin,hee jin,2024-04-25
+4,2024-04-25,Pause,122489.0,Pause,pause,pause,pause,pause,1,5,False,False,False,False,False,pause,pause,pause,2024-04-25
+9,2024-04-25,Alito,117519.0,Alito,alito,alito,alito,alito,1,5,False,False,False,False,False,alito,alito,alito,2024-04-25
+10,2024-04-25,Celtics,102200.0,Celtics,celtics,celtics,celtics,celtics,1,7,False,False,False,False,False,celtics,celtics,celtics,2024-04-25
+4,2024-04-25,Brighton,100340.0,Brighton,brighton,brighton,brighton,brighton,1,8,False,False,False,False,False,brighton,brighton,brighton,2024-04-25
+5,2024-04-25,Bang PD,95792.0,Bang PD,bang pd,bang pd,bang pd,bang pd,2,7,False,False,False,False,False,bang pd,bang pd,bang pd,2024-04-25
+1,2024-04-25,Klopp,88285.0,Klopp,klopp,klopp,klopp,klopp,1,5,False,False,False,False,False,klopp,klopp,klopp,2024-04-25
+2,2024-04-25,UT Austin,87624.0,UT Austin,ut austin,ut austin,ut austin,ut austin,2,9,False,False,False,False,False,ut austin,ut austin,ut austin,2024-04-25
+13,2024-04-25,#NFLDraft,83757.0,#NFLDraft,#nfldraft,nfldraft,nfldraft,nfldraft,1,8,False,True,True,False,False,#nfldraft,nfldraft,nfldraft,2024-04-25
+4,2024-04-25,Amanda,80793.0,Amanda,amanda,amanda,amanda,amanda,1,6,False,False,False,False,False,amanda,amanda,amanda,2024-04-25
+2,2024-04-25,Giuliani,78167.0,Giuliani,giuliani,giuliani,giuliani,giuliani,1,8,False,False,False,False,False,giuliani,giuliani,giuliani,2024-04-25
+1,2024-04-25,TikTok,74770.0,TikTok,tiktok,tiktok,tiktok,tiktok,1,6,False,False,False,False,False,tiktok,tiktok,tiktok,2024-04-25
+2,2024-04-25,The Elite,73284.0,The Elite,the elite,the elite,the elite,the elite,2,9,False,False,False,False,False,the elite,the elite,the elite,2024-04-25
+2,2024-04-25,Shannon,70962.0,Shannon,shannon,shannon,shannon,shannon,1,7,False,False,False,False,False,shannon,shannon,shannon,2024-04-25
+1,2024-04-25,Presidents,68850.0,Presidents,presidents,presidents,presidents,presidents,1,10,False,False,False,False,False,presidents,presidents,presidents,2024-04-25
+9,2024-04-25,#AEWDynamite,67394.0,#AEWDynamite,#aewdynamite,aewdynamite,aewdynamite,aewdynamite,1,11,False,True,True,False,False,#aewdynamite,aewdynamite,aewdynamite,2024-04-25
+8,2024-04-25,Harvey Weinstein,66758.0,Harvey Weinstein,harvey weinstein,harvey weinstein,harvey weinstein,harvey weinstein,2,16,False,False,False,False,False,harvey weinstein,harvey weinstein,harvey weinstein,2024-04-25
+4,2024-04-25,Justices,59047.0,Justices,justices,justices,justices,justices,1,8,False,False,False,False,False,justices,justices,justices,2024-04-25
+3,2024-04-25,Foden,55408.0,Foden,foden,foden,foden,foden,1,5,False,False,False,False,False,foden,foden,foden,2024-04-25
+2,2024-04-25,Hasan,45989.0,Hasan,hasan,hasan,hasan,hasan,1,5,False,False,False,False,False,hasan,hasan,hasan,2024-04-25
+2,2024-04-25,Uvalde,45036.0,Uvalde,uvalde,uvalde,uvalde,uvalde,1,6,False,False,False,False,False,uvalde,uvalde,uvalde,2024-04-25
+7,2024-04-25,#jjk258,42336.0,#jjk258,#jjk258,jjk258,jjk258,jjk258,1,6,False,True,True,False,False,#jjk258,jjk258,jjk258,2024-04-25
+5,2024-04-25,Sauer,42251.0,Sauer,sauer,sauer,sauer,sauer,1,5,False,False,False,False,False,sauer,sauer,sauer,2024-04-25
+1,2024-04-25,Detroit,35642.0,Detroit,detroit,detroit,detroit,detroit,1,7,False,False,False,False,False,detroit,detroit,detroit,2024-04-25
+4,2024-04-25,Dreeben,34586.0,Dreeben,dreeben,dreeben,dreeben,dreeben,1,7,False,False,False,False,False,dreeben,dreeben,dreeben,2024-04-25
+2,2024-04-25,Mark Meadows,33889.0,Mark Meadows,mark meadows,mark meadows,mark meadows,mark meadows,2,12,False,False,False,False,False,mark meadows,mark meadows,mark meadows,2024-04-25
+1,2024-04-25,Roberts,33631.0,Roberts,roberts,roberts,roberts,roberts,1,7,False,False,False,False,False,roberts,roberts,roberts,2024-04-25
+8,2024-04-25,Tarkov,31538.0,Tarkov,tarkov,tarkov,tarkov,tarkov,1,6,False,False,False,False,False,tarkov,tarkov,tarkov,2024-04-25
+2,2024-04-25,Maye,29518.0,Maye,maye,maye,maye,maye,1,4,False,False,False,False,False,maye,maye,maye,2024-04-25
+8,2024-04-25,Tatum,29002.0,Tatum,tatum,tatum,tatum,tatum,1,5,False,False,False,False,False,tatum,tatum,tatum,2024-04-25
+1,2024-04-25,good thursday,28596.0,good thursday,good thursday,good thursday,good thursday,good thursday,2,13,False,False,False,False,False,good thursday,good thursday,good thursday,2024-04-25
+6,2024-04-25,Kavanaugh,28577.0,Kavanaugh,kavanaugh,kavanaugh,kavanaugh,kavanaugh,1,9,False,False,False,False,False,kavanaugh,kavanaugh,kavanaugh,2024-04-25
+5,2024-04-25,#GagCityChicago,28503.0,#GagCityChicago,#gagcitychicago,gagcitychicago,gagcitychicago,gagcitychicago,1,14,False,True,True,False,False,#gagcitychicago,gagcitychicago,gagcitychicago,2024-04-25
+5,2024-04-25,Good Thursday,27213.0,Good Thursday,good thursday,good thursday,good thursday,good thursday,2,13,False,False,False,False,False,good thursday,good thursday,good thursday,2024-04-25
+2,2024-04-25,Kent State,26926.0,Kent State,kent state,kent state,kent state,kent state,2,10,False,False,False,False,False,kent state,kent state,kent state,2024-04-25
+6,2024-04-25,Gege,23888.0,Gege,gege,gege,gege,gege,1,4,False,False,False,False,False,gege,gege,gege,2024-04-25
+5,2024-04-25,Draft Day,23672.0,Draft Day,draft day,draft day,draft day,draft day,2,9,False,False,False,False,False,draft day,draft day,draft day,2024-04-25
+2,2024-04-25,Leafs,22429.0,Leafs,leafs,leafs,leafs,leafs,1,5,False,False,False,False,False,leafs,leafs,leafs,2024-04-25
+1,2024-04-25,Kris Mayes,20232.0,Kris Mayes,kris mayes,kris mayes,kris mayes,kris mayes,2,10,False,False,False,False,False,kris mayes,kris mayes,kris mayes,2024-04-25
+10,2024-04-25,Tony Khan,19703.0,Tony Khan,tony khan,tony khan,tony khan,tony khan,2,9,False,False,False,False,False,tony khan,tony khan,tony khan,2024-04-25
+10,2024-04-25,Chet,19268.0,Chet,chet,chet,chet,chet,1,4,False,False,False,False,False,chet,chet,chet,2024-04-25
+1,2024-04-25,Greg Abbott,19200.0,Greg Abbott,greg abbott,greg abbott,greg abbott,greg abbott,2,11,False,False,False,False,False,greg abbott,greg abbott,greg abbott,2024-04-25
+2,2024-04-25,Justice Jackson,19056.0,Justice Jackson,justice jackson,justice jackson,justice jackson,justice jackson,2,15,False,False,False,False,False,justice jackson,justice jackson,justice jackson,2024-04-25
+2,2024-04-25,Bengals,18225.0,Bengals,bengals,bengals,bengals,bengals,1,7,False,False,False,False,False,bengals,bengals,bengals,2024-04-25
+8,2024-04-25,Amanda Seales,18074.0,Amanda Seales,amanda seales,amanda seales,amanda seales,amanda seales,2,13,False,False,False,False,False,amanda seales,amanda seales,amanda seales,2024-04-25
+4,2024-04-25,Gorsuch,17969.0,Gorsuch,gorsuch,gorsuch,gorsuch,gorsuch,1,7,False,False,False,False,False,gorsuch,gorsuch,gorsuch,2024-04-25
+1,2024-04-25,$META,17663.0,$META,$meta,$meta,meta,meta,1,5,False,False,True,False,False,$meta,$meta,meta,2024-04-25
+8,2024-04-25,Caleb Williams,17218.0,Caleb Williams,caleb williams,caleb williams,caleb williams,caleb williams,2,14,False,False,False,False,False,caleb williams,caleb williams,caleb williams,2024-04-25
+7,2024-04-25,Issa,17058.0,Issa,issa,issa,issa,issa,1,4,False,False,False,False,False,issa,issa,issa,2024-04-25
+2,2024-04-25,Sotomayor,17003.0,Sotomayor,sotomayor,sotomayor,sotomayor,sotomayor,1,9,False,False,False,False,False,sotomayor,sotomayor,sotomayor,2024-04-25
+8,2024-04-25,Drake Maye,16789.0,Drake Maye,drake maye,drake maye,drake maye,drake maye,2,10,False,False,False,False,False,drake maye,drake maye,drake maye,2024-04-25
+4,2024-04-25,Bruins,16391.0,Bruins,bruins,bruins,bruins,bruins,1,6,False,False,False,False,False,bruins,bruins,bruins,2024-04-25
+3,2024-04-25,WE LOVE TRUMP,15898.0,WE LOVE TRUMP,we love trump,we love trump,we love trump,we love trump,3,13,False,False,False,False,False,we love trump,we love trump,we love trump,2024-04-25
+1,2024-04-25,Nixon,15606.0,Nixon,nixon,nixon,nixon,nixon,1,5,False,False,False,False,False,nixon,nixon,nixon,2024-04-25
+7,2024-04-25,#thursdayvibes,15114.0,#thursdayvibes,#thursdayvibes,thursdayvibes,thursdayvibes,thursdayvibes,1,13,False,True,True,False,False,#thursdayvibes,thursdayvibes,thursdayvibes,2024-04-25
+3,2024-04-25,Bowers,14644.0,Bowers,bowers,bowers,bowers,bowers,1,6,False,False,False,False,False,bowers,bowers,bowers,2024-04-25
+2,2024-04-25,Naz Reid,14393.0,Naz Reid,naz reid,naz reid,naz reid,naz reid,2,8,False,False,False,False,False,naz reid,naz reid,naz reid,2024-04-25
+1,2024-04-25,Nabers,14280.0,Nabers,nabers,nabers,nabers,nabers,1,6,False,False,False,False,False,nabers,nabers,nabers,2024-04-25
+1,2024-04-25,Kagan,14220.0,Kagan,kagan,kagan,kagan,kagan,1,5,False,False,False,False,False,kagan,kagan,kagan,2024-04-25
+3,2024-04-25,#BHAMCI,13948.0,#BHAMCI,#bhamci,bhamci,bhamci,bhamci,1,6,False,True,True,False,False,#bhamci,bhamci,bhamci,2024-04-25
+1,2024-04-25,Penix,13381.0,Penix,penix,penix,penix,penix,1,5,False,False,False,False,False,penix,penix,penix,2024-04-25
+1,2024-04-25,Jenna Ellis,13354.0,Jenna Ellis,jenna ellis,jenna ellis,jenna ellis,jenna ellis,2,11,False,False,False,False,False,jenna ellis,jenna ellis,jenna ellis,2024-04-25
+4,2024-04-25,Bob Cole,12857.0,Bob Cole,bob cole,bob cole,bob cole,bob cole,2,8,False,False,False,False,False,bob cole,bob cole,bob cole,2024-04-25
+2,2024-04-25,Herro,12689.0,Herro,herro,herro,herro,herro,1,5,False,False,False,False,False,herro,herro,herro,2024-04-25
+1,2024-04-25,De Zerbi,12126.0,De Zerbi,de zerbi,de zerbi,de zerbi,de zerbi,2,8,False,False,False,False,False,de zerbi,de zerbi,de zerbi,2024-04-25
+4,2024-04-25,#Survivor,10829.0,#Survivor,#survivor,survivor,survivor,survivor,1,8,False,True,True,False,False,#survivor,survivor,survivor,2024-04-25
+3,2024-04-25,#MeToo,10255.0,#MeToo,#metoo,metoo,metoo,metoo,1,5,False,True,True,False,False,#metoo,metoo,metoo,2024-04-25
+1,2024-04-25,Go Bills,10120.0,Go Bills,go bills,go bills,go bills,go bills,2,8,False,False,False,False,False,go bills,go bills,go bills,2024-04-25
+1,2024-04-25,Spoelstra,9263.0,Spoelstra,spoelstra,spoelstra,spoelstra,spoelstra,1,9,False,False,False,False,False,spoelstra,spoelstra,spoelstra,2024-04-25
+1,2024-04-25,49ers,9246.0,49ers,49ers,49ers,49ers,49ers,1,5,False,False,False,False,False,49ers,49ers,49ers,2024-04-25
+4,2024-04-25,$MSFT,9230.0,$MSFT,$msft,$msft,msft,msft,1,5,False,False,True,False,False,$msft,$msft,msft,2024-04-25
+3,2024-04-25,JJ McCarthy,9132.0,JJ McCarthy,jj mccarthy,jj mccarthy,jj mccarthy,jj mccarthy,2,11,False,False,False,False,False,jj mccarthy,jj mccarthy,jj mccarthy,2024-04-25
+1,2024-04-25,Clutch Player of the Year,9065.0,Clutch Player of the Year,clutch player of the year,clutch player of the year,clutch player of the year,clutch player of the year,5,25,False,False,False,False,False,clutch player of the year,clutch player of the year,clutch player of the year,2024-04-25
+2,2024-04-25,$EMO,8704.0,$EMO,$emo,$emo,emo,emo,1,4,False,False,True,False,False,$emo,$emo,emo,2024-04-25
+5,2024-04-25,Marchand,8685.0,Marchand,marchand,marchand,marchand,marchand,1,8,False,False,False,False,False,marchand,marchand,marchand,2024-04-25
+4,2024-04-25,Velma,8684.0,Velma,velma,velma,velma,velma,1,5,False,False,False,False,False,velma,velma,velma,2024-04-25
+1,2024-04-25,Winning Time,8612.0,Winning Time,winning time,winning time,winning time,winning time,2,12,False,False,False,False,False,winning time,winning time,winning time,2024-04-25
+4,2024-04-25,#MHA421,8416.0,#MHA421,#mha421,mha421,mha421,mha421,1,6,False,True,True,False,False,#mha421,mha421,mha421,2024-04-25
+3,2024-04-25,#Survivor46,8392.0,#Survivor46,#survivor46,survivor46,survivor46,survivor46,1,10,False,True,True,False,False,#survivor46,survivor46,survivor46,2024-04-25
+6,2024-04-25,Jack Perry,8278.0,Jack Perry,jack perry,jack perry,jack perry,jack perry,2,10,False,False,False,False,False,jack perry,jack perry,jack perry,2024-04-25
+1,2024-04-25,Christina Bobb,7757.0,Christina Bobb,christina bobb,christina bobb,christina bobb,christina bobb,2,14,False,False,False,False,False,christina bobb,christina bobb,christina bobb,2024-04-25
+4,2024-04-25,Caleb Martin,7653.0,Caleb Martin,caleb martin,caleb martin,caleb martin,caleb martin,2,12,False,False,False,False,False,caleb martin,caleb martin,caleb martin,2024-04-25
+2,2024-04-25,Chapman,7645.0,Chapman,chapman,chapman,chapman,chapman,1,7,False,False,False,False,False,chapman,chapman,chapman,2024-04-25
+6,2024-04-25,Charli,7610.0,Charli,charli,charli,charli,charli,1,6,False,False,False,False,False,charli,charli,charli,2024-04-25
+3,2024-04-25,$GOOGL,7489.0,$GOOGL,$googl,$googl,googl,googl,1,6,False,False,True,False,False,$googl,$googl,googl,2024-04-25
+6,2024-04-25,Porzingis,6688.0,Porzingis,porzingis,porzingis,porzingis,porzingis,1,9,False,False,False,False,False,porzingis,porzingis,porzingis,2024-04-25
+4,2024-04-25,Jrue,6420.0,Jrue,jrue,jrue,jrue,jrue,1,4,False,False,False,False,False,jrue,jrue,jrue,2024-04-25
+4,2024-04-25,Jeezy,6160.0,Jeezy,jeezy,jeezy,jeezy,jeezy,1,5,False,False,False,False,False,jeezy,jeezy,jeezy,2024-04-25
+3,2024-04-25,$BCCOIN,6146.0,$BCCOIN,$bccoin,$bccoin,bccoin,bccoin,1,7,False,False,True,False,False,$bccoin,$bccoin,bccoin,2024-04-25
+3,2024-04-25,Jaylen Brown,6013.0,Jaylen Brown,jaylen brown,jaylen brown,jaylen brown,jaylen brown,2,12,False,False,False,False,False,jaylen brown,jaylen brown,jaylen brown,2024-04-25
+1,2024-04-25,Hendrickson,5628.0,Hendrickson,hendrickson,hendrickson,hendrickson,hendrickson,1,11,False,False,False,False,False,hendrickson,hendrickson,hendrickson,2024-04-25
+2,2024-04-25,#Chucky,5536.0,#Chucky,#chucky,chucky,chucky,chucky,1,6,False,True,True,False,False,#chucky,chucky,chucky,2024-04-25
+1,2024-04-25,11 TRACKS,5466.0,11 TRACKS,11 tracks,11 tracks,11 tracks,11 tracks,2,9,False,False,False,False,False,11 tracks,11 tracks,11 tracks,2024-04-25
+1,2024-04-25,#HEATCulture,5458.0,#HEATCulture,#heatculture,heatculture,heatculture,heatculture,1,11,False,True,True,False,False,#heatculture,heatculture,heatculture,2024-04-25
+3,2024-04-25,Deebo,5458.0,Deebo,deebo,deebo,deebo,deebo,1,5,False,False,False,False,False,deebo,deebo,deebo,2024-04-25
+1,2024-04-25,Kenzie,5055.0,Kenzie,kenzie,kenzie,kenzie,kenzie,1,6,False,False,False,False,False,kenzie,kenzie,kenzie,2024-04-25
+1,2024-04-25,#ThursdayThoughts,4760.0,#ThursdayThoughts,#thursdaythoughts,thursdaythoughts,thursdaythoughts,thursdaythoughts,1,16,False,True,True,False,False,#thursdaythoughts,thursdaythoughts,thursdaythoughts,2024-04-25
+5,2024-04-25,#RaiseHail,4688.0,#RaiseHail,#raisehail,raisehail,raisehail,raisehail,1,9,False,True,True,False,False,#raisehail,raisehail,raisehail,2024-04-25
+1,2024-04-25,#NHLBruins,4617.0,#NHLBruins,#nhlbruins,nhlbruins,nhlbruins,nhlbruins,1,9,False,True,True,False,False,#nhlbruins,nhlbruins,nhlbruins,2024-04-25
+4,2024-04-25,troye,4402.0,troye,troye,troye,troye,troye,1,5,False,False,False,False,False,troye,troye,troye,2024-04-25
+1,2024-04-25,Latham,4036.0,Latham,latham,latham,latham,latham,1,6,False,False,False,False,False,latham,latham,latham,2024-04-25
+2,2024-04-25,#thursdaymorning,3735.0,#thursdaymorning,#thursdaymorning,thursdaymorning,thursdaymorning,thursdaymorning,1,15,False,True,True,False,False,#thursdaymorning,thursdaymorning,thursdaymorning,2024-04-25
+1,2024-04-25,Roddy,3627.0,Roddy,roddy,roddy,roddy,roddy,1,5,False,False,False,False,False,roddy,roddy,roddy,2024-04-25
+5,2024-04-25,#GoKingsGo,3556.0,#GoKingsGo,#gokingsgo,gokingsgo,gokingsgo,gokingsgo,1,9,False,True,True,False,False,#gokingsgo,gokingsgo,gokingsgo,2024-04-25
+3,2024-04-25,#ThunderUp,3528.0,#ThunderUp,#thunderup,thunderup,thunderup,thunderup,1,9,False,True,True,False,False,#thunderup,thunderup,thunderup,2024-04-25
+3,2024-04-25,Pete Crow,3183.0,Pete Crow,pete crow,pete crow,pete crow,pete crow,2,9,False,False,False,False,False,pete crow,pete crow,pete crow,2024-04-25
+1,2024-04-25,Jovic,3096.0,Jovic,jovic,jovic,jovic,jovic,1,5,False,False,False,False,False,jovic,jovic,jovic,2024-04-25
+5,2024-04-25,Kopitar,3053.0,Kopitar,kopitar,kopitar,kopitar,kopitar,1,7,False,False,False,False,False,kopitar,kopitar,kopitar,2024-04-25
+1,2024-04-25,#VegasBorn,2977.0,#VegasBorn,#vegasborn,vegasborn,vegasborn,vegasborn,1,9,False,True,True,False,False,#vegasborn,vegasborn,vegasborn,2024-04-25
+2,2024-04-25,Shad Khan,2809.0,Shad Khan,shad khan,shad khan,shad khan,shad khan,2,9,False,False,False,False,False,shad khan,shad khan,shad khan,2024-04-25
+1,2024-04-25,Q1 GDP,2631.0,Q1 GDP,q1 gdp,q1 gdp,q1 gdp,q1 gdp,2,6,False,False,False,False,False,q1 gdp,q1 gdp,q1 gdp,2024-04-25
+4,2024-04-25,Brandon Ingram,2441.0,Brandon Ingram,brandon ingram,brandon ingram,brandon ingram,brandon ingram,2,14,False,False,False,False,False,brandon ingram,brandon ingram,brandon ingram,2024-04-25
+2,2024-04-25,Talbot,1953.0,Talbot,talbot,talbot,talbot,talbot,1,6,False,False,False,False,False,talbot,talbot,talbot,2024-04-25
+2,2024-04-25,$PULSR,1849.0,$PULSR,$pulsr,$pulsr,pulsr,pulsr,1,6,False,False,True,False,False,$pulsr,$pulsr,pulsr,2024-04-25
+2,2024-04-25,Blizzcon,1838.0,Blizzcon,blizzcon,blizzcon,blizzcon,blizzcon,1,8,False,False,False,False,False,blizzcon,blizzcon,blizzcon,2024-04-25
+1,2024-04-25,#TOTORO,1803.0,#TOTORO,#totoro,totoro,totoro,totoro,1,6,False,True,True,False,False,#totoro,totoro,totoro,2024-04-25
+1,2024-04-25,Nick Saban,1688.0,Nick Saban,nick saban,nick saban,nick saban,nick saban,2,10,False,False,False,False,False,nick saban,nick saban,nick saban,2024-04-25
+2,2024-04-25,#bucciovertimechallenge,1680.0,#bucciovertimechallenge,#bucciovertimechallenge,bucciovertimechallenge,bucciovertimechallenge,bucciovertimechallenge,1,22,False,True,True,False,False,#bucciovertimechallenge,bucciovertimechallenge,bucciovertimechallenge,2024-04-25
+1,2024-04-25,$pulsr,1640.0,$pulsr,$pulsr,$pulsr,pulsr,pulsr,1,6,False,False,True,False,False,$pulsr,$pulsr,pulsr,2024-04-25
+1,2024-04-25,Happy NFL,1567.0,Happy NFL,happy nfl,happy nfl,happy nfl,happy nfl,2,9,False,False,False,False,False,happy nfl,happy nfl,happy nfl,2024-04-25
+1,2024-04-25,#GoFins,1540.0,#GoFins,#gofins,gofins,gofins,gofins,1,6,False,True,True,False,False,#gofins,gofins,gofins,2024-04-25
+1,2024-04-25,Cam Newton,1248.0,Cam Newton,cam newton,cam newton,cam newton,cam newton,2,10,False,False,False,False,False,cam newton,cam newton,cam newton,2024-04-25
+14,2024-03-29,YA YA,2614494.0,YA YA,ya ya,ya ya,ya ya,ya ya,2,5,False,False,False,False,False,ya ya,ya ya,ya ya,2024-03-29
+1,2024-03-29,Ya Ya,2334172.0,Ya Ya,ya ya,ya ya,ya ya,ya ya,2,5,False,False,False,False,False,ya ya,ya ya,ya ya,2024-03-29
+17,2024-03-29,Beyoncé,1070206.0,Beyoncé,beyoncé,beyoncé,beyoncé,beyonc,1,7,False,False,True,True,False,beyoncé,beyoncé,beyoncé,2024-03-29
+15,2024-03-29,#COWBOYCARTER,513039.0,#COWBOYCARTER,#cowboycarter,cowboycarter,cowboycarter,cowboycarter,1,12,False,True,True,False,False,#cowboycarter,cowboycarter,cowboycarter,2024-03-29
+15,2024-03-29,Good Friday,468532.0,Good Friday,good friday,good friday,good friday,good friday,2,11,False,False,False,False,False,good friday,good friday,good friday,2024-03-29
+3,2024-03-29,Cowboy Carter,248855.0,Cowboy Carter,cowboy carter,cowboy carter,cowboy carter,cowboy carter,2,13,False,False,False,False,False,cowboy carter,cowboy carter,cowboy carter,2024-03-29
+17,2024-03-29,Jolene,202941.0,Jolene,jolene,jolene,jolene,jolene,1,6,False,False,False,False,False,jolene,jolene,jolene,2024-03-29
+1,2024-03-29,Clinton,198869.0,Clinton,clinton,clinton,clinton,clinton,1,7,False,False,False,False,False,clinton,clinton,clinton,2024-03-29
+1,2024-03-29,NYPD,191625.0,NYPD,nypd,nypd,nypd,nypd,1,4,False,False,False,False,False,nypd,nypd,nypd,2024-03-29
+2,2024-03-29,#CowboyCarter,155478.0,#CowboyCarter,#cowboycarter,cowboycarter,cowboycarter,cowboycarter,1,12,False,True,True,False,False,#cowboycarter,cowboycarter,cowboycarter,2024-03-29
+7,2024-03-29,hobi,154699.0,hobi,hobi,hobi,hobi,hobi,1,4,False,False,False,False,False,hobi,hobi,hobi,2024-03-29
+2,2024-03-29,#OpeningDay,136117.0,#OpeningDay,#openingday,openingday,openingday,openingday,1,10,False,True,True,False,False,#openingday,openingday,openingday,2024-03-29
+13,2024-03-29,Happy Easter,132067.0,Happy Easter,happy easter,happy easter,happy easter,happy easter,2,12,False,False,False,False,False,happy easter,happy easter,happy easter,2024-03-29
+2,2024-03-29,Yankees,97113.0,Yankees,yankees,yankees,yankees,yankees,1,7,False,False,False,False,False,yankees,yankees,yankees,2024-03-29
+3,2024-03-29,Rangers,90316.0,Rangers,rangers,rangers,rangers,rangers,1,7,False,False,False,False,False,rangers,rangers,rangers,2024-03-29
+4,2024-03-29,II Most Wanted,88768.0,II Most Wanted,ii most wanted,ii most wanted,ii most wanted,ii most wanted,3,14,False,False,False,False,False,ii most wanted,ii most wanted,ii most wanted,2024-03-29
+1,2024-03-29,Dolly,86347.0,Dolly,dolly,dolly,dolly,dolly,1,5,False,False,False,False,False,dolly,dolly,dolly,2024-03-29
+11,2024-03-29,II MOST WANTED,79395.0,II MOST WANTED,ii most wanted,ii most wanted,ii most wanted,ii most wanted,3,14,False,False,False,False,False,ii most wanted,ii most wanted,ii most wanted,2024-03-29
+3,2024-03-29,$SHIV,76047.0,$SHIV,$shiv,$shiv,shiv,shiv,1,5,False,False,True,False,False,$shiv,$shiv,shiv,2024-03-29
+5,2024-03-29,Arizona,63923.0,Arizona,arizona,arizona,arizona,arizona,1,7,False,False,False,False,False,arizona,arizona,arizona,2024-03-29
+1,2024-03-29,Dodgers,63495.0,Dodgers,dodgers,dodgers,dodgers,dodgers,1,7,False,False,False,False,False,dodgers,dodgers,dodgers,2024-03-29
+8,2024-03-29,Louis Gossett Jr.,58725.0,Louis Gossett Jr.,louis gossett jr,louis gossett jr,louis gossett jr,louis gossett jr,3,16,False,False,True,False,False,louis gossett jr,louis gossett jr,louis gossett jr,2024-03-29
+2,2024-03-29,#SKZ_4TH_FANMEETING,54716.0,#SKZ_4TH_FANMEETING,#skz 4th fanmeeting,skz 4th fanmeeting,skz 4th fanmeeting,skz 4th fanmeeting,3,18,False,True,True,False,False,#skz 4th fanmeeting,skz 4th fanmeeting,skz 4th fanmeeting,2024-03-29
+1,2024-03-29,#SKZS_MAGIC_SCHOOL,52818.0,#SKZS_MAGIC_SCHOOL,#skzs magic school,skzs magic school,skzs magic school,skzs magic school,3,17,False,True,True,False,False,#skzs magic school,skzs magic school,skzs magic school,2024-03-29
+9,2024-03-29,Bama,51653.0,Bama,bama,bama,bama,bama,1,4,False,False,False,False,False,bama,bama,bama,2024-03-29
+2,2024-03-29,Jets,50184.0,Jets,jets,jets,jets,jets,1,4,False,False,False,False,False,jets,jets,jets,2024-03-29
+9,2024-03-29,Bodyguard,47348.0,Bodyguard,bodyguard,bodyguard,bodyguard,bodyguard,1,9,False,False,False,False,False,bodyguard,bodyguard,bodyguard,2024-03-29
+1,2024-03-29,Hochul,46806.0,Hochul,hochul,hochul,hochul,hochul,1,6,False,False,False,False,False,hochul,hochul,hochul,2024-03-29
+3,2024-03-29,Soto,43841.0,Soto,soto,soto,soto,soto,1,4,False,False,False,False,False,soto,soto,soto,2024-03-29
+3,2024-03-29,Mets,43030.0,Mets,mets,mets,mets,mets,1,4,False,False,False,False,False,mets,mets,mets,2024-03-29
+5,2024-03-29,Phillies,42850.0,Phillies,phillies,phillies,phillies,phillies,1,8,False,False,False,False,False,phillies,phillies,phillies,2024-03-29
+2,2024-03-29,Braves,40027.0,Braves,braves,braves,braves,braves,1,6,False,False,False,False,False,braves,braves,braves,2024-03-29
+2,2024-03-29,Viernes Santo,39869.0,Viernes Santo,viernes santo,viernes santo,viernes santo,viernes santo,2,13,False,False,False,False,False,viernes santo,viernes santo,viernes santo,2024-03-29
+4,2024-03-29,Cubs,39289.0,Cubs,cubs,cubs,cubs,cubs,1,4,False,False,False,False,False,cubs,cubs,cubs,2024-03-29
+1,2024-03-29,Tigers,39170.0,Tigers,tigers,tigers,tigers,tigers,1,6,False,False,False,False,False,tigers,tigers,tigers,2024-03-29
+8,2024-03-29,Clemson,39070.0,Clemson,clemson,clemson,clemson,clemson,1,7,False,False,False,False,False,clemson,clemson,clemson,2024-03-29
+2,2024-03-29,Astros,37367.0,Astros,astros,astros,astros,astros,1,6,False,False,False,False,False,astros,astros,astros,2024-03-29
+6,2024-03-29,Tyrant,31397.0,Tyrant,tyrant,tyrant,tyrant,tyrant,1,6,False,False,False,False,False,tyrant,tyrant,tyrant,2024-03-29
+3,2024-03-29,Celtics,29722.0,Celtics,celtics,celtics,celtics,celtics,1,7,False,False,False,False,False,celtics,celtics,celtics,2024-03-29
+5,2024-03-29,UConn,27088.0,UConn,uconn,uconn,uconn,uconn,1,5,False,False,False,False,False,uconn,uconn,uconn,2024-03-29
+4,2024-03-29,Just For Fun,24271.0,Just For Fun,just for fun,just for fun,just for fun,just for fun,3,12,False,False,False,False,False,just for fun,just for fun,just for fun,2024-03-29
+1,2024-03-29,Nestor,24046.0,Nestor,nestor,nestor,nestor,nestor,1,6,False,False,False,False,False,nestor,nestor,nestor,2024-03-29
+9,2024-03-29,16 Carriages,22992.0,16 Carriages,16 carriages,16 carriages,16 carriages,16 carriages,2,12,False,False,False,False,False,16 carriages,16 carriages,16 carriages,2024-03-29
+2,2024-03-29,$BRETT,22140.0,$BRETT,$brett,$brett,brett,brett,1,6,False,False,True,False,False,$brett,$brett,brett,2024-03-29
+1,2024-03-29,#actii,21957.0,#actii,#actii,actii,actii,actii,1,5,False,True,True,False,False,#actii,actii,actii,2024-03-29
+3,2024-03-29,Hawks,21925.0,Hawks,hawks,hawks,hawks,hawks,1,5,False,False,False,False,False,hawks,hawks,hawks,2024-03-29
+1,2024-03-29,#RepBX,21574.0,#RepBX,#repbx,repbx,repbx,repbx,1,5,False,True,True,False,False,#repbx,repbx,repbx,2024-03-29
+6,2024-03-29,Elite 8,19942.0,Elite 8,elite 8,elite 8,elite 8,elite 8,2,7,False,False,False,False,False,elite 8,elite 8,elite 8,2024-03-29
+5,2024-03-29,My Rose,19006.0,My Rose,my rose,my rose,my rose,my rose,2,7,False,False,False,False,False,my rose,my rose,my rose,2024-03-29
+10,2024-03-29,Levii's Jeans,18496.0,Levii's Jeans,levii s jeans,levii s jeans,levii s jeans,levii s jeans,3,13,False,False,True,False,False,levii s jeans,levii s jeans,levii s jeans,2024-03-29
+1,2024-03-29,Indiana,18405.0,Indiana,indiana,indiana,indiana,indiana,1,7,False,False,False,False,False,indiana,indiana,indiana,2024-03-29
+8,2024-03-29,#FursuitFriday,18291.0,#FursuitFriday,#fursuitfriday,fursuitfriday,fursuitfriday,fursuitfriday,1,13,False,True,True,False,False,#fursuitfriday,fursuitfriday,fursuitfriday,2024-03-29
+1,2024-03-29,#murderdrones,18087.0,#murderdrones,#murderdrones,murderdrones,murderdrones,murderdrones,1,12,False,True,True,False,False,#murderdrones,murderdrones,murderdrones,2024-03-29
+4,2024-03-29,Huff,17971.0,Huff,huff,huff,huff,huff,1,4,False,False,False,False,False,huff,huff,huff,2024-03-29
+2,2024-03-29,#DragRaceUK,16789.0,#DragRaceUK,#dragraceuk,dragraceuk,dragraceuk,dragraceuk,1,10,False,True,True,False,False,#dragraceuk,dragraceuk,dragraceuk,2024-03-29
+2,2024-03-29,Dbacks,16404.0,Dbacks,dbacks,dbacks,dbacks,dbacks,1,6,False,False,False,False,False,dbacks,dbacks,dbacks,2024-03-29
+3,2024-03-29,$MEW,16127.0,$MEW,$mew,$mew,mew,mew,1,4,False,False,True,False,False,$mew,$mew,mew,2024-03-29
+4,2024-03-29,Reddick,16039.0,Reddick,reddick,reddick,reddick,reddick,1,7,False,False,False,False,False,reddick,reddick,reddick,2024-03-29
+1,2024-03-29,AMERIICAN REQUIEM,15980.0,AMERIICAN REQUIEM,ameriican requiem,ameriican requiem,ameriican requiem,ameriican requiem,2,17,False,False,False,False,False,ameriican requiem,ameriican requiem,ameriican requiem,2024-03-29

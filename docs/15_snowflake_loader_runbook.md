@@ -29,16 +29,12 @@ data/output/<run_tag>/
   state/
 ```
 
-2. Snowflake credentials in environment:
+2. Snowflake credentials loaded from a local gitignored shell env file (do not commit secrets):
 
 ```bash
-export SNOWFLAKE_ACCOUNT='...'
-export SNOWFLAKE_USER='...'
-export SNOWFLAKE_PASSWORD='...'
-export SNOWFLAKE_ROLE='...'
-export SNOWFLAKE_WAREHOUSE='...'
-export SNOWFLAKE_DATABASE='...'
-export SNOWFLAKE_SCHEMA='...'
+set -a
+source local/snowflake.env
+set +a
 ```
 
 3. SQL objects created in this exact order.
@@ -89,7 +85,7 @@ python3 -m snowflake_loader.main_load_run \
 2. Resolve run DB from `<run_root>/state/*.db` (or explicit path).
 3. Enforce strict completion gates:
 - hydration completion semantics aligned with `scripts/ops/stage_drain.py`
-- actor completion semantics aligned with `scripts/ops/stage_drain.py`
+- actor completion semantics aligned with `scripts/ops/stage_drain.py` when actor files are present under the run root
 4. Skip files already present in `LOADER_FILE_MANIFEST` for this `source_run_tag` and dataset family.
 5. `PUT` pending files into family-specific internal stages.
 6. `COPY INTO` landing tables with metadata columns and raw JSON in `VARIANT`.
