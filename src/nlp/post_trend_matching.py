@@ -123,10 +123,15 @@ def match_post_candidates_to_trends(
     )
 
     output_rows: list[dict[str, Any]] = []
+    total_candidates = len(candidates)
+    _progress_interval = max(1, total_candidates // 20)
 
     for candidate in candidates.itertuples(index=False):
         candidate_row = candidate._asdict()
         candidate_id = int(candidate_row["candidate_id"])
+
+        if candidate_id % _progress_interval == 0:
+            print(f"  Matching candidate {candidate_id:,} / {total_candidates:,} ({candidate_id * 100 // total_candidates}%)")
 
         temporal_pool, temporal_pool_mode = _temporal_pool_for_candidate(
             candidate_row=candidate_row,
@@ -184,6 +189,7 @@ def match_post_candidates_to_trends(
             trend_keys=trend_keys,
             trend_counts=trend_counts,
             trend_names=trend_names,
+            lexical_pre_scores=lexical_pre_scores,
             cfg=cfg,
         )
         if fuzzy_matches:
@@ -232,6 +238,8 @@ def match_post_candidates_to_trends(
                 temporal_pool_mode=temporal_pool_mode,
             )
         )
+
+    print(f"  Matching complete: {total_candidates:,} candidates processed.")
 
     full_matches_df = pd.DataFrame(output_rows)
     if full_matches_df.empty:
@@ -548,9 +556,11 @@ def _build_stage_pool(
         )[: cfg.max_stage_pool * 4]
 
     lexical_pre_scores: dict[int, float] = {}
+    matcher = SequenceMatcher(a=candidate_key)
     for trend_id in pool:
         trend_key = trend_keys[int(trend_id)]
-        lexical_pre_scores[int(trend_id)] = _sequence_ratio(candidate_key, trend_key)
+        matcher.set_seq2(trend_key)
+        lexical_pre_scores[int(trend_id)] = float(matcher.ratio())
 
     ranked_pool = sorted(
         pool,
@@ -572,6 +582,7 @@ def _match_fuzzy(
     trend_keys: list[str],
     trend_counts: list[float],
     trend_names: list[str],
+    lexical_pre_scores: dict[int, float] | None = None,
     cfg: MatchConfig,
 ) -> list[dict[str, Any]]:
     candidate_key = str(candidate_row.get("candidate_key", ""))
@@ -582,7 +593,10 @@ def _match_fuzzy(
     for trend_id in trend_ids:
         trend_row = trend_rows[int(trend_id)]
         trend_key = trend_keys[int(trend_id)]
-        score = _sequence_ratio(candidate_key, trend_key)
+        if lexical_pre_scores is not None and int(trend_id) in lexical_pre_scores:
+            score = lexical_pre_scores[int(trend_id)]
+        else:
+            score = _sequence_ratio(candidate_key, trend_key)
         if score >= cfg.fuzzy_min_score:
             hits.append(
                 {
@@ -640,21 +654,25 @@ def _match_semantic(
         return []
 
     hits: list[dict[str, Any]] = []
+    candidate_trigrams = _char_ngrams(candidate_phrase, n=3)
+    candidate_tokens_counted = _token_counts(candidate_phrase)
+    matcher = SequenceMatcher(a=candidate_phrase)
     for trend_id in trend_ids:
         trend_row = trend_rows[int(trend_id)]
         trend_phrase = trend_keys[int(trend_id)]
 
-        token_cosine = _token_cosine_similarity(candidate_phrase, trend_phrase)
-        trigram_jaccard = _char_trigram_jaccard(candidate_phrase, trend_phrase)
+        token_cosine = _token_cosine_from_counts(candidate_tokens_counted, _token_counts(trend_phrase))
+        trigram_jaccard = _char_trigram_jaccard_from_sets(candidate_trigrams, _char_ngrams(trend_phrase, n=3))
         combined = 0.7 * token_cosine + 0.3 * trigram_jaccard
 
         if combined >= cfg.semantic_min_score:
+            matcher.set_seq2(trend_phrase)
             hits.append(
                 {
                     "trend_id": int(trend_id),
                     "trend_row": trend_row,
                     "match_score": float(combined),
-                    "lexical_score": float(_sequence_ratio(candidate_phrase, trend_phrase)),
+                    "lexical_score": float(matcher.ratio()),
                     "semantic_token_cosine": float(token_cosine),
                     "semantic_char_trigram_jaccard": float(trigram_jaccard),
                 }
@@ -823,19 +841,16 @@ def _sequence_ratio(a: str, b: str) -> float:
     return float(SequenceMatcher(a=a, b=b).ratio())
 
 
-def _token_cosine_similarity(a: str, b: str) -> float:
-    tokens_a = _tokenize(a)
-    tokens_b = _tokenize(b)
-    if not tokens_a or not tokens_b:
+def _token_counts(value: str) -> dict[str, int]:
+    counts: dict[str, int] = {}
+    for token in _tokenize(value):
+        counts[token] = counts.get(token, 0) + 1
+    return counts
+
+
+def _token_cosine_from_counts(counts_a: dict[str, int], counts_b: dict[str, int]) -> float:
+    if not counts_a or not counts_b:
         return 0.0
-
-    counts_a: dict[str, int] = {}
-    counts_b: dict[str, int] = {}
-
-    for token in tokens_a:
-        counts_a[token] = counts_a.get(token, 0) + 1
-    for token in tokens_b:
-        counts_b[token] = counts_b.get(token, 0) + 1
 
     vocab = set(counts_a) | set(counts_b)
     dot = float(sum(counts_a.get(token, 0) * counts_b.get(token, 0) for token in vocab))
@@ -847,17 +862,22 @@ def _token_cosine_similarity(a: str, b: str) -> float:
     return dot / (norm_a * norm_b)
 
 
-def _char_trigram_jaccard(a: str, b: str) -> float:
-    grams_a = _char_ngrams(a, n=3)
-    grams_b = _char_ngrams(b, n=3)
+def _token_cosine_similarity(a: str, b: str) -> float:
+    return _token_cosine_from_counts(_token_counts(a), _token_counts(b))
+
+
+def _char_trigram_jaccard_from_sets(grams_a: set[str], grams_b: set[str]) -> float:
     if not grams_a or not grams_b:
         return 0.0
-
     intersection = len(grams_a & grams_b)
     union = len(grams_a | grams_b)
     if union == 0:
         return 0.0
     return float(intersection / union)
+
+
+def _char_trigram_jaccard(a: str, b: str) -> float:
+    return _char_trigram_jaccard_from_sets(_char_ngrams(a, n=3), _char_ngrams(b, n=3))
 
 
 def _char_ngrams(value: str, n: int) -> set[str]:

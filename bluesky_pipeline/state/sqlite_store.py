@@ -37,6 +37,8 @@ class SQLiteStore:
         if self._conn is None:
             self.db_path.parent.mkdir(parents=True, exist_ok=True)
             self._conn = sqlite3.connect(self.db_path)
+            self._conn.execute("PRAGMA journal_mode = WAL;")
+            self._conn.execute("PRAGMA synchronous = NORMAL;")
             self._conn.row_factory = sqlite3.Row
             self._conn.execute("PRAGMA foreign_keys = ON;")
         return self._conn
@@ -487,7 +489,10 @@ class SQLiteStore:
             (job_type, run_id, dataset_type, local_path, created_at),
         )
         conn.commit()
-        return int(cursor.lastrowid)
+        file_id = cursor.lastrowid
+        if file_id is None:
+            raise RuntimeError("Failed to create batch file row: SQLite did not return a row id")
+        return file_id
 
     def open_batch_file(self, job_type: str, run_id: str, dataset_type: str, local_path: str) -> int:
         """Backward-compatible alias for `create_batch_file(...)`."""
