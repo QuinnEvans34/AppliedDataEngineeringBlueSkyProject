@@ -8,6 +8,8 @@ from typing import Any
 
 import numpy as np
 import pandas as pd
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import linear_kernel
 
 CANDIDATE_REQUIRED_COLUMNS = [
     "uri",
@@ -122,6 +124,12 @@ def match_post_candidates_to_trends(
         .tolist()
     )
 
+    print("  Building TF-IDF index...")
+    tfidf_vectorizer, tfidf_matrix = _build_tfidf_index(trend_keys)
+    print("  Building FAISS semantic index...")
+    sentence_model, faiss_index = _build_faiss_index(trend_keys)
+    print("  Index build complete.")
+
     output_rows: list[dict[str, Any]] = []
     total_candidates = len(candidates)
     _progress_interval = max(1, total_candidates // 20)
@@ -171,7 +179,7 @@ def match_post_candidates_to_trends(
             )
             continue
 
-        stage_pool, lexical_pre_scores = _build_stage_pool(
+        stage_pool, tfidf_pre_scores = _build_stage_pool(
             candidate_row=candidate_row,
             temporal_pool=temporal_pool,
             token_index=token_index,
@@ -179,6 +187,8 @@ def match_post_candidates_to_trends(
             trend_keys=trend_keys,
             trend_counts=trend_counts,
             trend_names=trend_names,
+            tfidf_vectorizer=tfidf_vectorizer,
+            tfidf_matrix=tfidf_matrix,
             cfg=cfg,
         )
 
@@ -189,7 +199,7 @@ def match_post_candidates_to_trends(
             trend_keys=trend_keys,
             trend_counts=trend_counts,
             trend_names=trend_names,
-            lexical_pre_scores=lexical_pre_scores,
+            tfidf_pre_scores=tfidf_pre_scores,
             cfg=cfg,
         )
         if fuzzy_matches:
@@ -204,11 +214,11 @@ def match_post_candidates_to_trends(
             )
             continue
 
-        semantic_pool = _semantic_pool_from_lexical(
-            stage_pool=stage_pool,
-            lexical_pre_scores=lexical_pre_scores,
-            trend_counts=trend_counts,
-            trend_names=trend_names,
+        semantic_pool = _semantic_pool_from_faiss(
+            candidate_row=candidate_row,
+            temporal_pool=temporal_pool,
+            sentence_model=sentence_model,
+            faiss_index=faiss_index,
             cfg=cfg,
         )
         semantic_matches = _match_semantic(
@@ -443,6 +453,36 @@ def _build_trend_date_index(trends: pd.DataFrame) -> dict[pd.Timestamp, list[int
     return result
 
 
+def _build_tfidf_index(
+    trend_keys: list[str],
+) -> tuple[TfidfVectorizer, Any]:
+    """Build TF-IDF char-ngram index over all trend keys. Called once."""
+
+    vectorizer = TfidfVectorizer(analyzer="char_wb", ngram_range=(2, 3))
+    tfidf_matrix = vectorizer.fit_transform(trend_keys)
+    return vectorizer, tfidf_matrix
+
+
+def _build_faiss_index(
+    trend_keys: list[str],
+) -> tuple[Any, Any]:
+    """Build FAISS inner-product index over sentence embeddings. Called once."""
+
+    import faiss
+    from sentence_transformers import SentenceTransformer
+
+    model = SentenceTransformer("all-MiniLM-L6-v2")
+    embeddings = model.encode(
+        trend_keys, batch_size=256, show_progress_bar=True,
+    ).astype("float32")
+    faiss.normalize_L2(embeddings)
+
+    dimension = embeddings.shape[1]
+    index = faiss.IndexFlatIP(dimension)
+    index.add(embeddings)
+    return model, index
+
+
 def _temporal_pool_for_candidate(
     *,
     candidate_row: dict[str, Any],
@@ -516,6 +556,8 @@ def _build_stage_pool(
     trend_keys: list[str],
     trend_counts: list[float],
     trend_names: list[str],
+    tfidf_vectorizer: TfidfVectorizer,
+    tfidf_matrix: Any,
     cfg: MatchConfig,
 ) -> tuple[list[int], dict[int, float]]:
     candidate_tokens = [
@@ -544,34 +586,30 @@ def _build_stage_pool(
     else:
         pool = list(temporal_pool)
 
-    # Deterministic score for capped pool ordering.
+    # Vectorized TF-IDF cosine scoring replaces per-trend SequenceMatcher loop.
     candidate_key = str(candidate_row.get("candidate_key", ""))
-    if len(pool) > cfg.max_stage_pool * 4:
-        pool = sorted(
-            pool,
-            key=lambda trend_id: (
-                -trend_counts[int(trend_id)],
-                trend_names[int(trend_id)],
-            ),
-        )[: cfg.max_stage_pool * 4]
+    if not pool or not candidate_key:
+        return pool[: cfg.max_stage_pool], {}
 
-    lexical_pre_scores: dict[int, float] = {}
-    matcher = SequenceMatcher(a=candidate_key)
-    for trend_id in pool:
-        trend_key = trend_keys[int(trend_id)]
-        matcher.set_seq2(trend_key)
-        lexical_pre_scores[int(trend_id)] = float(matcher.ratio())
+    candidate_vec = tfidf_vectorizer.transform([candidate_key])
+    all_tfidf_scores = linear_kernel(candidate_vec, tfidf_matrix).flatten()
+    tfidf_pre_scores: dict[int, float] = {
+        int(tid): float(all_tfidf_scores[int(tid)]) for tid in pool
+    }
 
     ranked_pool = sorted(
         pool,
         key=lambda trend_id: (
-            -lexical_pre_scores.get(int(trend_id), 0.0),
+            -tfidf_pre_scores.get(int(trend_id), 0.0),
             -trend_counts[int(trend_id)],
             trend_names[int(trend_id)],
         ),
     )
     capped_pool = ranked_pool[: cfg.max_stage_pool]
-    return capped_pool, lexical_pre_scores
+    return capped_pool, tfidf_pre_scores
+
+
+_TFIDF_PREFILTER_THRESHOLD = 0.20
 
 
 def _match_fuzzy(
@@ -582,7 +620,7 @@ def _match_fuzzy(
     trend_keys: list[str],
     trend_counts: list[float],
     trend_names: list[str],
-    lexical_pre_scores: dict[int, float] | None = None,
+    tfidf_pre_scores: dict[int, float] | None = None,
     cfg: MatchConfig,
 ) -> list[dict[str, Any]]:
     candidate_key = str(candidate_row.get("candidate_key", ""))
@@ -591,13 +629,17 @@ def _match_fuzzy(
 
     hits: list[dict[str, Any]] = []
     for trend_id in trend_ids:
-        trend_row = trend_rows[int(trend_id)]
+        # TF-IDF pre-filter: skip trends with low char-ngram similarity to
+        # avoid expensive SequenceMatcher calls on obvious non-matches.
+        if tfidf_pre_scores is not None:
+            tfidf_score = tfidf_pre_scores.get(int(trend_id), 0.0)
+            if tfidf_score < _TFIDF_PREFILTER_THRESHOLD:
+                continue
+
         trend_key = trend_keys[int(trend_id)]
-        if lexical_pre_scores is not None and int(trend_id) in lexical_pre_scores:
-            score = lexical_pre_scores[int(trend_id)]
-        else:
-            score = _sequence_ratio(candidate_key, trend_key)
+        score = _sequence_ratio(candidate_key, trend_key)
         if score >= cfg.fuzzy_min_score:
+            trend_row = trend_rows[int(trend_id)]
             hits.append(
                 {
                     "trend_id": int(trend_id),
@@ -620,23 +662,33 @@ def _match_fuzzy(
     return hits
 
 
-def _semantic_pool_from_lexical(
+def _semantic_pool_from_faiss(
     *,
-    stage_pool: list[int],
-    lexical_pre_scores: dict[int, float],
-    trend_counts: list[float],
-    trend_names: list[str],
+    candidate_row: dict[str, Any],
+    temporal_pool: list[int],
+    sentence_model: Any,
+    faiss_index: Any,
     cfg: MatchConfig,
 ) -> list[int]:
-    ranked = sorted(
-        stage_pool,
-        key=lambda trend_id: (
-            -lexical_pre_scores.get(int(trend_id), 0.0),
-            -trend_counts[int(trend_id)],
-            trend_names[int(trend_id)],
-        ),
-    )
-    return ranked[: cfg.semantic_pool_top_k]
+    """Retrieve semantic nearest-neighbor candidates via FAISS."""
+
+    import faiss as _faiss
+
+    candidate_key = str(candidate_row.get("candidate_key", ""))
+    if not candidate_key:
+        return []
+
+    embedding = sentence_model.encode([candidate_key]).astype("float32")
+    _faiss.normalize_L2(embedding)
+
+    k = min(cfg.semantic_pool_top_k * 4, faiss_index.ntotal)
+    if k == 0:
+        return []
+    _, indices = faiss_index.search(embedding, k)
+
+    temporal_set = set(temporal_pool)
+    pool = [int(idx) for idx in indices[0] if idx != -1 and int(idx) in temporal_set]
+    return pool[: cfg.semantic_pool_top_k]
 
 
 def _match_semantic(

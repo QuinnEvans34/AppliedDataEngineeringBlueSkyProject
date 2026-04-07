@@ -488,8 +488,8 @@ class SQLiteStore:
             """,
             (job_type, run_id, dataset_type, local_path, created_at),
         )
-        conn.commit()
         file_id = cursor.lastrowid
+        conn.commit()
         if file_id is None:
             raise RuntimeError("Failed to create batch file row: SQLite did not return a row id")
         return file_id
