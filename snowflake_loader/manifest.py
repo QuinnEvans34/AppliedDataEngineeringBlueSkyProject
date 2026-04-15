@@ -11,6 +11,7 @@ DATASET_FAMILIES: tuple[str, ...] = (
     "hydrated_posts",
     "hydration_misses",
     "actor_profiles",
+    "trend_matches",
 )
 
 BUSINESS_KEY_BY_FAMILY: dict[str, str] = {
@@ -18,6 +19,7 @@ BUSINESS_KEY_BY_FAMILY: dict[str, str] = {
     "hydrated_posts": "uri",
     "hydration_misses": "uri",
     "actor_profiles": "did",
+    "trend_matches": "post_uri",
 }
 
 

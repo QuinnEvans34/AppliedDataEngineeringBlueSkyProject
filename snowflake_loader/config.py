@@ -31,6 +31,7 @@ class SnowflakeObjectConfig:
             "hydrated_posts": "BLUESKY_HYDRATED_POSTS_STAGE",
             "hydration_misses": "BLUESKY_HYDRATION_MISSES_STAGE",
             "actor_profiles": "BLUESKY_ACTOR_PROFILES_STAGE",
+            "trend_matches": "BLUESKY_TREND_MATCHES_STAGE",
         }
     )
     pipe_names: dict[str, str] = field(
@@ -39,6 +40,7 @@ class SnowflakeObjectConfig:
             "hydrated_posts": "BLUESKY_HYDRATED_POSTS_PIPE",
             "hydration_misses": "BLUESKY_HYDRATION_MISSES_PIPE",
             "actor_profiles": "BLUESKY_ACTOR_PROFILES_PIPE",
+            "trend_matches": "BLUESKY_TREND_MATCHES_PIPE",
         }
     )
     landing_table_names: dict[str, str] = field(
@@ -47,6 +49,7 @@ class SnowflakeObjectConfig:
             "hydrated_posts": "LANDING_HYDRATED_POSTS",
             "hydration_misses": "LANDING_HYDRATION_MISSES",
             "actor_profiles": "LANDING_ACTOR_PROFILES",
+            "trend_matches": "LANDING_TREND_MATCHES",
         }
     )
 

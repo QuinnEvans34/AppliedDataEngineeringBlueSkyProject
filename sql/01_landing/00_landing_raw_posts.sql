@@ -1,6 +1,6 @@
 -- Landing table for raw_posts append loads.
 
-CREATE TABLE IF NOT EXISTS LANDING_RAW_POSTS (
+CREATE TABLE IF NOT EXISTS RAW.LANDING_RAW_POSTS (
   landing_id NUMBER AUTOINCREMENT START 1 INCREMENT 1,
   raw_payload VARIANT NOT NULL,
   source_filename STRING NOT NULL,

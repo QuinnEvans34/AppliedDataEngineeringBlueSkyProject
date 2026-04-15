@@ -3,13 +3,18 @@
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass
+from datetime import datetime, timezone
 from difflib import SequenceMatcher
+from pathlib import Path
 from typing import Any
 
 import numpy as np
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
+
+from bluesky_pipeline.text_prep.trend_match_writer import TrendMatchWriter
+from src.nlp.trend_normalization import normalize_trend_name
 
 CANDIDATE_REQUIRED_COLUMNS = [
     "uri",
@@ -269,6 +274,42 @@ def match_post_candidates_to_trends(
         best_matches_df=best_matches_df,
         cfg=cfg,
     )
+
+    # ---- Write-back: persist matched results as gzip JSONL for Snowflake ----
+    matched_rows = best_matches_df[best_matches_df["is_matched"]]
+    if not matched_rows.empty:
+        run_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+        writer = TrendMatchWriter(
+            output_dir=Path("data/trend_matches"),
+            run_id=run_id,
+        )
+        matched_at = datetime.now(timezone.utc).isoformat(timespec="seconds").replace(
+            "+00:00", "Z"
+        )
+
+        for row in matched_rows.itertuples(index=False):
+            base_trend_label = ""
+            if not pd.isna(row.trend_key_no_hash):
+                base_trend_label = str(row.trend_key_no_hash)
+            elif not pd.isna(row.trend_name_clean):
+                base_trend_label = str(row.trend_name_clean)
+
+            normalized_trend = normalize_trend_name(base_trend_label)
+            trend_key_no_hash = normalized_trend["normalized_key_no_hash"]
+            trend_name = normalized_trend["trend_name_clean_no_hash"]
+            writer.write_matches([{
+                "post_uri": str(row.uri),
+                "trend_name": trend_name,
+                "trend_key_no_hash": trend_key_no_hash,
+                "trend_date": str(row.trend_date),
+                "match_method": str(row.match_method),
+                "match_score": float(row.match_score),
+                "matched_at": matched_at,
+            }])
+
+        written_files = writer.close()
+        summary["trend_match_files_written"] = [str(p) for p in written_files]
+        summary["trend_match_run_id"] = run_id
 
     return full_matches_df, best_matches_df, summary
 
