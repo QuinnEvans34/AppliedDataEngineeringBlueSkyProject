@@ -33,6 +33,9 @@ CREATE TABLE IF NOT EXISTS CURATED.ML_READY (
   matched_tweet_volume    NUMBER,
   matched_trend_rank      NUMBER,
 
+  -- ── Profanity categorical feature ──
+  severity_max            STRING,
+
   -- ── Split ──
   dataset_split           STRING
 );
@@ -45,7 +48,7 @@ SELECT COUNT(*) AS row_count FROM CURATED.ML_READY;
 -- Expected: 0 (table definition only, no data yet)
 
 DESCRIBE TABLE CURATED.ML_READY;
--- Expected: 20 columns
+-- Expected: 21 columns
 */
 
 -- Reminder: suspend warehouse after running validation queries.

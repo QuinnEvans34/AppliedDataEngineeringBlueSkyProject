@@ -1,2 +1,3 @@
 local/
 *.env
+sql/00_setup/_generated/

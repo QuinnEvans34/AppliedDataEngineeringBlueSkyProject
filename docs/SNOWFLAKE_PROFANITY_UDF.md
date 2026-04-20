@@ -1,6 +1,14 @@
 # SNOWFLAKE_PROFANITY_UDF.md
 ## Spec: Profanity Redaction — Snowflake JavaScript UDF
 
+> **STATUS (Phase C):** The hardcoded-list approach described in the
+> sections "Full UDF Code", "Adding Custom Words Later", and the manual
+> "Validation Queries" is **HISTORICAL**. The live UDF is now rendered
+> from `ENHANCED.PROFANITY_TERMS` + `ENHANCED.PROFANITY_WHITELIST`, and
+> its output object carries two additional keys (`severity_max`,
+> `redaction_count`). See **"Template + Renderer Workflow (current)"**
+> at the bottom of this doc for the current deploy + test process.
+
 ---
 
 ### What This Is
@@ -73,6 +81,8 @@ OBJECT with two keys:
 ---
 
 ### Full UDF Code
+
+> **HISTORICAL (pre-Phase C).** See "Template + Renderer Workflow (current)" below.
 
 ```sql
 CREATE OR REPLACE FUNCTION clean_profanity(post_text STRING)
@@ -189,6 +199,11 @@ is available in all downstream curated views and in CURATED_ML_READY.
 
 ### Validation Queries
 
+> **HISTORICAL (pre-Phase C).** These manual spot-checks are superseded by
+> `sql/99_validation/01_profanity_unit_tests.sql` — 24 ASSERT-style rows
+> covering every item in the Phase C acceptance checklist. See
+> "Template + Renderer Workflow (current)" below.
+
 **After creating the UDF — test it directly:**
 ```sql
 -- Test 1: Clean text
@@ -272,7 +287,70 @@ This UDF must be deployed BEFORE re-running
 ---
 
 ### Adding Custom Words Later
+
+> **HISTORICAL (pre-Phase C).** Editing an array inside `03_udfs.sql` is
+> no longer the way. The current workflow is: `INSERT` into
+> `ENHANCED.PROFANITY_TERMS`, re-render, re-deploy, re-run the unit
+> tests. See "Template + Renderer Workflow (current)" below.
+
 To add words to the list after deployment, edit the
 `PROFANITY_LIST` array in `03_udfs.sql` and re-run
 `CREATE OR REPLACE FUNCTION`. The view automatically picks
 up the change on next query — no other files need updating.
+
+---
+
+## Template + Renderer Workflow (current)
+
+- **Template.** `sql/00_setup/03_udfs.sql` contains Jinja-style placeholders
+  `{{PROFANITY_TERMS_JSON}}` and `{{PROFANITY_WHITELIST_JSON}}`. Running the
+  template directly in Snowflake triggers a 1/0 guard whose row carries the
+  message `template not rendered — run scripts/render_profanity_udf.py`.
+  The renderer strips the guard before substituting placeholders.
+- **Renderer.** `scripts/render_profanity_udf.py` — stdlib-only in the
+  default mode.
+  - Default: `python scripts/render_profanity_udf.py --terms-json <path>`
+    reads a local JSON file (no Snowflake credentials needed; CI-friendly).
+    The JSON shape is
+    `{"terms": [{"term": "...", "severity": "...", "allow_separators": true|false}, ...],
+    "whitelist": ["sussex", ...]}`.
+  - `--from-snowflake` pulls live rows from `ENHANCED.PROFANITY_TERMS` and
+    `ENHANCED.PROFANITY_WHITELIST` using env vars `SNOWFLAKE_ACCOUNT`,
+    `SNOWFLAKE_USER`, `SNOWFLAKE_PASSWORD`, `SNOWFLAKE_WAREHOUSE`,
+    `SNOWFLAKE_DATABASE`.
+  - Output: `sql/00_setup/_generated/03_udfs.rendered.sql`
+    (git-ignored — the directory is added to `.gitignore` automatically).
+  - `--dry-run` prints rendered SQL to stdout instead of writing.
+  - Stdout also prints `terms_total`, `whitelist_total`, and a severity
+    breakdown after every run.
+- **UDF return shape (new).** The OBJECT now has four keys:
+  `post_text_clean`, `was_profanity_redacted`, `redaction_count`,
+  `severity_max`. `severity_max` is one of `mild`, `strong`, `sexual`,
+  `slur`, or `NULL` when nothing was redacted.
+- **Detection vs redaction.** Leetspeak substitutions
+  (`0→o, 1→i, 3→e, 4→a, 5→s, 7→t, @→a, $→s`), single-separator tolerance
+  (`f.u.c.k`, `f*ck`), and 3+ char run collapse (`fuuuuck`) apply to an
+  internal detection copy. Redactions are applied to the ORIGINAL string
+  at mapped offsets, so non-redacted spans keep their exact input
+  characters and the user's spelling is preserved outside `[Profanity]`.
+- **Mask order.** Whitelist occurrences are masked FIRST, then URLs, then
+  term scanning happens. This is how `Sussex`, `classic`, `passage`, etc.
+  avoid false positives, and how links stay intact.
+- **Unit tests.** `sql/99_validation/01_profanity_unit_tests.sql` — 24
+  `ASSERT`-style queries covering every Phase C acceptance item (Sussex
+  whitelist, `f*ck` / `sh1t` / `a$$` / `fuuuuck` / `f.u.c.k`, URL
+  preservation, NULL / empty-string safety, mixed case, multiple-profanity
+  count, slur-over-mild severity ordering, strict word-boundary sanity).
+  Every row must return `PASS` before calling Phase C green.
+- **Deploy sequence.**
+  1. Rows in `ENHANCED.PROFANITY_TERMS` / `ENHANCED.PROFANITY_WHITELIST`
+     are authoritative (landed in Phases A + B via
+     `sql/00_setup/04_profanity_config.sql`).
+  2. `python scripts/render_profanity_udf.py --terms-json <export>.json`
+     (or `--from-snowflake`).
+  3. Run `sql/00_setup/_generated/03_udfs.rendered.sql` in Snowflake.
+  4. Run `sql/99_validation/01_profanity_unit_tests.sql` and confirm 24
+     PASS rows.
+- **Adding a term now.** `INSERT` into `ENHANCED.PROFANITY_TERMS`,
+  re-render, re-deploy, re-run the unit tests. Do NOT edit the hardcoded
+  list in this doc.

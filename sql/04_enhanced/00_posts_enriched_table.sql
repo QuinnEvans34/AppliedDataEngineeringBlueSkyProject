@@ -61,6 +61,10 @@ CREATE TABLE IF NOT EXISTS ENHANCED.POSTS_ENRICHED (
   trend_match_method      STRING,
   trend_match_score       FLOAT,
 
+  -- ── Profanity metrics ──
+  severity_max            STRING,
+  redaction_count         NUMBER,
+
   -- ── Metadata ──
   enriched_at             TIMESTAMP_TZ DEFAULT CURRENT_TIMESTAMP()
 );
@@ -73,7 +77,7 @@ SELECT COUNT(*) AS row_count FROM ENHANCED.POSTS_ENRICHED;
 -- Expected: 0 (table definition only, no data yet)
 
 DESCRIBE TABLE ENHANCED.POSTS_ENRICHED;
--- Expected: 39 columns
+-- Expected: 41 columns
 */
 
 -- Reminder: suspend warehouse after running validation queries.
